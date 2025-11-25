@@ -4,7 +4,11 @@
   "tooltip.calcium.enchanting_table_fuel": "Add Lapis Lazuli",
   "item.calcium.enchanting_tablet": "Enchanting Tablet",
 
+  "block.calcium.stone_wall": "Stone Wall",
   "block.calcium.polished_stone": "Polished Stone",
+  "block.calcium.polished_stone_stairs": "Polished Stone Stairs",
+  "block.calcium.polished_stone_slab": "Polished Stone Slab",
+  "block.calcium.polished_stone_wall": "Polished Stone Wall",
   "block.calcium.andesite_bricks": "Andesite Bricks",
   "block.calcium.andesite_brick_stairs": "Andesite Brick Stairs",
   "block.calcium.andesite_brick_slab": "Andesite Brick Slab",

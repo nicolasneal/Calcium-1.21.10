@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
@@ -14,6 +14,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.nicolas.calcium.block.ModBlocks;
 
@@ -44,7 +45,8 @@ public class Cracking {
                 if (crackedState.isPresent()) {
                     if (!world.isClient()) {
                         world.setBlockState(blockPos, crackedState.get(), Block.NOTIFY_ALL);
-                        itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(hand));
+                        itemStack.damage(1, playerEntity, hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
+
                         ((ServerWorld) world).spawnParticles(
                                 new BlockStateParticleEffect(ParticleTypes.BLOCK, blockState),
                                 blockPos.getX() + 0.5,

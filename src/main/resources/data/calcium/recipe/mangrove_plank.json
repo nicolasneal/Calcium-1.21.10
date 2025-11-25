@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "calcium:mangrove_timber"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:mangrove_plank",
+    "count": 2
+  }
+}
+
+
+
+
+
+
+
+
+
+

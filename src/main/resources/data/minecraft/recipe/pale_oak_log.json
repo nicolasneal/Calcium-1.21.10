@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "calcium:pale_oak_timber"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:pale_oak_log",
+    "count": 1
+  }
+}
+
+
+
+
+
+
+
+
+

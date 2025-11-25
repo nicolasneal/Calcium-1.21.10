@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:jungle_plank",
+    "@": "calcium:wooden_rod"
+  },
+  "pattern": [
+    "#@#",
+    "#@#"
+  ],
+  "result": {
+    "id": "minecraft:jungle_fence",
+    "count": 2
+  }
+}
+
+
+
+

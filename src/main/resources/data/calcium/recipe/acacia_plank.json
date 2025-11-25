@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "calcium:acacia_timber"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:acacia_plank",
+    "count": 2
+  }
+}
+
+
+
+
+
+
+
+

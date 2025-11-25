@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:acacia_log"
+  ],
+  "result": {
+    "id": "minecraft:acacia_wood",
+    "count": 1
+  }
+}
+
+
+
+
+

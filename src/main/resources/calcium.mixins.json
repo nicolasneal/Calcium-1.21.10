@@ -5,9 +5,7 @@
   "mixins": [
     "attributes.Axolotl",
     "BedMixin",
-    "CampfireMixin",
-    "SignMixin",
-    "SignUseMixin"
+    "CampfireMixin"
   ],
   "injectors": {
     "defaultRequire": 1

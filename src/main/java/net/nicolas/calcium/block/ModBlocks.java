@@ -25,7 +25,17 @@ public class ModBlocks {
     public static final String MOD_ID = "calcium";
 
     // STONE VARIANT BLOCKS
+
+    public static final Block STONE_WALL = register("stone_wall", WallBlock::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
     public static final Block POLISHED_STONE = register("polished_stone", Block::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", settings -> new StairsBlock(ModBlocks.POLISHED_STONE.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    public static final Block POLISHED_STONE_SLAB = register("polished_stone_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    public static final Block POLISHED_STONE_WALL = register("polished_stone_wall", WallBlock::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    // Cracked Stone Brick Stairs
+    // Cracked Stone Brick Slab
+    // Cracked Stone Brick Wall
+    // Smooth Stone Stairs
+    // Smooth Stone Wall
     public static final Block ANDESITE_BRICKS = register("andesite_bricks", Block::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
     public static final Block ANDESITE_BRICK_STAIRS = register("andesite_brick_stairs", settings -> new StairsBlock(ModBlocks.ANDESITE_BRICKS.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
     public static final Block ANDESITE_BRICK_SLAB = register("andesite_brick_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
@@ -45,15 +55,19 @@ public class ModBlocks {
     public static final Block CRACKED_RED_SANDSTONE_BRICKS = register("cracked_red_sandstone_bricks", Block::new, Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8F, 0.8F), true);
 
     // PLANT BLOCKS
+
     public static final Block BUSY_LIZZIE = register("busy_lizzie", BusyLizzie::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
     public static final Block PAMPAS = register("pampas", Pampas::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
     public static final Block GOLDENROD = register("goldenrod", Goldenrod::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
 
-
     public static void initialize() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemgroup) -> {
+            itemgroup.add(STONE_WALL);
             itemgroup.add(POLISHED_STONE);
+            itemgroup.add(POLISHED_STONE_STAIRS);
+            itemgroup.add(POLISHED_STONE_SLAB);
+            itemgroup.add(POLISHED_STONE_WALL);
             itemgroup.add(ANDESITE_BRICKS);
             itemgroup.add(ANDESITE_BRICK_STAIRS);
             itemgroup.add(ANDESITE_BRICK_SLAB);

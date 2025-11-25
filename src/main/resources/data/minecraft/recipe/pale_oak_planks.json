@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:pale_oak_plank"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:pale_oak_planks",
+    "count": 1
+  }
+}
+
+
+
+
+
+
+
+
+

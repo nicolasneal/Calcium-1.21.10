@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "calcium:spruce_timber"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:spruce_plank",
+    "count": 2
+  }
+}
+
+
+
+
+
+

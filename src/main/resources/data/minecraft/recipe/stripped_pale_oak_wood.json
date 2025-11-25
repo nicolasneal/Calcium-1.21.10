@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stripped_pale_oak_log"
+  ],
+  "result": {
+    "id": "minecraft:stripped_pale_oak_wood",
+    "count": 1
+  }
+}
+
+
+
+
+
+
+
+
+

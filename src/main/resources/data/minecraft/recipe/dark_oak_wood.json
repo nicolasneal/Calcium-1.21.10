@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:dark_oak_log"
+  ],
+  "result": {
+    "id": "minecraft:dark_oak_wood",
+    "count": 1
+  }
+}
+
+
+
+
+
+

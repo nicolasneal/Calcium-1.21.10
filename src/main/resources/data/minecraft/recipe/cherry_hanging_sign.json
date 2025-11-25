@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:cherry_plank",
+    "@": "minecraft:chain"
+  },
+  "pattern": [
+    "@ @",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:cherry_hanging_sign",
+    "count": 2
+  }
+}
+
+
+
+
+
+
+
+

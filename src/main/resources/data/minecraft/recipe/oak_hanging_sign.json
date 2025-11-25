@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:oak_plank",
+    "@": "minecraft:chain"
+  },
+  "pattern": [
+    "@ @",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:oak_hanging_sign",
+    "count": 2
+  }
+}
+

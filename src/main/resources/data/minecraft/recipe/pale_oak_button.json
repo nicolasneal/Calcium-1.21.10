@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:pale_oak_plank",
+    "@": "minecraft:redstone"
+  },
+  "pattern": [
+    "#@"
+  ],
+  "result": {
+    "id": "minecraft:pale_oak_button",
+    "count": 1
+  }
+}
+
+
+
+
+
+
+
+
+

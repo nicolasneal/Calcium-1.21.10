@@ -29,7 +29,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
         if (itemStack.isOf(Items.STICK)) {
             world.playSound(null, pos, SoundEvents.ITEM_FLINTANDSTEEL_USE, SoundCategory.BLOCKS, 1.0F, world.random.nextFloat() * 0.4F + 0.8F);
 
-            if (!world.isClient) {
+            if (!world.isClient()) {
                 if (world.random.nextFloat() < 0.30F) {
                     world.setBlockState(pos, state.with(CampfireBlock.LIT, true));
                 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:birch_plank",
+    "@": "minecraft:redstone"
+  },
+  "pattern": [
+    "#@"
+  ],
+  "result": {
+    "id": "minecraft:birch_button",
+    "count": 1
+  }
+}
+
+

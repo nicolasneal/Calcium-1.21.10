@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:acacia_plank",
+    "@": "minecraft:chain"
+  },
+  "pattern": [
+    "@ @",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:acacia_hanging_sign",
+    "count": 2
+  }
+}
+
+
+
+
+

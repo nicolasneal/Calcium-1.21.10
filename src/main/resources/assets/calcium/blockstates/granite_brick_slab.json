@@ -1,13 +1,13 @@
 {
   "variants": {
-    "type=top": {
-      "model": "calcium:block/slabs/granite_bricks_top"
-    },
     "type=bottom": {
-      "model": "calcium:block/slabs/granite_bricks_bottom"
+      "model": "calcium:block/granite_brick_slab"
+    },
+    "type=top": {
+      "model": "calcium:block/granite_brick_slab_top"
     },
     "type=double": {
-      "model": "calcium:block/slabs/granite_bricks_double"
+      "model": "calcium:block/granite_bricks"
     }
   }
 }

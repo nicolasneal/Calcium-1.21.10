@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "calcium:dark_oak_timber"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:dark_oak_plank",
+    "count": 2
+  }
+}
+
+
+
+
+
+
+
+
+

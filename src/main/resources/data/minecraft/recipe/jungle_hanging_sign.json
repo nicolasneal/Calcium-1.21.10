@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:jungle_plank",
+    "@": "minecraft:chain"
+  },
+  "pattern": [
+    "@ @",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:jungle_hanging_sign",
+    "count": 2
+  }
+}
+
+
+
+

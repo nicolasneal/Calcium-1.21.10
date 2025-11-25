@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stripped_cherry_log"
+  ],
+  "result": {
+    "id": "minecraft:stripped_cherry_wood",
+    "count": 1
+  }
+}
+
+
+
+
+
+
+
+

@@ -20,7 +20,7 @@ public class EnchantingTableMixin {
 
     @Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
     private void onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
-        if (!world.isClient) {
+        if (!world.isClient()) {
             player.openHandledScreen(new NamedScreenHandlerFactory() {
 
                 @Override

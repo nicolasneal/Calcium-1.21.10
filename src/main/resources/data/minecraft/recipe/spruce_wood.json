@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:spruce_log"
+  ],
+  "result": {
+    "id": "minecraft:spruce_wood",
+    "count": 1
+  }
+}
+
+
+

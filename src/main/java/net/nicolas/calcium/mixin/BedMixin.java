@@ -13,6 +13,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import java.util.Objects;
+
 @Mixin(MinecraftClient.class) public abstract class BedMixin {
 
     @Shadow public ClientPlayerEntity player;
@@ -30,15 +32,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
         if (player != null && player.isSleeping()) {
 
-            long window = client.getWindow().getHandle();
-            boolean sneakPressed = InputUtil.isKeyPressed(window, InputUtil.fromTranslationKey(client.options.sneakKey.getBoundKeyTranslationKey()).getCode());
+            boolean sneakPressed = InputUtil.isKeyPressed(client.getWindow(), InputUtil.fromTranslationKey(client.options.sneakKey.getBoundKeyTranslationKey()).getCode());
             boolean perspectivePressed = client.options.togglePerspectiveKey.isPressed();
 
             for (KeyBinding key : client.options.allKeys) {
                 key.setPressed(false);
             }
             if (sneakPressed) {
-                client.getNetworkHandler().sendPacket(
+                Objects.requireNonNull(client.getNetworkHandler()).sendPacket(
                         new ClientCommandC2SPacket(player, ClientCommandC2SPacket.Mode.STOP_SLEEPING)
                 );
             }
