@@ -1,0 +1,7 @@
+{
+  "parent": "calcium:block/flowerbed_tinted_4",
+  "textures": {
+    "flowerbed": "calcium:block/clovers",
+    "stem": "calcium:block/clovers_stem"
+  }
+}

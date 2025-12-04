@@ -3,15 +3,17 @@
   "package": "net.nicolas.calcium.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "attributes.Axolotl",
     "BedMixin",
-    "CampfireMixin"
+    "BlocksMixin",
+    "CampfireMixin",
+    "BowlMixin",
+    "PumpkinMixin",
+    "attributes.Axolotl"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "refmap": "calcium.refmap.json",
   "client": [
-    "SignMixin"
   ]
 }

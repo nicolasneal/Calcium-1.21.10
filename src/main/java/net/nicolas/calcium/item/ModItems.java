@@ -45,6 +45,8 @@ public class ModItems {
     public static final Item WOODEN_ROD = register("wooden_rod", Item::new, new Item.Settings().maxCount(64));
     public static final Item STONE = register("stone", Item::new, new Item.Settings().maxCount(64));
     public static final Item GLASS = register("glass", Item::new, new Item.Settings().maxCount(64));
+    public static final Item PUMPKIN_SLICE = register("pumpkin_slice", Item::new, new Item.Settings().maxCount(64));
+    public static final Item FLOUR = register("flour", Item::new, new Item.Settings().maxCount(64));
     // INGREDIENTS (UTILITY)
     public static final Item ENCHANTING_TABLET = register("enchanting_tablet", Item::new, new Item.Settings().maxCount(64));
     // FOOD AND DRINK (MOB DROPS)
@@ -95,6 +97,8 @@ public class ModItems {
             itemgroup.add(WOODEN_ROD);
             itemgroup.add(STONE);
             itemgroup.add(GLASS);
+            itemgroup.add(PUMPKIN_SLICE);
+            itemgroup.add(FLOUR);
             itemgroup.add(ENCHANTING_TABLET);
         });
 

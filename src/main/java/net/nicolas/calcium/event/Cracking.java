@@ -25,6 +25,8 @@ public class Cracking {
 
     private static final Map<Block, Block> CRACKED_BLOCKS = new ImmutableMap.Builder<Block, Block>()
             .put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS)
+            .put(Blocks.STONE_BRICK_STAIRS, ModBlocks.CRACKED_STONE_BRICK_STAIRS)
+            .put(Blocks.STONE_BRICK_SLAB, ModBlocks.CRACKED_STONE_BRICK_SLAB)
             .put(ModBlocks.ANDESITE_BRICKS, ModBlocks.CRACKED_ANDESITE_BRICKS)
             .put(Blocks.DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS)
             .put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
@@ -68,8 +70,26 @@ public class Cracking {
     }
 
     private static Optional<BlockState> getCrackedState(BlockState originalState) {
-        return Optional.ofNullable(CRACKED_BLOCKS.get(originalState.getBlock()))
-                .map(Block::getDefaultState);
+        Block targetBlock = CRACKED_BLOCKS.get(originalState.getBlock());
+
+        if (targetBlock == null) {
+            return Optional.empty();
+        }
+
+        BlockState newState = targetBlock.getDefaultState();
+
+        for (net.minecraft.state.property.Property<?> property : originalState.getProperties()) {
+            if (newState.contains(property)) {
+                newState = copyProperty(originalState, newState, property);
+            }
+        }
+
+        return Optional.of(newState);
+
+    }
+
+    private static <T extends Comparable<T>> BlockState copyProperty(BlockState source, BlockState target, net.minecraft.state.property.Property<T> property) {
+        return target.with(property, source.get(property));
     }
 
 }
