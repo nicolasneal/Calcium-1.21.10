@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#calcium:water_container",
+    "calcium:flour",
+    "calcium:flour"
+  ],
+  "result": {
+    "count": 1,
+    "id": "calcium:dough"
+  }
+}

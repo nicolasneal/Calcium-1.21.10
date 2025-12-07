@@ -30,7 +30,12 @@ public class CalciumClient implements ClientModInitializer {
                 return BiomeColors.getGrassColor(world, pos);
             }
             return GrassColors.getColor(0.5, 1.0);
-        }, ModBlocks.CLOVERS);
+        },
+            ModBlocks.WILD_CARROT,
+            ModBlocks.WILD_POTATO,
+            ModBlocks.WILD_BEETROOT,
+            ModBlocks.CLOVERS
+        );
 
     }
 }

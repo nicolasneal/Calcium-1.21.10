@@ -3,8 +3,8 @@
   "category": "food",
   "cookingtime": 100,
   "experience": 0.35,
-  "ingredient": "calcium:squid",
+  "ingredient": "calcium:tentacles",
   "result": {
-    "id": "calcium:calamari"
+    "id": "calcium:cooked_tentacles"
   }
 }

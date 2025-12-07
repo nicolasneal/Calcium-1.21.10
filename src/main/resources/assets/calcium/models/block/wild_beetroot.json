@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "calcium:block/cross_tinted_overlay",
   "textures": {
-    "cross": "calcium:block/wild_beetroot"
+    "cross": "calcium:block/wild_beetroot",
+    "tint": "calcium:block/wild_beetroot_tint"
   }
 }

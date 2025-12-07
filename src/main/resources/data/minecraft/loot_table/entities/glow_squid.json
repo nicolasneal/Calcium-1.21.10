@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "calcium:squid",
+          "name": "calcium:tentacles",
           "functions": [
             {
               "function": "minecraft:set_count",

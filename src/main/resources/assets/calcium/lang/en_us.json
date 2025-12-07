@@ -60,8 +60,9 @@
   "item.calcium.wooden_rod": "Wooden Rod",
   "item.calcium.stone": "Stone",
   "item.calcium.glass": "Glass",
-  "item.calcium.pumpkin_slice": "Pumpkin Slice",
   "item.calcium.flour": "Flour",
+  "item.calcium.dough": "Dough",
+  "item.calcium.pumpkin_slice": "Pumpkin Slice",
   "item.calcium.fur": "Fur",
   "item.calcium.hide": "Hide",
   "item.calcium.pixie_dust": "Pixie Dust",
@@ -76,8 +77,8 @@
   "item.calcium.cooked_chevon": "Cooked Chevon",
   "item.calcium.frog": "Frog",
   "item.calcium.cooked_frog": "Cooked Frog",
-  "item.calcium.squid": "Squid",
-  "item.calcium.calamari": "Calamari",
+  "item.calcium.tentacles": "Tentacles",
+  "item.calcium.cooked_tentacles": "Cooked Tentacles",
   "item.calcium.water_bowl": "Water Bowl"
 
 }

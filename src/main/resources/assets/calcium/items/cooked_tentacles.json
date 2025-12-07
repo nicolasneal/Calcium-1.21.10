@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "calcium:item/squid"
+    "model": "calcium:item/cooked_tentacles"
   }
 }

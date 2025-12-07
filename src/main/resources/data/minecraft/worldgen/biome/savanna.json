@@ -70,10 +70,10 @@
       "minecraft:spring_lava"
     ],
     [
-      "minecraft:tall_grass",
-      "calcium:pampas",
       "minecraft:glow_lichen",
+      "minecraft:patch_tall_grass",
       "minecraft:trees_savanna",
+      "minecraft:flower_warm",
       "minecraft:patch_grass_savanna",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
@@ -144,52 +144,40 @@
     "misc": [],
     "monster": [
       {
-        "type": "minecraft:spider",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
-      },
-      {
         "type": "minecraft:zombie",
+        "minCount": 3,
         "maxCount": 4,
-        "minCount": 4,
-        "weight": 95
+        "weight": 90
       },
       {
         "type": "minecraft:zombie_villager",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
+        "minCount": 3,
+        "maxCount": 4,
+        "weight": 9
       },
       {
         "type": "minecraft:skeleton",
+        "minCount": 3,
         "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "weight": 99
       },
       {
         "type": "minecraft:creeper",
+        "minCount": 3,
         "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "weight": 99
       },
       {
-        "type": "minecraft:slime",
+        "type": "minecraft:spider",
+        "minCount": 3,
         "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
+        "weight": 99
       },
       {
         "type": "minecraft:enderman",
-        "maxCount": 4,
         "minCount": 1,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:witch",
         "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
+        "weight": 4
       }
     ],
     "underground_water_creature": [

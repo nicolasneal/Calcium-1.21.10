@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "calcium:block/cross_tinted_overlay",
   "textures": {
-    "cross": "calcium:block/wild_potato"
+    "cross": "calcium:block/wild_potato",
+    "tint": "calcium:block/wild_potato_tint"
   }
 }

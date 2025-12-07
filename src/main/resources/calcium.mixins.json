@@ -5,9 +5,8 @@
   "mixins": [
     "BedMixin",
     "BlocksMixin",
-    "CampfireMixin",
     "BowlMixin",
-    "PumpkinMixin",
+    "CampfireMixin",
     "attributes.Axolotl"
   ],
   "injectors": {
@@ -15,5 +14,8 @@
   },
   "refmap": "calcium.refmap.json",
   "client": [
+    "AnvilScreenMixin",
+    "SignTextMixin",
+    "SmithingScreenMixin"
   ]
 }

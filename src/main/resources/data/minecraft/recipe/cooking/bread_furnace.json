@@ -3,8 +3,8 @@
   "category": "food",
   "cookingtime": 200,
   "experience": 0.35,
-  "ingredient": "calcium:squid",
+  "ingredient": "calcium:dough",
   "result": {
-    "id": "calcium:calamari"
+    "id": "minecraft:bread"
   }
 }
