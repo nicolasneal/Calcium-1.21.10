@@ -70,15 +70,21 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_dense",f
+      "calcium:clovers",
+      "calcium:bushes",
+      "calcium:dandelions",
+      "calcium:poppies",
+      "calcium:cornflowers",
+      "calcium:goldenrods",
+      "calcium:wild_wheat_plants",
+      "calcium:wild_carrot_plants",
+      "calcium:wild_potato_plants",
+      "calcium:wild_beetroot_plants",
       "minecraft:glow_lichen",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:patch_bush",
       "minecraft:trees_plains",
-      "minecraft:flower_plains",
-      "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
     ],
@@ -92,8 +98,8 @@
     "ambient": [
       {
         "type": "minecraft:bat",
-        "maxCount": 8,
         "minCount": 8,
+        "maxCount": 8,
         "weight": 10
       }
     ],

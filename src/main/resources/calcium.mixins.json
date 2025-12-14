@@ -4,10 +4,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BedMixin",
-    "BlocksMixin",
     "BowlMixin",
-    "CampfireMixin",
-    "attributes.Axolotl"
+    "CampfireMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -16,6 +14,7 @@
   "client": [
     "AnvilScreenMixin",
     "SignTextMixin",
-    "SmithingScreenMixin"
+    "SmithingScreenMixin",
+    "MinecraftClientMixin"
   ]
 }

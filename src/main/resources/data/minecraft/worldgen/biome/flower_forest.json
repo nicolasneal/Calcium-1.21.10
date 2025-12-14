@@ -81,11 +81,16 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_dense",f
+      "calcium:clovers",
+      "calcium:bushes",
+      "calcium:wild_wheat_plants",
+      "calcium:wild_carrot_plants",
+      "calcium:wild_potato_plants",
+      "calcium:wild_beetroot_plants",
       "minecraft:glow_lichen",
-      "minecraft:flower_forest_flowers",
       "minecraft:trees_flower_forest",
       "minecraft:flower_flower_forest",
-      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin",

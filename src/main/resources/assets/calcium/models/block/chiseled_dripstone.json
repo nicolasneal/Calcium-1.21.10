@@ -1,8 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "calcium:block/chiseled_dripstone",
-    "particle": "calcium:block/chiseled_dripstone"
-  },
-  "render_type": "solid"
+    "side": "calcium:block/chiseled_dripstone_side",
+    "end": "calcium:block/chiseled_dripstone_end"
+  }
 }

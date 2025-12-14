@@ -50,6 +50,8 @@ public class ModItems {
     public static final Item GLASS = register("glass", Item::new, new Item.Settings().maxCount(64));
     public static final Item FLOUR = register("flour", Item::new, new Item.Settings().maxCount(64));
     public static final Item DOUGH = register("dough", Item::new, new Item.Settings().maxCount(64));
+    public static final Item COOKIE_DOUGH = register("cookie_dough", Item::new, new Item.Settings().maxCount(64));
+    public static final Item CAKE_BATTER = register("cake_batter", Item::new, new Item.Settings().maxCount(64));
     public static final Item PUMPKIN_SLICE = register("pumpkin_slice", Item::new, new Item.Settings().maxCount(64));
 
     // INGREDIENTS (UTILITY)
@@ -70,6 +72,7 @@ public class ModItems {
     public static final Item COOKED_FROG = register("cooked_frog", Item::new, new Item.Settings().maxCount(64).food(ModFoods.COOKED_FROG));
     public static final Item TENTACLES = register("tentacles", Item::new, new Item.Settings().maxCount(64).food(ModFoods.TENTACLES));
     public static final Item COOKED_TENTACLES = register("cooked_tentacles", Item::new, new Item.Settings().maxCount(64).food(ModFoods.COOKED_TENTACLES));
+    public static final Item CHOCOLATE = register("chocolate", Item::new, new Item.Settings().maxCount(64).food(ModFoods.CHOCOLATE));
     public static final Item WATER_BOWL = register("water_bowl", Item::new, new Item.Settings().maxCount(64).food(ModFoods.WATER_BOWL).component(DataComponentTypes.CONSUMABLE, ConsumableComponents.DRINK).useRemainder(BOWL).recipeRemainder(BOWL));
 
     private static <T extends Item> T register(String name, Function<Item.Settings, T> constructor, Item.Settings settings) {
@@ -107,6 +110,8 @@ public class ModItems {
             itemgroup.add(GLASS);
             itemgroup.add(FLOUR);
             itemgroup.add(DOUGH);
+            itemgroup.add(COOKIE_DOUGH);
+            itemgroup.add(CAKE_BATTER);
             itemgroup.add(PUMPKIN_SLICE);
             itemgroup.add(ENCHANTING_TABLET);
         });
@@ -124,6 +129,7 @@ public class ModItems {
             itemgroup.add(COOKED_FROG);
             itemgroup.add(TENTACLES);
             itemgroup.add(COOKED_TENTACLES);
+            itemgroup.add(CHOCOLATE);
             itemgroup.add(WATER_BOWL);
         });
 

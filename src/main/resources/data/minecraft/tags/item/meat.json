@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "calcium:cheval",
+    "calcium:cooked_cheval",
+    "calcium:bear",
+    "calcium:cooked_bear",
+    "calcium:camel",
+    "calcium:cooked_camel",
+    "calcium:chevon",
+    "calcium:cooked_chevon",
+    "calcium:frog",
+    "calcium:cooked_frog",
+    "calcium:tentacles",
+    "calcium:cooked_tentacles"
+  ]
+}

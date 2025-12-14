@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "calcium:item/wild_wheat"
+    "layer0": "calcium:block/wild_wheat"
   }
 }

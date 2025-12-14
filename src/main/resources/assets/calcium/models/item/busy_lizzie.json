@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "calcium:item/busy_lizzie"
+    "layer0": "calcium:block/busy_lizzie"
   }
 }

@@ -24,17 +24,43 @@ import java.util.Optional;
 public class Cracking {
 
     private static final Map<Block, Block> CRACKED_BLOCKS = new ImmutableMap.Builder<Block, Block>()
-            .put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS)
-            .put(Blocks.STONE_BRICK_STAIRS, ModBlocks.CRACKED_STONE_BRICK_STAIRS)
-            .put(Blocks.STONE_BRICK_SLAB, ModBlocks.CRACKED_STONE_BRICK_SLAB)
-            .put(ModBlocks.ANDESITE_BRICKS, ModBlocks.CRACKED_ANDESITE_BRICKS)
-            .put(Blocks.DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS)
-            .put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
-            .put(Blocks.DEEPSLATE_TILES, Blocks.CRACKED_DEEPSLATE_TILES)
-            .put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS)
-            .put(Blocks.CUT_SANDSTONE, ModBlocks.CRACKED_SANDSTONE_BRICKS)
-            .put(Blocks.CUT_RED_SANDSTONE, ModBlocks.CRACKED_RED_SANDSTONE_BRICKS)
-            .build();
+
+        .put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS)
+        .put(Blocks.STONE_BRICK_STAIRS, ModBlocks.CRACKED_STONE_BRICK_STAIRS)
+        .put(Blocks.STONE_BRICK_SLAB, ModBlocks.CRACKED_STONE_BRICK_SLAB)
+        .put(ModBlocks.ANDESITE_BRICKS, ModBlocks.CRACKED_ANDESITE_BRICKS)
+        .put(ModBlocks.ANDESITE_BRICK_STAIRS, ModBlocks.CRACKED_ANDESITE_BRICK_STAIRS)
+        .put(ModBlocks.ANDESITE_BRICK_SLAB, ModBlocks.CRACKED_ANDESITE_BRICK_SLAB)
+        .put(ModBlocks.DIORITE_BRICKS, ModBlocks.CRACKED_DIORITE_BRICKS)
+        .put(ModBlocks.DIORITE_BRICK_STAIRS, ModBlocks.CRACKED_DIORITE_BRICK_STAIRS)
+        .put(ModBlocks.DIORITE_BRICK_SLAB, ModBlocks.CRACKED_DIORITE_BRICK_SLAB)
+        .put(ModBlocks.GRANITE_BRICKS, ModBlocks.CRACKED_GRANITE_BRICKS)
+        .put(ModBlocks.GRANITE_BRICK_STAIRS, ModBlocks.CRACKED_GRANITE_BRICK_STAIRS)
+        .put(ModBlocks.GRANITE_BRICK_SLAB, ModBlocks.CRACKED_GRANITE_BRICK_SLAB)
+        .put(Blocks.DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS)
+        .put(Blocks.DEEPSLATE_BRICK_STAIRS, ModBlocks.CRACKED_DEEPSLATE_BRICK_STAIRS)
+        .put(Blocks.DEEPSLATE_BRICK_SLAB, ModBlocks.CRACKED_DEEPSLATE_BRICK_SLAB)
+        .put(Blocks.DEEPSLATE_TILES, Blocks.CRACKED_DEEPSLATE_TILES)
+        .put(Blocks.DEEPSLATE_TILE_STAIRS, ModBlocks.CRACKED_DEEPSLATE_TILE_STAIRS)
+        .put(Blocks.DEEPSLATE_TILE_SLAB, ModBlocks.CRACKED_DEEPSLATE_TILE_SLAB)
+        .put(ModBlocks.DRIPSTONE_BRICKS, ModBlocks.CRACKED_DRIPSTONE_BRICKS)
+        .put(ModBlocks.DRIPSTONE_BRICK_STAIRS, ModBlocks.CRACKED_DRIPSTONE_BRICK_STAIRS)
+        .put(ModBlocks.DRIPSTONE_BRICK_SLAB, ModBlocks.CRACKED_DRIPSTONE_BRICK_SLAB)
+        .put(Blocks.CUT_SANDSTONE, ModBlocks.CRACKED_SANDSTONE_BRICKS)
+        .put(ModBlocks.SANDSTONE_BRICK_STAIRS, ModBlocks.CRACKED_SANDSTONE_BRICK_STAIRS)
+        .put(Blocks.CUT_SANDSTONE_SLAB, ModBlocks.CRACKED_SANDSTONE_BRICK_SLAB)
+        .put(Blocks.CUT_RED_SANDSTONE, ModBlocks.CRACKED_RED_SANDSTONE_BRICKS)
+        .put(ModBlocks.RED_SANDSTONE_BRICK_STAIRS, ModBlocks.CRACKED_RED_SANDSTONE_BRICK_STAIRS)
+        .put(Blocks.CUT_RED_SANDSTONE_SLAB, ModBlocks.CRACKED_RED_SANDSTONE_BRICK_SLAB)
+        .put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)
+        .put(Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS, ModBlocks.CRACKED_BLACKSTONE_BRICK_STAIRS)
+        .put(Blocks.POLISHED_BLACKSTONE_BRICK_SLAB, ModBlocks.CRACKED_BLACKSTONE_BRICK_SLAB)
+        .put(ModBlocks.BASALT_BRICKS, ModBlocks.CRACKED_BASALT_BRICKS)
+        .put(ModBlocks.BASALT_BRICK_STAIRS, ModBlocks.CRACKED_BASALT_BRICK_STAIRS)
+        .put(ModBlocks.BASALT_BRICK_SLAB, ModBlocks.CRACKED_BASALT_BRICK_SLAB)
+        .put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS)
+
+        .build();
 
     public static void registerEvents() {
         UseBlockCallback.EVENT.register((playerEntity, world, hand, hitResult) -> {
@@ -50,15 +76,15 @@ public class Cracking {
                         itemStack.damage(1, playerEntity, hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
 
                         ((ServerWorld) world).spawnParticles(
-                                new BlockStateParticleEffect(ParticleTypes.BLOCK, blockState),
-                                blockPos.getX() + 0.5,
-                                blockPos.getY() + 0.5,
-                                blockPos.getZ() + 0.5,
-                                10,
-                                0.25,
-                                0.25,
-                                0.25,
-                                0.1
+                            new BlockStateParticleEffect(ParticleTypes.BLOCK, blockState),
+                            blockPos.getX() + 0.5,
+                            blockPos.getY() + 0.5,
+                            blockPos.getZ() + 0.5,
+                            10,
+                            0.25,
+                            0.25,
+                            0.25,
+                            0.1
                         );
                     }
                     world.playSound(null, blockPos, SoundEvents.ENTITY_TURTLE_EGG_CRACK, SoundCategory.BLOCKS, 1.0F, 1.0F);
@@ -66,6 +92,7 @@ public class Cracking {
                 }
             }
             return ActionResult.PASS;
+
         });
     }
 

@@ -16,6 +16,7 @@ public class ModFoods {
     public static final FoodComponent COOKED_FROG = new FoodComponent.Builder().nutrition(4).saturationModifier(8.0f).build();
     public static final FoodComponent TENTACLES = new FoodComponent.Builder().nutrition(2).saturationModifier(0.5f).build();
     public static final FoodComponent COOKED_TENTACLES = new FoodComponent.Builder().nutrition(5).saturationModifier(6.2f).build();
+    public static final FoodComponent CHOCOLATE = new FoodComponent.Builder().nutrition(4).saturationModifier(6f).build();
     public static final FoodComponent WATER_BOWL = new FoodComponent.Builder().nutrition(0).saturationModifier(0f).alwaysEdible().build();
 
 }

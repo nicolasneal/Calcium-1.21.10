@@ -9,7 +9,7 @@
             "type": "minecraft:weighted_state_provider",
             "entries": [
               {
-                "weight": 55,
+                "weight": 70,
                 "data": {
                   "Name": "minecraft:short_grass"
                 }
@@ -18,15 +18,6 @@
                 "weight": 15,
                 "data": {
                   "Name": "calcium:goldenrod",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                }
-              },
-              {
-                "weight": 15,
-                "data": {
-                  "Name": "minecraft:tall_grass",
                   "Properties": {
                     "half": "lower"
                   }
