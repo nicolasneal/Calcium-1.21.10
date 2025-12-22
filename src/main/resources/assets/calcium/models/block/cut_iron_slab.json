@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "calcium:block/cut_iron",
+    "side": "calcium:block/cut_iron",
+    "top": "calcium:block/cut_iron"
+  }
+}
+
+

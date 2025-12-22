@@ -6,10 +6,6 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "dry_foliage_color": 10528412,
-    "fog_color": 8484720,
-    "foliage_color": 8883574,
-    "grass_color": 7832178,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -19,8 +15,12 @@
     "music": [],
     "music_volume": 0.0,
     "sky_color": 12171705,
+    "fog_color": 8484720,
     "water_color": 7768221,
-    "water_fog_color": 5597568
+    "water_fog_color": 5597568,
+    "grass_color": 7832178,
+    "foliage_color": 8883574,
+    "dry_foliage_color": 10528412
   },
   "features": [
     [],
@@ -38,18 +38,12 @@
     [],
     [],
     [
-      "minecraft:ore_dirt",
       "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
       "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
       "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
       "minecraft:ore_gold",
@@ -64,7 +58,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:disk_sand",
+      "calcium:disk_silt",
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
@@ -80,9 +74,7 @@
       "minecraft:pale_garden_flowers",
       "minecraft:flower_pale_garden",
       "minecraft:patch_grass_forest",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water"
+      "minecraft:patch_pumpkin"
     ],
     [
       "minecraft:freeze_top_layer"

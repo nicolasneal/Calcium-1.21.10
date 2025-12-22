@@ -16,6 +16,8 @@ public class CalciumClient implements ClientModInitializer {
     @Override public void onInitializeClient() {
 
         HandledScreens.register(Calcium.ENCHANTING_SCREEN_HANDLER, EnchantingScreen::new);
+        BlockRenderLayerMap.putBlock(ModBlocks.IRON_GRATE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_GRATE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_WHEAT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_CARROT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_POTATO, BlockRenderLayer.CUTOUT);

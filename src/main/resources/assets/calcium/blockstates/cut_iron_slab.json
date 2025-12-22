@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "calcium:block/cut_iron_slab"
+    },
+    "type=top": {
+      "model": "calcium:block/cut_iron_slab_top"
+    },
+    "type=double": {
+      "model": "calcium:block/cut_iron"
+    }
+  }
+}
+
+

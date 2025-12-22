@@ -5,7 +5,8 @@
   "mixins": [
     "BedMixin",
     "BowlMixin",
-    "CampfireMixin"
+    "CampfireMixin",
+    "WitherSkeletonMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -13,8 +14,9 @@
   "refmap": "calcium.refmap.json",
   "client": [
     "AnvilScreenMixin",
+    "MinecraftClientMixin",
+    "SignEditScreenMixin",
     "SignTextMixin",
-    "SmithingScreenMixin",
-    "MinecraftClientMixin"
+    "SmithingScreenMixin"
   ]
 }

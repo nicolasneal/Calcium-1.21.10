@@ -3,6 +3,7 @@ package net.nicolas.calcium;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
@@ -30,12 +31,27 @@ public class Calcium implements ModInitializer {
 
 	@Override public void onInitialize() {
 
-		// Custom Class Initialization
+		// Class Initialization
+
 		ModItems.initialize();
 		ModBlocks.initialize();
 		Cracking.registerEvents();
 
-		// Registering Items as Fuels
+		// Registering Compostables
+
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.PONTEDERIA.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.BUSY_LIZZIE.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.GOLDENROD.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.PAMPAS.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.CLOVERS.asItem(), 0.30f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.PUMPKIN_SLICE, 0.50f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.FLOUR, 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.DOUGH, 0.85f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.COOKIE_DOUGH, 0.85f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.CAKE_BATTER, 1.00f);
+
+		// Registering Fuels
+
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.OAK_TIMBER, 300);
 			builder.add(ModItems.BIRCH_TIMBER, 300);
@@ -48,6 +64,7 @@ public class Calcium implements ModInitializer {
 		});
 
 		// Overriding Item Stack Sizes
+
 		DefaultItemComponentEvents.MODIFY.register(context -> {
 			// Standard Signs
 			context.modify(Items.OAK_SIGN, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
