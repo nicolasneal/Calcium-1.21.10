@@ -7,7 +7,7 @@
       "model": "calcium:block/cracked_blackstone_brick_slab_top"
     },
     "type=double": {
-      "model": "calcium:block/cracked_blackstone_bricks"
+      "model": "minecraft:block/cracked_blackstone_bricks"
     }
   }
 }

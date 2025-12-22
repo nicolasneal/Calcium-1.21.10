@@ -7,9 +7,6 @@
   "creature_spawn_probability": 0.03,
   "downfall": 0.0,
   "effects": {
-    "fog_color": 12638463,
-    "foliage_color": 10387789,
-    "grass_color": 9470285,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -29,8 +26,11 @@
     ],
     "music_volume": 1.0,
     "sky_color": 7254527,
+    "fog_color": 12638463,
     "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "grass_color": 9470285,
+    "foliage_color": 10387789
   },
   "features": [
     [],
@@ -48,18 +48,12 @@
     [],
     [],
     [
-      "minecraft:ore_dirt",
       "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
       "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
       "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
       "minecraft:ore_gold",
@@ -75,7 +69,7 @@
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
       "minecraft:ore_gold_extra",
-      "minecraft:disk_sand",
+      "calcium:disk_silt",
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
@@ -92,7 +86,6 @@
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane_badlands",
-      "minecraft:patch_pumpkin",
       "minecraft:patch_cactus_decorated",
       "minecraft:patch_firefly_bush_near_water"
     ],

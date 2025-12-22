@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "calcium:block/barley_bottom"
+    },
+    "half=upper": {
+      "model": "calcium:block/barley_top"
+    }
+  }
+}

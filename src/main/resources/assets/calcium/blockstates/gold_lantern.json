@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "calcium:block/gold_lantern"
+    },
+    "hanging=true": {
+      "model": "calcium:block/gold_lantern_hanging"
+    }
+  }
+}

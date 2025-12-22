@@ -59,6 +59,11 @@ public class Cracking {
         .put(ModBlocks.BASALT_BRICK_STAIRS, ModBlocks.CRACKED_BASALT_BRICK_STAIRS)
         .put(ModBlocks.BASALT_BRICK_SLAB, ModBlocks.CRACKED_BASALT_BRICK_SLAB)
         .put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS)
+        .put(Blocks.NETHER_BRICK_STAIRS, ModBlocks.CRACKED_NETHER_BRICK_STAIRS)
+        .put(Blocks.NETHER_BRICK_SLAB, ModBlocks.CRACKED_NETHER_BRICK_SLAB)
+        .put(Blocks.RED_NETHER_BRICKS, ModBlocks.CRACKED_RED_NETHER_BRICKS)
+        .put(Blocks.RED_NETHER_BRICK_STAIRS, ModBlocks.CRACKED_RED_NETHER_BRICK_STAIRS)
+        .put(Blocks.RED_NETHER_BRICK_SLAB, ModBlocks.CRACKED_RED_NETHER_BRICK_SLAB)
 
         .build();
 
@@ -74,7 +79,6 @@ public class Cracking {
                     if (!world.isClient()) {
                         world.setBlockState(blockPos, crackedState.get(), Block.NOTIFY_ALL);
                         itemStack.damage(1, playerEntity, hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
-
                         ((ServerWorld) world).spawnParticles(
                             new BlockStateParticleEffect(ParticleTypes.BLOCK, blockState),
                             blockPos.getX() + 0.5,

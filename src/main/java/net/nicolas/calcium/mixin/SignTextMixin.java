@@ -14,4 +14,5 @@ public class SignTextMixin {
     private void modifyTextOffset(CallbackInfoReturnable<Vec3d> cir) {
         cir.setReturnValue(new Vec3d(0.0, 0.3255, 0.065));
     }
+
 }

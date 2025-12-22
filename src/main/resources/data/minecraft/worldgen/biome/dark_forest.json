@@ -6,9 +6,6 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "dry_foliage_color": 8082228,
-    "fog_color": 12638463,
-    "grass_color_modifier": "dark_forest",
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -28,8 +25,11 @@
     ],
     "music_volume": 1.0,
     "sky_color": 7972607,
+    "fog_color": 12638463,
     "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "dry_foliage_color": 8082228,
+    "grass_color_modifier": "dark_forest"
   },
   "features": [
     [],
@@ -47,18 +47,12 @@
     [],
     [],
     [
-      "minecraft:ore_dirt",
       "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
       "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
       "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
       "minecraft:ore_andesite_lower",
       "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
       "minecraft:ore_gold",
@@ -73,7 +67,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:disk_sand",
+      "calcium:disk_silt",
       "minecraft:disk_clay",
       "minecraft:disk_gravel"
     ],
@@ -83,15 +77,14 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_dense",
+      "calcium:bushes_dense",
       "minecraft:glow_lichen",
       "minecraft:dark_forest_vegetation",
       "minecraft:forest_flowers",
-      "minecraft:flower_default",
-      "minecraft:patch_grass_forest",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_leaf_litter",
-      "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
     ],

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "calcium:block/tall_icy_iris_bottom"
+    },
+    "half=upper": {
+      "model": "calcium:block/tall_icy_iris_top"
+    }
+  }
+}

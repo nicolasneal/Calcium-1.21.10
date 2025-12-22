@@ -16,6 +16,9 @@ public class CalciumClient implements ClientModInitializer {
     @Override public void onInitializeClient() {
 
         HandledScreens.register(Calcium.ENCHANTING_SCREEN_HANDLER, EnchantingScreen::new);
+        BlockRenderLayerMap.putBlock(ModBlocks.IRON_GRATE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_GRATE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_WHEAT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_CARROT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_POTATO, BlockRenderLayer.CUTOUT);
@@ -23,7 +26,11 @@ public class CalciumClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.PONTEDERIA, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.BUSY_LIZZIE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.GOLDENROD, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.BARLEY, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.SEA_OATS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.PAMPAS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.ICY_IRIS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.TALL_ICY_IRIS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.CLOVERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_PONTEDERIA, BlockRenderLayer.CUTOUT);
 
@@ -36,6 +43,7 @@ public class CalciumClient implements ClientModInitializer {
             ModBlocks.WILD_CARROT,
             ModBlocks.WILD_POTATO,
             ModBlocks.WILD_BEETROOT,
+            ModBlocks.BARLEY,
             ModBlocks.CLOVERS
         );
 

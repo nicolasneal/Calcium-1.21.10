@@ -7,7 +7,7 @@
       "model": "calcium:block/cracked_deepslate_tile_slab_top"
     },
     "type=double": {
-      "model": "calcium:block/cracked_deepslate_tiles"
+      "model": "minecraft:block/cracked_deepslate_tiles"
     }
   }
 }

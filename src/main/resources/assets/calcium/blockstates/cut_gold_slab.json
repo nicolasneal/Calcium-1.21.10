@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "calcium:block/cut_gold_slab"
+    },
+    "type=top": {
+      "model": "calcium:block/cut_gold_slab_top"
+    },
+    "type=double": {
+      "model": "calcium:block/cut_gold"
+    }
+  }
+}
