@@ -10,8 +10,7 @@ import org.spongepowered.asm.mixin.Unique;
 @Mixin(TorchBlock.class)
 public class TorchBlockMixin {
 
-    @Unique
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+    @Unique public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return Block.createColumnShape(4.0, 0.0, 11.0);
     }
 

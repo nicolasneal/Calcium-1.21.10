@@ -1,4 +1,4 @@
-package net.nicolas.calcium.mixin;
+package net.nicolas.calcium.mixin.hitboxes;
 
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;

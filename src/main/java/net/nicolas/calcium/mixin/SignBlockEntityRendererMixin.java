@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(SignBlockEntityRenderer.class)
-public class SignTextMixin {
+public class SignBlockEntityRendererMixin {
 
     @Inject(method = "getTextOffset", at = @At("HEAD"), cancellable = true)
     private void modifyTextOffset(CallbackInfoReturnable<Vec3d> cir) {

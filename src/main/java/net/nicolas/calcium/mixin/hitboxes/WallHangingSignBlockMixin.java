@@ -1,4 +1,4 @@
-package net.nicolas.calcium.mixin;
+package net.nicolas.calcium.mixin.hitboxes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -17,7 +17,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(WallHangingSignBlock.class)
 public class WallHangingSignBlockMixin {
-
 
     @Unique private static final VoxelShape BOARD_X = Block.createCuboidShape(7.0, 0.0, 1.0, 9.0, 10.0, 15.0);
     @Unique private static final VoxelShape BAR_X = Block.createCuboidShape(7.0, 14.0, 0.0, 9.0, 16.0, 16.0);

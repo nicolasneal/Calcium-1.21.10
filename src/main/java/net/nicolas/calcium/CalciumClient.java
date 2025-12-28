@@ -6,9 +6,9 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.BlockRenderLayer;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.world.biome.GrassColors;
 import net.nicolas.calcium.block.ModBlocks;
+import net.nicolas.calcium.screen.CustomBeaconScreen;
 import net.nicolas.calcium.screen.EnchantingScreen;
 
 public class CalciumClient implements ClientModInitializer {
@@ -16,8 +16,14 @@ public class CalciumClient implements ClientModInitializer {
     @Override public void onInitializeClient() {
 
         HandledScreens.register(Calcium.ENCHANTING_SCREEN_HANDLER, EnchantingScreen::new);
+        HandledScreens.register(Calcium.CUSTOM_BEACON_SCREEN_HANDLER, CustomBeaconScreen::new);
+
         BlockRenderLayerMap.putBlock(ModBlocks.IRON_GRATE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.GOLD_GRATE, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_DOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_TRAPDOOR, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_BARS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLD_CHAIN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.GOLD_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_WHEAT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_CARROT, BlockRenderLayer.CUTOUT);

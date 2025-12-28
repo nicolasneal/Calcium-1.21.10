@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.event.Cracking;
 import net.nicolas.calcium.item.ModItems;
+import net.nicolas.calcium.screen.CustomBeaconScreenHandler;
 import net.nicolas.calcium.screen.EnchantingScreenHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,9 +26,14 @@ public class Calcium implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	// Registering Screens
+
 	public static final ScreenHandlerType<EnchantingScreenHandler> ENCHANTING_SCREEN_HANDLER =
-			Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "enchanting_screen"),
-					new ScreenHandlerType<>(EnchantingScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
+		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "enchanting_screen"),
+			new ScreenHandlerType<>(EnchantingScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
+
+	public static final ScreenHandlerType<CustomBeaconScreenHandler> CUSTOM_BEACON_SCREEN_HANDLER =
+		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "beacon"),
+			new ScreenHandlerType<>(CustomBeaconScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
 
 	@Override public void onInitialize() {
 

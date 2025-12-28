@@ -127,7 +127,7 @@
         "weight": 99
       },
       {
-        "type": "minecraft:skeleton",
+        "type": "minecraft:parched",
         "minCount": 3,
         "maxCount": 4,
         "weight": 99

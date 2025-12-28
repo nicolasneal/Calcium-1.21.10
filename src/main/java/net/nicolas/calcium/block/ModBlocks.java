@@ -211,36 +211,37 @@ public class ModBlocks {
     public static final Block CUT_IRON_STAIRS = register("cut_iron_stairs", settings -> new StairsBlock(ModBlocks.CUT_IRON.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.IRON).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F), true);
     public static final Block CUT_IRON_SLAB = register("cut_iron_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.IRON).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F), true);
     public static final Block CHISELED_IRON = register("chiseled_iron", Block::new, Block.Settings.create().sounds(BlockSoundGroup.IRON).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F), true);
-    public static final Block IRON_GRATE = register("iron_grate", GrateBlock::new, Block.Settings.create().sounds(BlockSoundGroup.COPPER_GRATE).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).strength(5.0f, 6.0f).nonOpaque(), true);
-    public static final Block IRON_BULB = register("iron_bulb", BulbBlock::new, Block.Settings.create().luminance(state -> state.get(BulbBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.COPPER_BULB).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).strength(5.0f, 6.0f), true);
+    public static final Block IRON_GRATE = register("iron_grate", GrateBlock::new, Block.Settings.create().sounds(BlockSoundGroup.COPPER_GRATE).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f).nonOpaque(), true);
+    public static final Block IRON_BULB = register("iron_bulb", BulbBlock::new, Block.Settings.create().luminance(state -> state.get(BulbBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.COPPER_BULB).mapColor(MapColor.IRON_GRAY).instrument(NoteBlockInstrument.IRON_XYLOPHONE).requiresTool().strength(5.0f, 6.0f), true);
     public static final Block CUT_GOLD = register("cut_gold", Block::new, Block.Settings.create().sounds(BlockSoundGroup.METAL).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().strength(3.0F, 6.0F), true);
     public static final Block CUT_GOLD_STAIRS = register("cut_gold_stairs", settings -> new StairsBlock(ModBlocks.CUT_GOLD.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.METAL).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().strength(3.0F, 6.0F), true);
     public static final Block CUT_GOLD_SLAB = register("cut_gold_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.METAL).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().strength(3.0F, 6.0F), true);
     public static final Block CHISELED_GOLD = register("chiseled_gold", Block::new, Block.Settings.create().sounds(BlockSoundGroup.METAL).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().strength(3.0F, 6.0F), true);
-    public static final Block GOLD_GRATE = register("gold_grate", GrateBlock::new, Block.Settings.create().sounds(BlockSoundGroup.COPPER_GRATE).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).strength(3.0f, 6.0f).nonOpaque(), true);
-    public static final Block GOLD_BULB = register("gold_bulb", BulbBlock::new, Block.Settings.create().luminance(state -> state.get(BulbBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.COPPER_BULB).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).strength(3.0f, 6.0f), true);
-    // Gold Door
-    // Gold Trapdoor
-    // Gold Bars
-    // Gold Chain
-    public static final Block GOLD_LANTERN = register("gold_lantern", LanternBlock::new, Block.Settings.create().luminance(state -> 15).sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.GOLD).pistonBehavior(PistonBehavior.DESTROY).nonOpaque().strength(3.5f, 3.5f), true);
+    public static final Block GOLD_GRATE = register("gold_grate", GrateBlock::new, Block.Settings.create().sounds(BlockSoundGroup.COPPER_GRATE).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).nonOpaque().requiresTool().strength(3.0f, 6.0f), true);
+    public static final Block GOLD_BULB = register("gold_bulb", BulbBlock::new, Block.Settings.create().luminance(state -> state.get(BulbBlock.LIT) ? 15 : 0).sounds(BlockSoundGroup.COPPER_BULB).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().strength(3.0f, 6.0f), true);
+    public static final Block GOLD_DOOR = register("gold_door", settings -> new DoorBlock(BlockSetType.COPPER, settings), Block.Settings.create().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().nonOpaque().pistonBehavior(PistonBehavior.DESTROY).strength(3.0F, 6.0F), true);
+    public static final Block GOLD_TRAPDOOR = register("gold_trapdoor", (settings) -> new TrapdoorBlock(BlockSetType.COPPER, settings), Block.Settings.create().mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).requiresTool().nonOpaque().pistonBehavior(PistonBehavior.DESTROY).strength(3.0F, 6.0F), true);
+    public static final Block GOLD_BARS = register("gold_bars", PaneBlock::new, Block.Settings.create().sounds(BlockSoundGroup.METAL).nonOpaque().requiresTool().strength(3.0F, 6.0F), true);
+    public static final Block GOLD_CHAIN = register("gold_chain", ChainBlock::new, Block.Settings.create().sounds(BlockSoundGroup.CHAIN).nonOpaque().solid().requiresTool().strength(3.0F, 6.0F), true);
+    public static final Block GOLD_LANTERN = register("gold_lantern", LanternBlock::new, Block.Settings.create().luminance(state -> 15).sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).pistonBehavior(PistonBehavior.DESTROY).requiresTool().nonOpaque().strength(3.5f, 3.5f), true);
 
-    // PLANT BLOCKS (9, 1)
+    // PLANT BLOCKS (14, 1)
 
     public static final Block WILD_WHEAT = register("wild_wheat", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_CARROT = register("wild_carrot", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_POTATO = register("wild_potato", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_BEETROOT = register("wild_beetroot", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block PONTEDERIA = register("pontederia", (settings) -> new FlowerBlock(StatusEffects.WATER_BREATHING, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
-    public static final Block BUSY_LIZZIE = register("busy_lizzie", BushBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block GOLDENROD = register("goldenrod", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block BARLEY = register("barley", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block SEA_OATS = register("sea_oats", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block PAMPAS = register("pampas", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block ICY_IRIS = register("icy_iris", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block TALL_ICY_IRIS = register("tall_icy_iris", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block BUSY_LIZZIE = register("busy_lizzie", BushBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block GOLDENROD = register("goldenrod", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block BARLEY = register("barley", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block SEA_OATS = register("sea_oats", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block PAMPAS = register("pampas", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block ICY_IRIS = register("icy_iris", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block TALL_ICY_IRIS = register("tall_icy_iris", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
     public static final Block CLOVERS = register("clovers", FlowerbedBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.FLOWERBED).pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block POTTED_PONTEDERIA = register("potted_pontederia", settings -> new FlowerPotBlock(PONTEDERIA, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+
     public static void initialize() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemgroup) -> {
@@ -339,6 +340,10 @@ public class ModBlocks {
             itemgroup.add(CHISELED_GOLD);
             itemgroup.add(GOLD_GRATE);
             itemgroup.add(GOLD_BULB);
+            itemgroup.add(GOLD_DOOR);
+            itemgroup.add(GOLD_TRAPDOOR);
+            itemgroup.add(GOLD_BARS);
+            itemgroup.add(GOLD_CHAIN);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemgroup) -> {

@@ -3,24 +3,40 @@
   "package": "net.nicolas.calcium.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BedMixin",
-    "BowlMixin",
-    "CampfireMixin",
-    "RedstoneTorchBlockMixin",
-    "TallPlantBlockMixin",
+    "CampfireBlockMixin",
+    "ItemMixin",
     "TorchBlockMixin",
-    "WallHangingSignBlockMixin",
-    "WitherSkeletonMixin"
+    "WitherSkeletonEntityMixin",
+    "hitboxes.RedstoneTorchBlockMixin",
+    "hitboxes.TallPlantBlockMixin",
+    "hitboxes.WallHangingSignBlockMixin",
+    "screens.AbstractFurnaceScreenHandlerMixin",
+    "screens.AnvilScreenHandlerMixin",
+    "screens.BeaconBlockEntityMixin",
+    "screens.CartographyTableScreenHandlerMixin",
+    "screens.CraftingScreenHandlerMixin",
+    "screens.EnchantmentScreenHandlerMixin",
+    "screens.GrindstoneScreenHandlerMixin",
+    "screens.HorseScreenHandlerMixin",
+    "screens.MerchantScreenHandlerMixin",
+    "screens.PlayerScreenHandlerMixin",
+    "screens.SmithingScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "refmap": "calcium.refmap.json",
   "client": [
-    "AnvilScreenMixin",
     "MinecraftClientMixin",
+    "SignBlockEntityRendererMixin",
     "SignEditScreenMixin",
-    "SignTextMixin",
-    "SmithingScreenMixin"
+    "screens.AbstractFurnaceScreenMixin",
+    "screens.AnvilScreenMixin",
+    "screens.CartographyTableScreenMixin",
+    "screens.EnchantmentScreenMixin",
+    "screens.GrindstoneScreenMixin",
+    "screens.MerchantScreenMixin",
+    "screens.MountScreenMixin",
+    "screens.SmithingScreenMixin"
   ]
 }

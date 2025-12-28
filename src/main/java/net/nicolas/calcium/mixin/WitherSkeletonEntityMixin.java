@@ -12,14 +12,12 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(WitherSkeletonEntity.class)
-public class WitherSkeletonMixin {
+public class WitherSkeletonEntityMixin {
 
     @Inject(method = "initEquipment", at = @At("TAIL"))
     private void equipGoldSword(Random random, LocalDifficulty localDifficulty, CallbackInfo ci) {
-
         WitherSkeletonEntity self = (WitherSkeletonEntity) (Object) this;
-
         self.equipStack(EquipmentSlot.MAINHAND, new ItemStack(Items.GOLDEN_SWORD));
-
     }
+
 }

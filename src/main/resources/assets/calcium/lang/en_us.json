@@ -100,6 +100,10 @@
   "block.calcium.chiseled_gold": "Chiseled Gold",
   "block.calcium.gold_grate": "Gold Grate",
   "block.calcium.gold_bulb": "Gold Bulb",
+  "block.calcium.gold_door": "Gold Door",
+  "block.calcium.gold_trapdoor": "Gold Trapdoor",
+  "block.calcium.gold_bars": "Gold Bars",
+  "block.calcium.gold_chain": "Gold Chain",
   "block.calcium.gold_lantern": "Gold Lantern",
 
   "block.calcium.silt": "Silt",

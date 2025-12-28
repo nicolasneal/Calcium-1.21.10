@@ -19,12 +19,12 @@ public class CustomSlot extends Slot {
     private final Text tooltip;
 
     private CustomSlot(Inventory inventory, int index, int x, int y,
-                       SlotConfig.ItemMode itemMode,
-                       SlotConfig.StackMode stackMode,
-                       Item fixedItem,
-                       TagKey<Item> allowedTag,
-                       RecipeType<?> recipeType,
-                       Text tooltip) {
+           SlotConfig.ItemMode itemMode,
+           SlotConfig.StackMode stackMode,
+           Item fixedItem,
+           TagKey<Item> allowedTag,
+           RecipeType<?> recipeType,
+           Text tooltip) {
         super(inventory, index, x, y);
         this.itemMode = itemMode;
         this.stackMode = stackMode;
