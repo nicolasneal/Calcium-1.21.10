@@ -13,14 +13,20 @@
     "screens.AbstractFurnaceScreenHandlerMixin",
     "screens.AnvilScreenHandlerMixin",
     "screens.BeaconBlockEntityMixin",
+    "screens.BrewingStandScreenHandlerMixin",
     "screens.CartographyTableScreenHandlerMixin",
+    "screens.CrafterScreenHandlerMixin",
     "screens.CraftingScreenHandlerMixin",
     "screens.EnchantmentScreenHandlerMixin",
     "screens.GrindstoneScreenHandlerMixin",
+    "screens.HopperScreenHandlerMixin",
     "screens.HorseScreenHandlerMixin",
+    "screens.LoomScreenHandlerMixin",
     "screens.MerchantScreenHandlerMixin",
+    "screens.NautilusScreenHandlerMixin",
     "screens.PlayerScreenHandlerMixin",
-    "screens.SmithingScreenHandlerMixin"
+    "screens.SmithingScreenHandlerMixin",
+    "screens.StonecutterScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -29,14 +35,20 @@
   "client": [
     "MinecraftClientMixin",
     "SignBlockEntityRendererMixin",
-    "SignEditScreenMixin",
     "screens.AbstractFurnaceScreenMixin",
+    "screens.AbstractSignEditScreenMixin",
     "screens.AnvilScreenMixin",
+    "screens.BrewingStandScreenMixin",
     "screens.CartographyTableScreenMixin",
+    "screens.CrafterScreenMixin",
     "screens.EnchantmentScreenMixin",
     "screens.GrindstoneScreenMixin",
+    "screens.HangingSignEditScreenMixin",
+    "screens.LoomScreenMixin",
     "screens.MerchantScreenMixin",
     "screens.MountScreenMixin",
-    "screens.SmithingScreenMixin"
+    "screens.SignEditScreenMixin",
+    "screens.SmithingScreenMixin",
+    "screens.StonecutterScreenMixin"
   ]
 }

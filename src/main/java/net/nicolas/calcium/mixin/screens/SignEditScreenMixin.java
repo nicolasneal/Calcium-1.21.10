@@ -1,4 +1,4 @@
-package net.nicolas.calcium.mixin;
+package net.nicolas.calcium.mixin.screens;
 
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.client.gl.RenderPipelines;

@@ -21,22 +21,23 @@ public abstract class MerchantScreenMixin extends HandledScreen<MerchantScreenHa
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void calcium$modifyScreenSize(MerchantScreenHandler handler, PlayerInventory inventory, Text title, CallbackInfo ci) {
-        this.backgroundWidth = 277;
+        this.backgroundWidth = 280;
     }
 
     @Redirect(method = "drawBackground", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/DrawContext;drawGuiTexture(Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/util/Identifier;IIII)V"))
     private void calcium$redirectErrorTexture(DrawContext instance, RenderPipeline pipeline, Identifier texture, int x, int y, int width, int height) {
         if (texture.getPath().contains("out_of_stock")) {
-            instance.drawGuiTexture(pipeline, texture, this.x + 182, this.y + 41, width, height);
+            instance.drawGuiTexture(pipeline, texture, this.x + 185, this.y + 41, width, height);
         } else {
             instance.drawGuiTexture(pipeline, texture, x, y, width, height);
         }
     }
 
+
     @Redirect(method = "drawLevelInfo", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/DrawContext;drawGuiTexture(Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/util/Identifier;IIII)V"))
     private void calcium$redirectExpBarBackground(DrawContext instance, RenderPipeline pipeline, Identifier texture, int x, int y, int width, int height) {
-        if (texture.getPath().contains("experience_bar")) {
-            instance.drawGuiTexture(pipeline, texture, this.x + 138, this.y + 15, width, height);
+        if (texture.getPath().contains("experience_bar_background")) {
+            instance.drawGuiTexture(pipeline, texture, this.x + 141, this.y + 15, width, 6);
         }
         else {
             instance.drawGuiTexture(pipeline, texture, x, y, width, height);
@@ -45,8 +46,12 @@ public abstract class MerchantScreenMixin extends HandledScreen<MerchantScreenHa
 
     @Redirect(method = "drawLevelInfo", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/DrawContext;drawGuiTexture(Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/util/Identifier;IIIIIIII)V"))
     private void calcium$redirectExpBarProgress(DrawContext instance, RenderPipeline pipeline, Identifier texture, int textureWidth, int textureHeight, int u, int v, int x, int y, int width, int height) {
-        if (texture.getPath().contains("experience_bar")) {
-            instance.drawGuiTexture(pipeline, texture, textureWidth, textureHeight, u, v, x, this.y + 15, width, height);
+        String path = texture.getPath();
+        if (path.contains("experience_bar_current")) {
+            instance.drawGuiTexture(pipeline, texture, textureWidth, textureHeight, u, v, this.x + 141, this.y + 15, width, height);
+        }
+        else if (path.contains("experience_bar_result")) {
+            instance.drawGuiTexture(pipeline, texture, textureWidth, textureHeight, u, v, x + 5, this.y + 15, width, height);
         }
         else {
             instance.drawGuiTexture(pipeline, texture, textureWidth, textureHeight, u, v, x, y, width, height);
@@ -105,7 +110,7 @@ public abstract class MerchantScreenMixin extends HandledScreen<MerchantScreenHa
 
     @ModifyConstant(method = {"renderScrollbar", "mouseClicked"}, constant = @Constant(intValue = 94))
     private int calcium$modifyScrollbarX(int originalValue) {
-        return 97;
+        return 100;
     }
 
     @ModifyConstant(method = {"renderScrollbar", "mouseClicked", "mouseDragged"}, constant = @Constant(intValue = 18))
