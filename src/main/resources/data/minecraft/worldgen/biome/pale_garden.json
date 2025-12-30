@@ -1,12 +1,19 @@
 {
   "downfall": 0.8,
   "attributes": {
-    "minecraft:visual/sky_color": "#5CACE3",
-    "minecraft:visual/fog_color": "#AEE3FC",
-    "minecraft:visual/water_fog_color": "#03070A"
+    "minecraft:visual/fog_start_distance": -128,
+    "minecraft:visual/fog_end_distance": 384,
+    "minecraft:visual/sky_light_factor": 0.75,
+    "minecraft:visual/sky_color": "#AAB4B9",
+    "minecraft:visual/fog_color": "#877F79",
+    "minecraft:visual/cloud_color": "#7DFFFFFF",
+    "minecraft:visual/water_fog_color": "#556980"
   },
   "effects": {
-    "water_color": "#06609E"
+    "water_color": "#718F9E",
+    "grass_color": "#778272",
+    "foliage_color": "#878D76",
+    "dry_foliage_color": "#A0A69C"
   },
   "carvers": [
     "minecraft:cave",

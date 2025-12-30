@@ -3,10 +3,6 @@
   "config": {
     "decorators": [
       {
-        "type": "minecraft:beehive",
-        "probability": 0.002
-      },
-      {
         "type": "minecraft:place_on_ground",
         "block_state_provider": {
           "type": "minecraft:weighted_state_provider",

@@ -8,15 +8,23 @@
         "sound": "minecraft:music.overworld.swamp"
       }
     },
-    "minecraft:visual/sky_color": "#5CACE3",
-    "minecraft:visual/fog_color": "#AEE3FC",
-    "minecraft:visual/water_fog_color": "#03070A"
+    "minecraft:visual/fog_start_distance": -32,
+    "minecraft:visual/fog_end_distance": 384,
+    "minecraft:visual/sky_color": "#5E8E8C",
+    "minecraft:visual/fog_color": "#99B8B6",
+    "minecraft:visual/sky_light_color": "#ECFFED",
+    "minecraft:visual/cloud_color": "#DBC8DCD2",
+    "minecraft:visual/water_fog_color": "#275449",
+    "minecraft:visual/water_fog_end_distance": {
+      "argument": 0.5,
+      "modifier": "multiply"
+    }
   },
   "effects": {
-    "water_color": "#06609E",
-    "grass_color_modifier": "swamp",
+    "water_color": "#4C8273",
     "foliage_color": "#8DB127",
-    "dry_foliage_color": "#7B5334"
+    "dry_foliage_color": "#7B5334",
+    "grass_color_modifier": "swamp"
   },
   "carvers": [
     "minecraft:cave",

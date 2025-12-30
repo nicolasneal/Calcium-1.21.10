@@ -1,12 +1,14 @@
 {
   "downfall": 0.0,
   "attributes": {
-    "minecraft:visual/sky_color": "#5CACE3",
-    "minecraft:visual/fog_color": "#AEE3FC",
-    "minecraft:visual/water_fog_color": "#03070A"
+    "minecraft:visual/sky_color": "#6AB7D0",
+    "minecraft:visual/fog_color": "#A3D9E8",
+    "minecraft:visual/water_fog_color": "#3E6463"
   },
   "effects": {
-    "water_color": "#06609E"
+    "water_color": "#6C9D9F",
+    "grass_color": "#C2BC50",
+    "foliage_color": "#96AC43"
   },
   "carvers": [
     "minecraft:cave",

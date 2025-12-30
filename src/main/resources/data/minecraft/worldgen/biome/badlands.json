@@ -10,7 +10,7 @@
     },
     "minecraft:visual/sky_color": "#A4D3ED",
     "minecraft:visual/fog_color": "#BFE0F2",
-    "minecraft:visual/water_fog_color": "#42646B
+    "minecraft:visual/water_fog_color": "#42646B"
   },
   "effects": {
     "water_color": "#759EA5",
