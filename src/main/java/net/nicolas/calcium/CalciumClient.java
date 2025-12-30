@@ -9,13 +9,11 @@ import net.minecraft.client.render.BlockRenderLayer;
 import net.minecraft.world.biome.GrassColors;
 import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.screen.CustomBeaconScreen;
-import net.nicolas.calcium.screen.EnchantingScreen;
 
 public class CalciumClient implements ClientModInitializer {
 
     @Override public void onInitializeClient() {
 
-        HandledScreens.register(Calcium.ENCHANTING_SCREEN_HANDLER, EnchantingScreen::new);
         HandledScreens.register(Calcium.CUSTOM_BEACON_SCREEN_HANDLER, CustomBeaconScreen::new);
 
         BlockRenderLayerMap.putBlock(ModBlocks.IRON_GRATE, BlockRenderLayer.CUTOUT);
@@ -30,6 +28,10 @@ public class CalciumClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_POTATO, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.WILD_BEETROOT, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.PONTEDERIA, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.HIBISCUS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.POKER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.BLACK_STINKHORN, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.WHITE_STINKHORN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.BUSY_LIZZIE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.GOLDENROD, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.BARLEY, BlockRenderLayer.CUTOUT);
@@ -39,6 +41,10 @@ public class CalciumClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.TALL_ICY_IRIS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.CLOVERS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_PONTEDERIA, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.POTTED_HIBISCUS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.POTTED_POKER, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.POTTED_BLACK_STINKHORN, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.POTTED_WHITE_STINKHORN, BlockRenderLayer.CUTOUT);
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (world != null && pos != null) {
@@ -46,6 +52,7 @@ public class CalciumClient implements ClientModInitializer {
             }
             return GrassColors.getColor(0.5, 1.0);
         },
+            ModBlocks.WILD_WHEAT,
             ModBlocks.WILD_CARROT,
             ModBlocks.WILD_POTATO,
             ModBlocks.WILD_BEETROOT,
@@ -54,4 +61,5 @@ public class CalciumClient implements ClientModInitializer {
         );
 
     }
+
 }

@@ -72,11 +72,10 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:portobellos_sparse",
       "minecraft:glow_lichen",
       "minecraft:trees_plains",
-      "minecraft:patch_grass_plain",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:patch_grass_plain"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -64,10 +64,13 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_medium",
+      "calcium:toadstools_dense",
+      "calcium:portobellos_dense",
+      "calcium:black_stinkhorns",
+      "calcium:white_stinkhorns",
       "minecraft:glow_lichen",
-      "minecraft:mushroom_island_vegetation",
-      "minecraft:brown_mushroom_taiga",
-      "minecraft:red_mushroom_taiga"
+      "minecraft:mushroom_island_vegetation"
     ],
     [
       "minecraft:freeze_top_layer"

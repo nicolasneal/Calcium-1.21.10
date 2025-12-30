@@ -71,11 +71,15 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:bushes",
+      "calcium:busy_lizzies",
+      "calcium:hibiscuses",
+      "calcium:pokers",
+      "calcium:toadstools_sparse",
+      "calcium:portobellos_sparse",
       "minecraft:glow_lichen",
       "minecraft:trees_sparse_jungle",
       "minecraft:patch_grass_jungle",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water",
       "minecraft:vines",

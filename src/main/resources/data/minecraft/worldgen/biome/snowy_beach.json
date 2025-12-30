@@ -62,9 +62,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:patch_grass_badlands"
     ],
     [
       "minecraft:freeze_top_layer"

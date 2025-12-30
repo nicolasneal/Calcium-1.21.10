@@ -1,5 +1,5 @@
 {
-  "feature": "calcium:short_grass_dense",
+  "feature": "calcium:short_grass",
   "placement": [
     {
       "type": "minecraft:noise_threshold_count",

@@ -16,20 +16,10 @@ import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.event.Cracking;
 import net.nicolas.calcium.item.ModItems;
 import net.nicolas.calcium.screen.CustomBeaconScreenHandler;
-import net.nicolas.calcium.screen.EnchantingScreenHandler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Calcium implements ModInitializer {
 
-	public static final String MOD_ID = "calcium";
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
 	// Registering Screens
-
-	public static final ScreenHandlerType<EnchantingScreenHandler> ENCHANTING_SCREEN_HANDLER =
-		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "enchanting_screen"),
-			new ScreenHandlerType<>(EnchantingScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
 
 	public static final ScreenHandlerType<CustomBeaconScreenHandler> CUSTOM_BEACON_SCREEN_HANDLER =
 		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "beacon"),
@@ -46,6 +36,10 @@ public class Calcium implements ModInitializer {
 		// Registering Compostables
 
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.PONTEDERIA.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.HIBISCUS.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.POKER.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.BLACK_STINKHORN.asItem(), 0.65f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.WHITE_STINKHORN.asItem(), 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.BUSY_LIZZIE.asItem(), 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.GOLDENROD.asItem(), 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.PAMPAS.asItem(), 0.65f);
@@ -59,13 +53,6 @@ public class Calcium implements ModInitializer {
 		// Registering Fuels
 
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
-			builder.add(ModItems.OAK_TIMBER, 300);
-			builder.add(ModItems.BIRCH_TIMBER, 300);
-			builder.add(ModItems.SPRUCE_TIMBER, 300);
-			builder.add(ModItems.OAK_PLANK, 300);
-			builder.add(ModItems.BIRCH_PLANK, 300);
-			builder.add(ModItems.SPRUCE_PLANK, 300);
-			builder.add(ModItems.WOODEN_ROD, 200);
 			builder.add(ModItems.PIXIE_DUST, 2400);
 		});
 

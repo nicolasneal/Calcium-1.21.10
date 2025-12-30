@@ -15,7 +15,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
-
+import net.nicolas.calcium.block.custom.GenericPlantBlock;
 import java.util.function.Function;
 
 public class ModBlocks {
@@ -77,9 +77,9 @@ public class ModBlocks {
     public static final Block CRACKED_DEEPSLATE_TILE_STAIRS = register("cracked_deepslate_tile_stairs", settings -> new StairsBlock(Blocks.CRACKED_DEEPSLATE_TILES.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.DEEPSLATE_TILES).mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3.0F, 6.0F), true);
     public static final Block CRACKED_DEEPSLATE_TILE_SLAB = register("cracked_deepslate_tile_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.DEEPSLATE_TILES).mapColor(MapColor.DEEPSLATE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3.0F, 6.0F), true);
     // Cracked Deepslate Tile Wall
-    // Cracked Tuff Bricks
-    // Cracked Tuff Brick Stairs
-    // Cracked Tuff Brick Slab
+    public static final Block CRACKED_TUFF_BRICKS = register("cracked_tuff_bricks", Block::new, Block.Settings.create().sounds(BlockSoundGroup.TUFF).mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    public static final Block CRACKED_TUFF_BRICK_STAIRS = register("cracked_tuff_brick_stairs", settings -> new StairsBlock(ModBlocks.CRACKED_TUFF_BRICKS.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.TUFF).mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
+    public static final Block CRACKED_TUFF_BRICK_SLAB = register("cracked_tuff_brick_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.TUFF).mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 6.0F), true);
     // Cracked Tuff Brick Wall
     public static final Block DRIPSTONE_STAIRS = register("dripstone_stairs", settings -> new StairsBlock(Blocks.DRIPSTONE_BLOCK.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 1.0F), true);
     public static final Block DRIPSTONE_SLAB = register("dripstone_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.DRIPSTONE_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.5F, 1.0F), true);
@@ -147,7 +147,14 @@ public class ModBlocks {
     public static final Block CRACKED_BASALT_BRICK_STAIRS = register("cracked_basalt_brick_stairs", settings -> new StairsBlock(ModBlocks.CRACKED_BASALT_BRICKS.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
     public static final Block CRACKED_BASALT_BRICK_SLAB = register("cracked_basalt_brick_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
     // Cracked Basalt Brick Wall
+    public static final Block BASALT_TILES = register("basalt_tiles", Block::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block BASALT_TILE_STAIRS = register("basalt_tile_stairs", settings -> new StairsBlock(ModBlocks.BASALT_TILES.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block BASALT_TILE_SLAB = register("basalt_tile_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block CRACKED_BASALT_TILES = register("cracked_basalt_tiles", Block::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block CRACKED_BASALT_TILE_STAIRS = register("cracked_basalt_tile_stairs", settings -> new StairsBlock(ModBlocks.CRACKED_BASALT_TILES.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block CRACKED_BASALT_TILE_SLAB = register("cracked_basalt_tile_slab", SlabBlock::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
     public static final Block CHISELED_BASALT = register("chiseled_basalt", Block::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
+    public static final Block ENGRAVED_BASALT = register("engraved_basalt", Block::new, Block.Settings.create().sounds(BlockSoundGroup.BASALT).mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F), true);
     // Quartz Wall
     // Polished Quartz Wall
     public static final Block QUARTZ_BRICK_STAIRS = register("quartz_brick_stairs", settings -> new StairsBlock(Blocks.QUARTZ_BRICKS.getDefaultState(), settings), Block.Settings.create().sounds(BlockSoundGroup.STONE).mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.8F, 0.8F), true);
@@ -225,13 +232,17 @@ public class ModBlocks {
     public static final Block GOLD_CHAIN = register("gold_chain", ChainBlock::new, Block.Settings.create().sounds(BlockSoundGroup.CHAIN).nonOpaque().solid().requiresTool().strength(3.0F, 6.0F), true);
     public static final Block GOLD_LANTERN = register("gold_lantern", LanternBlock::new, Block.Settings.create().luminance(state -> 15).sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).pistonBehavior(PistonBehavior.DESTROY).requiresTool().nonOpaque().strength(3.5f, 3.5f), true);
 
-    // PLANT BLOCKS (14, 1)
+    // PLANT BLOCKS (17, 5)
 
     public static final Block WILD_WHEAT = register("wild_wheat", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_CARROT = register("wild_carrot", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_POTATO = register("wild_potato", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block WILD_BEETROOT = register("wild_beetroot", ShortPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block PONTEDERIA = register("pontederia", (settings) -> new FlowerBlock(StatusEffects.WATER_BREATHING, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block HIBISCUS = register("hibiscus", (settings) -> new FlowerBlock(StatusEffects.BLINDNESS, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block POKER = register("poker", (settings) -> new FlowerBlock(StatusEffects.NIGHT_VISION, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block BLACK_STINKHORN = register("black_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
+    public static final Block WHITE_STINKHORN = register("white_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.LIGHT_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
     public static final Block BUSY_LIZZIE = register("busy_lizzie", BushBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
     public static final Block GOLDENROD = register("goldenrod", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
     public static final Block BARLEY = register("barley", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
@@ -241,6 +252,10 @@ public class ModBlocks {
     public static final Block TALL_ICY_IRIS = register("tall_icy_iris", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
     public static final Block CLOVERS = register("clovers", FlowerbedBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.FLOWERBED).pistonBehavior(PistonBehavior.DESTROY), true);
     public static final Block POTTED_PONTEDERIA = register("potted_pontederia", settings -> new FlowerPotBlock(PONTEDERIA, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_HIBISCUS = register("potted_hibiscus", settings -> new FlowerPotBlock(HIBISCUS, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_POKER = register("potted_poker", settings -> new FlowerPotBlock(POKER, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_BLACK_STINKHORN = register("potted_black_stinkhorn", settings -> new FlowerPotBlock(BLACK_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_WHITE_STINKHORN = register("potted_white_stinkhorn", settings -> new FlowerPotBlock(WHITE_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
 
     public static void initialize() {
 
@@ -280,6 +295,9 @@ public class ModBlocks {
             itemgroup.add(CRACKED_DEEPSLATE_BRICK_SLAB);
             itemgroup.add(CRACKED_DEEPSLATE_TILE_STAIRS);
             itemgroup.add(CRACKED_DEEPSLATE_TILE_SLAB);
+            itemgroup.add(CRACKED_TUFF_BRICKS);
+            itemgroup.add(CRACKED_TUFF_BRICK_STAIRS);
+            itemgroup.add(CRACKED_TUFF_BRICK_SLAB);
             itemgroup.add(DRIPSTONE_STAIRS);
             itemgroup.add(DRIPSTONE_SLAB);
             itemgroup.add(POLISHED_DRIPSTONE);
@@ -315,7 +333,14 @@ public class ModBlocks {
             itemgroup.add(CRACKED_BASALT_BRICKS);
             itemgroup.add(CRACKED_BASALT_BRICK_STAIRS);
             itemgroup.add(CRACKED_BASALT_BRICK_SLAB);
+            itemgroup.add(BASALT_TILES);
+            itemgroup.add(BASALT_TILE_STAIRS);
+            itemgroup.add(BASALT_TILE_SLAB);
+            itemgroup.add(CRACKED_BASALT_TILES);
+            itemgroup.add(CRACKED_BASALT_TILE_STAIRS);
+            itemgroup.add(CRACKED_BASALT_TILE_SLAB);
             itemgroup.add(CHISELED_BASALT);
+            itemgroup.add(ENGRAVED_BASALT);
             itemgroup.add(QUARTZ_BRICK_STAIRS);
             itemgroup.add(QUARTZ_BRICK_SLAB);
             itemgroup.add(END_STONE_STAIRS);
@@ -353,6 +378,10 @@ public class ModBlocks {
             itemgroup.add(WILD_POTATO);
             itemgroup.add(WILD_BEETROOT);
             itemgroup.add(PONTEDERIA);
+            itemgroup.add(HIBISCUS);
+            itemgroup.add(POKER);
+            itemgroup.add(BLACK_STINKHORN);
+            itemgroup.add(WHITE_STINKHORN);
             itemgroup.add(BUSY_LIZZIE);
             itemgroup.add(GOLDENROD);
             itemgroup.add(BARLEY);

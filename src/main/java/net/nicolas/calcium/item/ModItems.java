@@ -27,36 +27,11 @@ public class ModItems {
 
     // INGREDIENTS (RESOURCES)
 
-    public static final Item OAK_TIMBER = register("oak_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item BIRCH_TIMBER = register("birch_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item SPRUCE_TIMBER = register("spruce_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item JUNGLE_TIMBER = register("jungle_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item ACACIA_TIMBER = register("acacia_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item DARK_OAK_TIMBER = register("dark_oak_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item MANGROVE_TIMBER = register("mangrove_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item CHERRY_TIMBER = register("cherry_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item PALE_OAK_TIMBER = register("pale_oak_timber", Item::new, new Item.Settings().maxCount(64));
-    public static final Item OAK_PLANK = register("oak_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item BIRCH_PLANK = register("birch_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item SPRUCE_PLANK = register("spruce_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item JUNGLE_PLANK = register("jungle_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item ACACIA_PLANK = register("acacia_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item DARK_OAK_PLANK = register("dark_oak_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item MANGROVE_PLANK = register("mangrove_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item CHERRY_PLANK = register("cherry_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item PALE_OAK_PLANK = register("pale_oak_plank", Item::new, new Item.Settings().maxCount(64));
-    public static final Item WOODEN_ROD = register("wooden_rod", Item::new, new Item.Settings().maxCount(64));
-    public static final Item STONE = register("stone", Item::new, new Item.Settings().maxCount(64));
-    public static final Item GLASS = register("glass", Item::new, new Item.Settings().maxCount(64));
     public static final Item FLOUR = register("flour", Item::new, new Item.Settings().maxCount(64));
     public static final Item DOUGH = register("dough", Item::new, new Item.Settings().maxCount(64));
     public static final Item COOKIE_DOUGH = register("cookie_dough", Item::new, new Item.Settings().maxCount(64));
     public static final Item CAKE_BATTER = register("cake_batter", Item::new, new Item.Settings().maxCount(64));
     public static final Item PUMPKIN_SLICE = register("pumpkin_slice", Item::new, new Item.Settings().maxCount(64));
-
-    // INGREDIENTS (UTILITY)
-
-    public static final Item ENCHANTING_TABLET = register("enchanting_tablet", Item::new, new Item.Settings().maxCount(64));
 
     // FOOD AND DRINK (MOB DROPS)
 
@@ -87,33 +62,11 @@ public class ModItems {
             itemgroup.add(HIDE);
             itemgroup.add(FUR);
             itemgroup.add(PIXIE_DUST);
-            itemgroup.add(OAK_TIMBER);
-            itemgroup.add(BIRCH_TIMBER);
-            itemgroup.add(SPRUCE_TIMBER);
-            itemgroup.add(JUNGLE_TIMBER);
-            itemgroup.add(ACACIA_TIMBER);
-            itemgroup.add(DARK_OAK_TIMBER);
-            itemgroup.add(MANGROVE_TIMBER);
-            itemgroup.add(CHERRY_TIMBER);
-            itemgroup.add(PALE_OAK_TIMBER);
-            itemgroup.add(OAK_PLANK);
-            itemgroup.add(BIRCH_PLANK);
-            itemgroup.add(SPRUCE_PLANK);
-            itemgroup.add(JUNGLE_PLANK);
-            itemgroup.add(ACACIA_PLANK);
-            itemgroup.add(DARK_OAK_PLANK);
-            itemgroup.add(MANGROVE_PLANK);
-            itemgroup.add(CHERRY_PLANK);
-            itemgroup.add(PALE_OAK_PLANK);
-            itemgroup.add(WOODEN_ROD);
-            itemgroup.add(STONE);
-            itemgroup.add(GLASS);
             itemgroup.add(FLOUR);
             itemgroup.add(DOUGH);
             itemgroup.add(COOKIE_DOUGH);
             itemgroup.add(CAKE_BATTER);
             itemgroup.add(PUMPKIN_SLICE);
-            itemgroup.add(ENCHANTING_TABLET);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(itemgroup -> {

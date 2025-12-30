@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Unique;
 public class TallPlantBlockMixin {
 
     @Unique public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return Block.createColumnShape(12.0, 0.0, 16.0);
+        return Block.createColumnShape(12.0, 0.0, 16.0).offset(state.getModelOffset(pos));
     }
 
 }

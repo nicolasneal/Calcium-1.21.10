@@ -17,9 +17,9 @@
       "type": "minecraft:cherry_foliage_placer",
       "height": 5,
       "offset": 0,
-      "radius": 3,
+      "radius": 4,
       "wide_bottom_layer_hole_chance": 0,
-      "corner_hole_chance": 0.9,
+      "corner_hole_chance": 0.7,
       "hanging_leaves_chance": 0,
       "hanging_leaves_extension_chance": 0
     },

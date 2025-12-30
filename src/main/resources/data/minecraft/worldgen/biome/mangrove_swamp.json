@@ -78,9 +78,13 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_medium",
+      "calcium:bushes",
+      "calcium:pontederias",
+      "calcium:toadstools_sparse",
+      "calcium:portobellos_sparse",
       "minecraft:glow_lichen",
       "minecraft:trees_mangrove",
-      "minecraft:patch_grass_normal",
       "minecraft:patch_dead_bush",
       "minecraft:patch_waterlily",
       "minecraft:seagrass_swamp",

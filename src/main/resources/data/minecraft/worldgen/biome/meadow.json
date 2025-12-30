@@ -69,8 +69,9 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_dense",
+      "calcium:bushes",
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_meadow",
       "minecraft:flower_meadow",
       "minecraft:trees_meadow",
       "minecraft:wildflowers_meadow"

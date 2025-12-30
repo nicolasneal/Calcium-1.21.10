@@ -69,11 +69,11 @@
     [
       "calcium:short_grass_dense",
       "calcium:bushes_dense",
+      "calcium:toadstools_sparse",
+      "calcium:portobellos_sparse",
       "minecraft:glow_lichen",
       "minecraft:dark_forest_vegetation",
       "minecraft:forest_flowers",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
       "minecraft:patch_leaf_litter",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"

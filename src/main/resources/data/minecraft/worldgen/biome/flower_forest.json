@@ -69,6 +69,8 @@
       "calcium:short_grass_dense",
       "calcium:clovers",
       "calcium:bushes",
+      "calcium:toadstools_sparse",
+      "calcium:portobellos_sparse",
       "calcium:wild_wheat_plants",
       "calcium:wild_carrot_plants",
       "calcium:wild_potato_plants",
@@ -76,10 +78,7 @@
       "minecraft:glow_lichen",
       "minecraft:trees_flower_forest",
       "minecraft:flower_flower_forest",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
     ],
     [

@@ -61,14 +61,10 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_medium",
+      "calcium:bushes",
       "minecraft:glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:patch_bush",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water"
+      "minecraft:trees_water"
     ],
     [
       "minecraft:freeze_top_layer"

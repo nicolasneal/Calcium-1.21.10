@@ -71,9 +71,7 @@
       "calcium:icy_irises",
       "minecraft:glow_lichen",
       "minecraft:trees_snowy",
-      "minecraft:patch_grass_badlands",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:patch_grass_badlands"
     ],
     [
       "minecraft:freeze_top_layer"

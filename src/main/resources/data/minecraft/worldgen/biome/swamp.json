@@ -22,6 +22,8 @@
   },
   "effects": {
     "water_color": "#517766",
+    "foliage_color": "#677D3B",
+    "dry_foliage_color": "#7B5334",
     "grass_color_modifier": "swamp"
   },
   "carvers": [
@@ -80,14 +82,12 @@
       "calcium:bushes",
       "calcium:blue_orchids",
       "calcium:pontederias",
+      "calcium:toadstools_sparse",
+      "calcium:portobellos_sparse",
       "minecraft:glow_lichen",
       "minecraft:trees_swamp",
       "minecraft:patch_dead_bush",
       "minecraft:patch_waterlily",
-      "minecraft:brown_mushroom_swamp",
-      "minecraft:red_mushroom_swamp",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane_swamp",
       "minecraft:patch_pumpkin",
       "minecraft:patch_firefly_bush_swamp",
