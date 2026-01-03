@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "redstone",
+  "group": "wooden_button",
   "key": {
-    "#": "calcium:acacia_plank",
+    "#": "minecraft:acacia_planks",
     "@": "minecraft:redstone"
   },
   "pattern": [
@@ -10,11 +11,6 @@
   ],
   "result": {
     "id": "minecraft:acacia_button",
-    "count": 1
+    "count": 2
   }
 }
-
-
-
-
-

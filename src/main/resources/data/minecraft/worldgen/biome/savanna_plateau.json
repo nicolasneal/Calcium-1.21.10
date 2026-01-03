@@ -63,6 +63,8 @@
     [
       "calcium:short_grass_medium",
       "calcium:bushes",
+      "calcium:pampas",
+      "calcium:poppies",
       "minecraft:glow_lichen",
       "minecraft:trees_savanna",
       "minecraft:patch_sugar_cane",

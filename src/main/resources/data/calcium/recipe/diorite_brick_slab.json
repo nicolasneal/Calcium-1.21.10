@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:diorite_bricks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:diorite_brick_slab",
+    "count": 4
+  }
+}

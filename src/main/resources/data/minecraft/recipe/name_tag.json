@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:paper",
+    "@": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "  @",
+    " # ",
+    "#  "
+  ],
+  "result": {
+    "id": "minecraft:acacia_boat",
+    "count": 1
+  }
+}

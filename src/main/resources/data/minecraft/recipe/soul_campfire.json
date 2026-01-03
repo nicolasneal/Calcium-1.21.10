@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:campfire",
+    "@": "#minecraft:soul_fire_base_blocks"
+  },
+  "pattern": [
+    "#",
+    "@"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:soul_campfire"
+  }
+}

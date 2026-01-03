@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:smooth_stone",
+    "@": "#minecraft:stick"
+  },
+  "pattern": [
+    "@#@",
+    "@ @"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:grindstone"
+  }
+}

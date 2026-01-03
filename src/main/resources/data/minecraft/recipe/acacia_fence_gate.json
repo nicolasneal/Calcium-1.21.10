@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:acacia_plank",
+    "#": "minecraft:acacia_planks",
     "@": "calcium:wooden_rod"
   },
   "pattern": [
@@ -14,8 +14,3 @@
     "count": 2
   }
 }
-
-
-
-
-

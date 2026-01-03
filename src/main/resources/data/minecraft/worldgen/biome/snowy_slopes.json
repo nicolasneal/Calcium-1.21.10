@@ -13,6 +13,7 @@
     "minecraft:visual/fog_end_distance": 384,
     "minecraft:visual/sky_color": "#C1D5F2",
     "minecraft:visual/fog_color": "#D8E4F7",
+    "minecraft:visual/sky_light_color": "#FBFEFF",
     "minecraft:visual/water_fog_color": "#4E86AB"
   },
   "effects": {

@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    "minecraft:stripped_oak_log"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:stripped_oak_log"
+  },
+  "pattern": [
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:stripped_oak_wood",
-    "count": 1
+    "count": 4
   }
 }
-

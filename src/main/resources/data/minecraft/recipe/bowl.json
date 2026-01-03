@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
-    "#": "#calcium:plank"
+    "#": "#minecraft:planks"
   },
   "pattern": [
     "# #",
     " # "
   ],
   "result": {
-    "id": "minecraft:bowl",
-    "count": 3
+    "count": 4,
+    "id": "minecraft:bowl"
   }
 }

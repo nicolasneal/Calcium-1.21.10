@@ -1,15 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    "minecraft:jungle_log"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:jungle_log"
+  },
+  "pattern": [
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:jungle_wood",
-    "count": 1
+    "count": 4
   }
 }
-
-
-
-

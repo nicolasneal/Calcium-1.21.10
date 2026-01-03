@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:copper_ingot",
+    "@": "minecraft:copper_nugget",
+    "$": "#minecraft:coals"
+  },
+  "pattern": [
+    "@",
+    "$",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:copper_lantern"
+  }
+}

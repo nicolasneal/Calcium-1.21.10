@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "@": "calcium:wooden_rod"
+  },
+  "pattern": [
+    "# #",
+    "#@#",
+    "# #"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraft:rail"
+  }
+}

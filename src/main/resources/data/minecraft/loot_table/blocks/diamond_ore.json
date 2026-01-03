@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond",
+          "name": "minecraft:diamond_ore",
           "conditions": [
             {
               "condition": "minecraft:match_tool",
@@ -30,7 +30,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "calcium:stone",
+          "name": "minecraft:cobblestone",
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -51,14 +51,8 @@
           ],
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 3.0
-              }
-            },
-            { "function": "minecraft:explosion_decay" }
+              "function": "minecraft:explosion_decay"
+            }
           ]
         }
       ]

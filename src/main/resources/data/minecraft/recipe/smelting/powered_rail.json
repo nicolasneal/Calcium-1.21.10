@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "@": "calcium:wooden_rod",
+    "$": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#$#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraft:powered_rail"
+  }
+}

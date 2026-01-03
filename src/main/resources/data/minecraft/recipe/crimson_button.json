@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_button",
+  "key": {
+    "#": "minecraft:crimson_planks",
+    "@": "minecraft:redstone"
+  },
+  "pattern": [
+    "#@"
+  ],
+  "result": {
+    "id": "minecraft:crimson_button",
+    "count": 2
+  }
+}

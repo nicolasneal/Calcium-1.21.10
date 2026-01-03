@@ -61,7 +61,9 @@
     [
       "calcium:short_grass_medium",
       "calcium:bushes",
+      "calcium:sea_oats",
       "minecraft:glow_lichen",
+      "minecraft:patch_dry_grass_desert",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_firefly_bush_near_water"
     ],

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_stained_glass",
+  "ingredients": [
+    "minecraft:stained_glass",
+    "minecraft:yellow_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:yellow_stained_glass"
+  }
+}

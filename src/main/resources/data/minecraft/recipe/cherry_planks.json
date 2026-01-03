@@ -2,22 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:cherry_plank"
+    "#": "#minecraft:cherry_logs"
   },
   "pattern": [
-    "##",
-    "##"
+    "#"
   ],
   "result": {
     "id": "minecraft:cherry_planks",
-    "count": 1
+    "count": 4
   }
 }
-
-
-
-
-
-
-
-

@@ -2,19 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:acacia_plank"
+    "#": "#minecraft:acacia_logs"
   },
   "pattern": [
-    "##",
-    "##"
+    "#"
   ],
   "result": {
     "id": "minecraft:acacia_planks",
-    "count": 1
+    "count": 4
   }
 }
-
-
-
-
-

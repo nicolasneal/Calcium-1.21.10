@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:polished_dripstone"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:polished_dripstone_slab",
+    "count": 4
+  }
+}

@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "key": {
-    "#": "#calcium:plank",
+    "#": "#minecraft:planks",
     "@": "minecraft:iron_ingot"
   },
   "pattern": [
@@ -11,7 +11,7 @@
     "###"
   ],
   "result": {
-    "id": "minecraft:barrel",
-    "count": 2
+    "count": 2,
+    "id": "minecraft:barrel"
   }
 }

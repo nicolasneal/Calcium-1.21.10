@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:stone_bricks",
+    "minecraft:moss_carpet"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:mossy_stone_bricks"
+  }
+}

@@ -2,11 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "#calcium:plank",
+    "#": "calcium:wooden_rod",
     "@": "minecraft:leather"
   },
   "pattern": [
-    "#@"
+    " # ",
+    "#@#",
+    " # "
   ],
   "result": {
     "id": "minecraft:item_frame",

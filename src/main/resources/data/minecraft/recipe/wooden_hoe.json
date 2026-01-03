@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "#calcium:timber",
+    "#": "#minecraft:planks",
     "@": "calcium:wooden_rod"
   },
   "pattern": [

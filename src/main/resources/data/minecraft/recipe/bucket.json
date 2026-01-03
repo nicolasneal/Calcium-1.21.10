@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "equipment",
+  "category": "misc",
   "key": {
     "#": "minecraft:iron_ingot"
   },
@@ -9,7 +9,7 @@
     " # "
   ],
   "result": {
-    "id": "minecraft:bucket",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:bucket"
   }
 }

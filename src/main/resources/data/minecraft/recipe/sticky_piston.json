@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:piston",
+    "minecraft:slime_ball"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:sticky_piston"
+  }
+}

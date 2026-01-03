@@ -2,33 +2,13 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "rolls": 1.0,
       "conditions": [
         {
-          "condition": "minecraft:any_of",
-          "terms": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "items": "minecraft:shears"
-              }
-            },
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "predicates": {
-                  "minecraft:enchantments": [
-                    {
-                      "enchantments": "minecraft:silk_touch",
-                      "levels": {
-                        "min": 1
-                      }
-                    }
-                  ]
-                }
-              }
-            }
-          ]
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:shears"
+          }
         }
       ],
       "entries": [
@@ -36,8 +16,7 @@
           "type": "minecraft:item",
           "name": "calcium:busy_lizzie"
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ],
   "random_sequence": "calcium:blocks/busy_lizzie"

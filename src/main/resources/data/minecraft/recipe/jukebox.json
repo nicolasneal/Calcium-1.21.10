@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#minecraft:planks",
+    "@": "minecraft:diamond",
+    "$": "minecraft:redstone"
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "#$#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:jukebox"
+  }
+}

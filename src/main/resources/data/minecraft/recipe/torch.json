@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:stick",
+    "#": "calcium:wooden_rod",
     "@": "#minecraft:coals"
   },
   "pattern": [

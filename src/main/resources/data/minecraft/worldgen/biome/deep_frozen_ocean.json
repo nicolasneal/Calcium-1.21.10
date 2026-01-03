@@ -6,7 +6,8 @@
     "minecraft:visual/water_fog_color": "#316789"
   },
   "effects": {
-    "water_color": "#62A4CC"
+    "water_color": "#62A4CC",
+    "grass_color": "#B5CCC0"
   },
   "carvers": [
     "minecraft:cave",
@@ -63,10 +64,8 @@
       "minecraft:spring_lava"
     ],
     [
-      "calcium:short_grass_medium",
-      "calcium:bushes",
-      "minecraft:glow_lichen",
-      "minecraft:trees_water"
+      "calcium:short_grass_sparse",
+      "minecraft:glow_lichen"
     ],
     [
       "minecraft:freeze_top_layer"

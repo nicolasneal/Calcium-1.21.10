@@ -2,17 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:spruce_plank"
+    "#": "minecraft:spruce_planks"
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:spruce_trapdoor",
-    "count": 2
+    "count": 4
   }
 }
-
-
-

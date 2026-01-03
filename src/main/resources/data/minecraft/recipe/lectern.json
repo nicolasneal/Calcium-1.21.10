@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "#minecraft:wooden_slabs",
+    "@": "minecraft:book"
+  },
+  "pattern": [
+    "S",
+    "@",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:lectern"
+  }
+}

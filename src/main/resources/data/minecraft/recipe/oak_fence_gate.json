@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:oak_plank",
+    "#": "minecraft:oak_planks",
     "@": "calcium:wooden_rod"
   },
   "pattern": [
@@ -14,4 +14,3 @@
     "count": 2
   }
 }
-

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:pumpkin",
+    "minecraft:torch"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:jack_o_lantern"
+  }
+}

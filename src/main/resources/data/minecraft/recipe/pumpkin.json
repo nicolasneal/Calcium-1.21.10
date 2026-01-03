@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "calcium:pumpkin_slice",
+    "calcium:pumpkin_slice",
+    "calcium:pumpkin_slice",
+    "calcium:pumpkin_slice"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:pumpkin"
+  }
+}

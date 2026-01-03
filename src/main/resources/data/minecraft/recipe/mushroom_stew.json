@@ -3,8 +3,8 @@
   "category": "misc",
   "ingredients": [
     "calcium:water_bowl",
-    "minecraft:brown_mushroom",
-    "minecraft:red_mushroom"
+    "#calcium:mushroom",
+    "#calcium:mushroom"
   ],
   "result": {
     "count": 1,

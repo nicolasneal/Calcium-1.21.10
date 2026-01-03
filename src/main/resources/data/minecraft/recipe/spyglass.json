@@ -4,7 +4,7 @@
   "key": {
     "#": "calcium:wooden_rod",
     "@": "minecraft:gold_ingot",
-    "$": "calcium:glass"
+    "$": "minecraft:amethyst_shard"
   },
   "pattern": [
     "  $",
@@ -12,7 +12,7 @@
     "#  "
   ],
   "result": {
-    "id": "minecraft:spyglass",
-    "count": 1
+    "count": 1,
+    "id": "minecraft:spyglass"
   }
 }

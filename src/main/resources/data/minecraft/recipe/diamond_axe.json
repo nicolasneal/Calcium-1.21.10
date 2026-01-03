@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:diamond",
+    "@": "calcium:wooden_rod"
+  },
+  "pattern": [
+    "##",
+    "#@",
+    " @"
+  ],
+  "result": {
+    "id": "minecraft:diamond_axe",
+    "count": 1
+  }
+}

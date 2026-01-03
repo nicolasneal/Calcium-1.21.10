@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:cherry_plank",
+    "#": "minecraft:cherry_planks",
     "@": "minecraft:redstone"
   },
   "pattern": [
@@ -10,14 +10,6 @@
   ],
   "result": {
     "id": "minecraft:cherry_pressure_plate",
-    "count": 1
+    "count": 2
   }
 }
-
-
-
-
-
-
-
-

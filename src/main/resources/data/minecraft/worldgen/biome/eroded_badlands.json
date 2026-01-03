@@ -69,8 +69,8 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_sparse",
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_badlands",
       "minecraft:patch_dry_grass_badlands",
       "minecraft:patch_dead_bush_badlands",
       "minecraft:patch_sugar_cane_badlands",

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:stripped_mangrove_log"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:mangrove_shelf",
+    "count": 1
+  }
+}

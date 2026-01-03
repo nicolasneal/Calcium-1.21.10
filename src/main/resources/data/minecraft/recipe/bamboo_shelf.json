@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:stripped_bamboo_log"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:bamboo_shelf",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "stained_glass",
+  "ingredients": [
+    "minecraft:glass",
+    "minecraft:orange_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:orange_stained_glass"
+  }
+}

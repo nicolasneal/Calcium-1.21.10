@@ -9,13 +9,16 @@
       }
     },
     "minecraft:gameplay/increased_fire_burnout": true,
+    "minecraft:visual/fog_start_distance": -16,
+    "minecraft:visual/fog_end_distance": 384,
     "minecraft:visual/sky_color": "#A5BEE3",
     "minecraft:visual/fog_color": "#C6D6ED",
+    "minecraft:visual/sky_light_color": "#FBFEFF",
     "minecraft:visual/water_fog_color": "#4E86AB"
   },
   "effects": {
     "water_color": "#91D4FF",
-    "grass_color": "#9EB2A8"
+    "grass_color": "#B5CCC0"
   },
   "carvers": [
     "minecraft:cave",
@@ -71,9 +74,9 @@
       "minecraft:spring_lava"
     ],
     [
+      "calcium:short_grass_sparse",
       "minecraft:glow_lichen",
-      "minecraft:trees_snowy",
-      "minecraft:patch_grass_badlands"
+      "minecraft:trees_snowy"
     ],
     [
       "minecraft:freeze_top_layer"

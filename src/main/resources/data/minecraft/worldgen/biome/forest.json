@@ -67,6 +67,7 @@
     ],
     [
       "calcium:short_grass_dense",
+      "calcium:barleys",
       "calcium:clovers",
       "calcium:bushes",
       "calcium:toadstools_sparse",
@@ -78,8 +79,8 @@
       "minecraft:glow_lichen",
       "minecraft:forest_flowers",
       "minecraft:trees_birch_and_oak_leaf_litter",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_firefly_bush_near_water"
+      "minecraft:patch_firefly_bush_near_water",
+      "calcium:pumpkins_scarce"
     ],
     [
       "minecraft:freeze_top_layer"

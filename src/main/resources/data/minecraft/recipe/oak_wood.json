@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    "minecraft:oak_log"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:oak_log"
+  },
+  "pattern": [
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:oak_wood",
-    "count": 1
+    "count": 4
   }
 }
-

@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": "calcium:wooden_rod",
-    "@": "calcium:stone"
+    "@": "minecraft:smooth_stone_slab"
   },
   "pattern": [
     "###",

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "calcium:cut_gold",
+    "calcium:cut_gold_stairs",
+    "calcium:cut_gold_slab",
+    "calcium:chiseled_gold",
+    "calcium:gold_grate",
+    "calcium:gold_bulb",
+    "calcium:gold_door",
+    "calcium:gold_trapdoor",
+    "calcium:gold_bars",
+    "calcium:gold_chain",
+    "calcium:gold_lantern"
+  ]
+}

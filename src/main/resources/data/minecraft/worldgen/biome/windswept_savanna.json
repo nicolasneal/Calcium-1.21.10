@@ -63,6 +63,8 @@
     [
       "calcium:short_grass_medium",
       "calcium:bushes",
+      "calcium:pampas",
+      "calcium:poppies",
       "minecraft:glow_lichen",
       "minecraft:trees_windswept_savanna"
     ],

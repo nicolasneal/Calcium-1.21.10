@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "calcium:cut_iron",
+    "calcium:cut_iron_stairs",
+    "calcium:cut_iron_slab",
+    "calcium:chiseled_iron",
+    "calcium:iron_grate",
+    "calcium:iron_bulb"
+  ]
+}

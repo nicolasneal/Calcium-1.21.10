@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:polished_basalt"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:polished_basalt_slab",
+    "count": 4
+  }
+}

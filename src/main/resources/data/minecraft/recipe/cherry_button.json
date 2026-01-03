@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "redstone",
+  "group": "wooden_button",
   "key": {
-    "#": "calcium:cherry_plank",
+    "#": "minecraft:cherry_planks",
     "@": "minecraft:redstone"
   },
   "pattern": [
@@ -10,14 +11,6 @@
   ],
   "result": {
     "id": "minecraft:cherry_button",
-    "count": 1
+    "count": 2
   }
 }
-
-
-
-
-
-
-
-

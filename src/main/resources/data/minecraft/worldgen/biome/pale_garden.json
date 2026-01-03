@@ -67,12 +67,13 @@
     ],
     [
       "calcium:short_grass_dense",
+      "calcium:tall_grass",
       "minecraft:glow_lichen",
       "minecraft:pale_garden_vegetation",
       "minecraft:pale_moss_patch",
       "minecraft:pale_garden_flowers",
       "minecraft:flower_pale_garden",
-      "minecraft:patch_pumpkin"
+      "calcium:pumpkins_scarce"
     ],
     [
       "minecraft:freeze_top_layer"

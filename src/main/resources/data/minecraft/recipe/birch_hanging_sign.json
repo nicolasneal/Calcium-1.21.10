@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:birch_plank",
+    "#": "minecraft:birch_planks",
     "@": "minecraft:chain"
   },
   "pattern": [
-    "@ @",
-    "###",
-    "###"
+    "@",
+    "#"
   ],
   "result": {
     "id": "minecraft:birch_hanging_sign",
-    "count": 2
+    "count": 1
   }
 }
-
-

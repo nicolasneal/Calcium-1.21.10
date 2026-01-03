@@ -2,16 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:birch_plank"
+    "#": "#minecraft:birch_logs"
   },
   "pattern": [
-    "##",
-    "##"
+    "#"
   ],
   "result": {
     "id": "minecraft:birch_planks",
-    "count": 1
+    "count": 4
   }
 }
-
-

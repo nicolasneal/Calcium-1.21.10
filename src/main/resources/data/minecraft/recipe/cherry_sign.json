@@ -2,24 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:cherry_plank",
+    "#": "minecraft:cherry_planks",
     "@": "calcium:wooden_rod"
   },
   "pattern": [
-    "###",
-    "###",
-    " @ "
+    "#",
+    "@"
   ],
   "result": {
     "id": "minecraft:cherry_sign",
-    "count": 2
+    "count": 1
   }
 }
-
-
-
-
-
-
-
-

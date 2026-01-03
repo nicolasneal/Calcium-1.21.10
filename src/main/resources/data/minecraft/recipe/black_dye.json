@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "black_dye",
+  "ingredients": [
+    [
+      "#minecraft:coals",
+      "minecraft:ink_sac",
+      "minecraft:wither_rose"
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:black_dye"
+  }
+}

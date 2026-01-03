@@ -1,14 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    "minecraft:stripped_spruce_log"
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:stripped_spruce_log"
+  },
+  "pattern": [
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:stripped_spruce_wood",
-    "count": 1
+    "count": 4
   }
 }
-
-
-

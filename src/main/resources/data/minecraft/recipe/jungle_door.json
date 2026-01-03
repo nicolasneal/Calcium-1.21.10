@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:jungle_plank"
+    "#": "minecraft:jungle_planks"
   },
   "pattern": [
     "##",
@@ -14,7 +14,3 @@
     "count": 1
   }
 }
-
-
-
-

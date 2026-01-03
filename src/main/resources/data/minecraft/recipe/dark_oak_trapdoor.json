@@ -2,20 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:dark_oak_plank"
+    "#": "minecraft:dark_oak_planks"
   },
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "id": "minecraft:dark_oak_trapdoor",
-    "count": 2
+    "count": 4
   }
 }
-
-
-
-
-
-

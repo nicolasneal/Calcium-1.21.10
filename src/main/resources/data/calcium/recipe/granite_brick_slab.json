@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "calcium:granite_bricks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "calcium:granite_brick_slab",
+    "count": 4
+  }
+}

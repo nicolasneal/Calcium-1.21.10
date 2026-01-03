@@ -27,6 +27,7 @@ public class ModItems {
 
     // INGREDIENTS (RESOURCES)
 
+    public static final Item WOODEN_ROD = register("wooden_rod", Item::new, new Item.Settings().maxCount(64));
     public static final Item FLOUR = register("flour", Item::new, new Item.Settings().maxCount(64));
     public static final Item DOUGH = register("dough", Item::new, new Item.Settings().maxCount(64));
     public static final Item COOKIE_DOUGH = register("cookie_dough", Item::new, new Item.Settings().maxCount(64));
@@ -59,6 +60,7 @@ public class ModItems {
     public static void initialize() {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register((itemgroup) -> {
+            itemgroup.add(WOODEN_ROD);
             itemgroup.add(HIDE);
             itemgroup.add(FUR);
             itemgroup.add(PIXIE_DUST);

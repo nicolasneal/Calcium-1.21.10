@@ -14,7 +14,7 @@
   },
   "effects": {
     "water_color": "#4B95BC",
-    "grass_color": "#9FC456"
+    "grass_color": "#B6DB61"
   },
   "carvers": [
     "minecraft:cave",
@@ -69,16 +69,17 @@
     [
       "calcium:short_grass_dense",
       "calcium:bushes",
+      "calcium:sunflowers",
+      "calcium:goldenrods",
       "calcium:wild_wheat_plants",
       "calcium:wild_carrot_plants",
       "calcium:wild_potato_plants",
       "calcium:wild_beetroot_plants",
       "minecraft:glow_lichen",
-      "minecraft:patch_sunflower",
       "minecraft:trees_plains",
-      "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water"
+      "minecraft:patch_firefly_bush_near_water",
+      "calcium:pumpkins_dense"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "calcium:mangrove_plank"
+    "#": "minecraft:mangrove_planks"
   },
   "pattern": [
     "##",
@@ -14,10 +14,3 @@
     "count": 1
   }
 }
-
-
-
-
-
-
-

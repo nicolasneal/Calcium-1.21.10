@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "#minecraft:warped_logs"
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "id": "minecraft:warped_planks",
+    "count": 4
+  }
+}

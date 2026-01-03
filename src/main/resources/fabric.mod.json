@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "calcium",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "Calcium",
 	"description": "Calcium is a better vanilla mod with a diverse range of features!",
 	"authors": [

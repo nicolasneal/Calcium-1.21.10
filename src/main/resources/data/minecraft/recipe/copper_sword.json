@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:copper_ingot",
+    "@": "calcium:wooden_rod"
+  },
+  "pattern": [
+    "#",
+    "#",
+    "@"
+  ],
+  "result": {
+    "id": "minecraft:copper_sword",
+    "count": 1
+  }
+}
