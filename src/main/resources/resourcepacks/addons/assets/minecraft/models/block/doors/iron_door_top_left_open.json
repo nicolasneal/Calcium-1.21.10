@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/doors/door_top_left_open",
+  "textures": {
+    "texture": "minecraft:block/doors/iron",
+    "particle": "minecraft:block/particles/iron_door"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

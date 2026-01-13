@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+  	"parent": "minecraft:block/template_copper_bars_side",
+	"textures": {
+		"texture": "block/exposed_copper_bars",
+		"particle": "block/exposed_copper"
+	}
+}

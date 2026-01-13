@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/trapdoors/template_trapdoor_top",
+  "textures": {
+    "texture": "minecraft:block/trapdoors/mangrove",
+    "particle": "minecraft:block/particles/mangrove_door"
+  }
+}
+
+
+
+
+

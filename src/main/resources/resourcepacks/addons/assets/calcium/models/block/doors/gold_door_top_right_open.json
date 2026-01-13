@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/doors/door_top_right_open",
+  "textures": {
+    "texture": "calcium:block/doors/gold",
+    "particle": "calcium:block/particles/gold_door"
+  }
+}
+
+

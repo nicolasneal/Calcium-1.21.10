@@ -80,7 +80,7 @@ public abstract class MerchantScreenMixin extends HandledScreen<MerchantScreenHa
 
     @ModifyArg(method = "renderMain", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/ingame/MerchantScreen;renderArrow(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/village/TradeOffer;II)V"), index = 2)
     private int calcium$modifyArrowX(int x) {
-        return x - 13;
+        return x + 3;
     }
 
     @ModifyArg(method = "renderMain", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/ingame/MerchantScreen;renderArrow(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/village/TradeOffer;II)V"), index = 3)

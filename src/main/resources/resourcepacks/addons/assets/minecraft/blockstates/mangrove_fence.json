@@ -1,0 +1,47 @@
+﻿{
+  "multipart": [
+    {
+      "apply": {
+        "model": "minecraft:block/fences/mangrove_fence_post"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/fences/mangrove_fence_north"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/fences/mangrove_fence_east"
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/fences/mangrove_fence_south"
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/fences/mangrove_fence_west"
+      },
+      "when": {
+        "west": "true"
+      }
+    }
+  ]
+}
+
+
+
+
+
+

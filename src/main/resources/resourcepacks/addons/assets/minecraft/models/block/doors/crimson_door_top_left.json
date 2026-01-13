@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:block/doors/door_top_left",
+  "textures": {
+    "texture": "minecraft:block/doors/crimson",
+    "particle": "minecraft:block/particles/crimson_door"
+  }
+}
+
+
+
+
+
+
+
+
+

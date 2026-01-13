@@ -3,6 +3,9 @@ package net.nicolas.calcium;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Items;
@@ -15,7 +18,9 @@ import net.minecraft.util.Identifier;
 import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.event.Cracking;
 import net.nicolas.calcium.item.ModItems;
+import net.nicolas.calcium.recipe.ModRecipes;
 import net.nicolas.calcium.screen.CustomBeaconScreenHandler;
+import net.nicolas.calcium.screen.CustomEnchantingScreenHandler;
 
 public class Calcium implements ModInitializer {
 
@@ -25,13 +30,25 @@ public class Calcium implements ModInitializer {
 		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "beacon"),
 			new ScreenHandlerType<>(CustomBeaconScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
 
+	public static final ScreenHandlerType<CustomEnchantingScreenHandler> CUSTOM_ENCHANTING_SCREEN_HANDLER =
+		Registry.register(Registries.SCREEN_HANDLER, Identifier.of("calcium", "enchanting_screen"),
+			new ScreenHandlerType<>(CustomEnchantingScreenHandler::new, FeatureSet.of(FeatureFlags.VANILLA)));
+
 	@Override public void onInitialize() {
 
 		// Class Initialization
 
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModRecipes.initialize();
 		Cracking.registerEvents();
+
+
+		// Resourcepack Initialization
+
+		FabricLoader.getInstance().getModContainer("calcium").ifPresent(container -> {
+			boolean success = ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("calcium", "addons"), container, net.minecraft.text.Text.of("Calcium Default"), ResourcePackActivationType.ALWAYS_ENABLED);
+		});
 
 		// Registering Compostables
 

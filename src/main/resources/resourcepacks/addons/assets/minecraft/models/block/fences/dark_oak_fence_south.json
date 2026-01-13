@@ -1,0 +1,15 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_side_south",
+  "textures": {
+    "texture": "minecraft:block/fences/dark_oak",
+    "particle": "minecraft:block/particles/dark_oak"
+  }
+}
+
+
+
+
+
+
+
+

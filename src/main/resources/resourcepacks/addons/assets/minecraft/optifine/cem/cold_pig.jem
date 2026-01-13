@@ -1,0 +1,120 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -13, -2],
+			"submodels": [
+				{
+					"id": "rotation",
+					"invertAxis": "xy",
+					"translate": [0, 13, 2],
+					"rotate": [-90, 0, 0],
+					"submodels": [
+						{
+							"id": "torso",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-5, -6, -7, 10, 16, 8], "textureOffset": [0, 16]},
+								{"coordinates": [-5, -6, -7, 10, 16, 8], "textureOffset": [0, 40], "sizeAdd": 0.25}
+							],
+							"submodels": [
+								{
+									"id": "tail",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, -6, -4],
+									"boxes": [
+										{"coordinates": [0, -5, 0, 0, 5, 5], "textureOffset": [32, 0]}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"rotation.rx": "0",
+					"tail.ry": "torad(0)+sin(limb_swing/2)*limb_speed/2",
+					"tail.rz": "torad(0)+sin(limb_swing/2)*limb_speed/2",
+					"ear1.rz": "torad(65)+sin(limb_swing/4)*limb_speed/2/4",
+					"ear2.rz": "torad(-65)+sin(limb_swing/4)*limb_speed/2/4"
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -12, 6],
+			"boxes": [
+				{"coordinates": [-4, 8, -14, 8, 8, 8], "textureOffset": [0, 0]},
+				{"coordinates": [-2, 9, -16, 4, 3, 2], "textureOffset": [32, 0]}
+			],
+			"submodels": [
+				{
+					"id": "ear1",
+					"invertAxis": "xy",
+					"translate": [-3.5, 13, -11],
+					"rotate": [0, 0, 65],
+					"boxes": [
+						{"coordinates": [-4, 0, -2, 5, 1, 4], "textureOffset": [44, 0]}
+					]
+				},
+				{
+					"id": "ear2",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [3.5, 13, -11],
+					"rotate": [0, 0, -65],
+					"boxes": [
+						{"coordinates": [-1, 0, -2, 5, 1, 4], "textureOffset": [44, 0]}
+					]
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [3, -6, -7],
+			"boxes": [
+				{"coordinates": [-5.1, 0, 3, 4, 7, 4], "textureOffset": [36, 16]}
+			]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-3, -6, -7],
+			"boxes": [
+				{"coordinates": [1.1, 0, 3, 4, 7, 4], "textureOffset": [36, 16]}
+			]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [3, -6, 5],
+			"boxes": [
+				{"coordinates": [-5.1, 0, -7, 4, 7, 4], "textureOffset": [36, 16]}
+			]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-3, -6, 5],
+			"boxes": [
+				{"coordinates": [1.1, 0, -7, 4, 7, 4], "textureOffset": [36, 16]}
+			]
+		}
+	]
+}

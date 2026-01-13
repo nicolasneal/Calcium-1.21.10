@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/trapdoors/template_trapdoor_top",
+  "textures": {
+    "texture": "minecraft:block/trapdoors/acacia",
+    "particle": "minecraft:block/particles/acacia_door"
+  }
+}
+
+

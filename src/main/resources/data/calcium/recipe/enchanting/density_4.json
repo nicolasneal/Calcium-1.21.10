@@ -1,0 +1,14 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:density",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:density",
+  "result_level": 4
+}

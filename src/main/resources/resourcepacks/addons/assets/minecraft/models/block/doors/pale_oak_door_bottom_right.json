@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/doors/door_bottom_right",
+  "textures": {
+    "texture": "minecraft:block/doors/pale_oak",
+    "particle": "minecraft:block/particles/pale_oak_door"
+  }
+}
+
+
+
+
+
+
+

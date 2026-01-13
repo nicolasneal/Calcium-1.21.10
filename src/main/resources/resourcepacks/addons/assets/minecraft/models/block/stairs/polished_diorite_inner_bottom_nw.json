@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/stairs/stairs_inner",
+        "textures": {
+            "1": "block/stairs/polished_diorite_1",
+	    "2": "block/stairs/polished_diorite_2",
+	    "3": "block/stairs/polished_diorite_3",
+	    "4": "block/polished_diorite",
+	    "particle": "block/polished_diorite"
+        }
+}
+
+

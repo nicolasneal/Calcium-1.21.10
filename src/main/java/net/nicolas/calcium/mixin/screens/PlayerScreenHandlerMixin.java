@@ -1,12 +1,19 @@
 package net.nicolas.calcium.mixin.screens;
 
 import net.minecraft.screen.PlayerScreenHandler;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerType;
+import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 @Mixin(PlayerScreenHandler.class)
-public class PlayerScreenHandlerMixin {
+public abstract class PlayerScreenHandlerMixin extends ScreenHandler {
+
+    protected PlayerScreenHandlerMixin(@Nullable ScreenHandlerType<?> type, int syncId) {
+        super(type, syncId);
+    }
 
     @ModifyArg(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/screen/PlayerScreenHandler;addInputSlots(II)V"), index = 0)
     private int calcium$modifyInputSlotsX(int x) {

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/doors/door_bottom_right_open",
+  "textures": {
+    "texture": "minecraft:block/doors/jungle",
+    "particle": "minecraft:block/particles/jungle_door"
+  }
+}
+
+
+
+

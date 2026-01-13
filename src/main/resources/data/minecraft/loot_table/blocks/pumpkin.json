@@ -44,7 +44,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:pumpkin_slice"
+              "name": "calcium:pumpkin_slice"
             }
           ]
         }

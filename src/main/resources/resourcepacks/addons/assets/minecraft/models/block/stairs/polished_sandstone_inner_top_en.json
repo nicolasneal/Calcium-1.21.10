@@ -1,0 +1,15 @@
+{
+    "parent": "minecraft:block/stairs/stairs_inner",
+        "textures": {
+            "1": "block/stairs/polished_sandstone_4",
+	    "2": "block/stairs/polished_sandstone_3",
+	    "3": "block/stairs/polished_sandstone_2",
+	    "4": "block/polished_sandstone",
+	    "particle": "block/polished_sandstone"
+        }
+}
+
+
+
+
+

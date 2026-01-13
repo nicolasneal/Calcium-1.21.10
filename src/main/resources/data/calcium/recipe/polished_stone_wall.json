@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:polished_stone"
+    "#": "calcium:polished_stone"
   },
   "pattern": [
     "###",

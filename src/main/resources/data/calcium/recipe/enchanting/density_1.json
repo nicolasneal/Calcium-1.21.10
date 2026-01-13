@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:density",
+  "result_level": 1
+}

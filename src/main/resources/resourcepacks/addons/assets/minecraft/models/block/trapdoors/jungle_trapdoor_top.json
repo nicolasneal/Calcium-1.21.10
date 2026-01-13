@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/trapdoors/template_trapdoor_top",
+  "textures": {
+    "texture": "minecraft:block/trapdoors/jungle",
+    "particle": "minecraft:block/particles/jungle_door"
+  }
+}
+
+
+
+

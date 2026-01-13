@@ -1,0 +1,19 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_post",
+  "textures": {
+    "texture": "minecraft:block/fences/crimson",
+    "particle": "minecraft:block/particles/crimson"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

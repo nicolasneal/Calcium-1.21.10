@@ -1,0 +1,14 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:breach",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:breach",
+  "result_level": 4
+}

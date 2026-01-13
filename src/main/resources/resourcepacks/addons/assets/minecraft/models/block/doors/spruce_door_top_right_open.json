@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/doors/door_top_right_open",
+  "textures": {
+    "texture": "minecraft:block/doors/spruce",
+    "particle": "minecraft:block/particles/spruce_door"
+  }
+}

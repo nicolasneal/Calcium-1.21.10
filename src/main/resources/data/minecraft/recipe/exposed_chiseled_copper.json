@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:exposed_copper_block"
+    "#": "minecraft:exposed_cut_copper"
   },
   "pattern": [
     "#"

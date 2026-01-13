@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:bane_of_arthropods",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:fermented_spider_eye",
+    "minecraft:fermented_spider_eye",
+    "minecraft:fermented_spider_eye",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:bane_of_arthropods",
+  "result_level": 3
+}

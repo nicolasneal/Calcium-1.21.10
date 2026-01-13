@@ -1,0 +1,6 @@
+{
+	"match": {
+		"items": "minecraft:redstone_torch"
+	},
+	"luminance": 0
+}

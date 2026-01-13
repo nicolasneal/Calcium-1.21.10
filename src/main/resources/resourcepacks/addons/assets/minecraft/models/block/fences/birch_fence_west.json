@@ -1,0 +1,7 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_side_west",
+  "textures": {
+    "texture": "minecraft:block/fences/birch",
+    "particle": "minecraft:block/particles/birch"
+  }
+}

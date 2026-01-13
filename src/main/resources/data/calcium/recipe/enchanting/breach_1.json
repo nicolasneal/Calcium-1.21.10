@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot"
+  ],
+  "result_enchantment": "minecraft:breach",
+  "result_level": 1
+}

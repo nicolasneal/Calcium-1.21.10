@@ -1,0 +1,176 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -8, 0],
+			"boxes": [
+				{
+					"coordinates": [-8, 0, -8, 16, 16, 16],
+					"uvNorth": [32, 32, 64, 64],
+					"uvEast": [0, 32, 32, 64],
+					"uvSouth": [96, 32, 128, 64],
+					"uvWest": [64, 32, 96, 64],
+					"uvUp": [64, 32, 32, 0],
+					"uvDown": [96, 0, 64, 32]
+				}
+			]
+		},
+		{
+			"part": "tentacle1",
+			"id": "tentacle1",
+			"invertAxis": "xy",
+			"translate": [-3.75, -1, 5],
+			"boxes": [
+				{
+					"coordinates": [2.75, -4, -6, 2, 5, 2],
+					"uvNorth": [4, 4, 8, 14],
+					"uvEast": [0, 4, 4, 14],
+					"uvSouth": [12, 4, 16, 14],
+					"uvWest": [8, 4, 12, 14],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle2",
+			"id": "tentacle2",
+			"invertAxis": "xy",
+			"translate": [1.25, -1, 5],
+			"boxes": [
+				{
+					"coordinates": [-2.25, -6, -6, 2, 7, 2],
+					"uvNorth": [4, 4, 8, 18],
+					"uvEast": [0, 4, 4, 18],
+					"uvSouth": [12, 4, 16, 18],
+					"uvWest": [8, 4, 12, 18],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle3",
+			"id": "tentacle3",
+			"invertAxis": "xy",
+			"translate": [6.25, -1, 5],
+			"boxes": [
+				{
+					"coordinates": [-7.25, -3, -6, 2, 4, 2],
+					"uvNorth": [4, 4, 8, 12],
+					"uvEast": [0, 4, 4, 12],
+					"uvSouth": [12, 4, 16, 12],
+					"uvWest": [8, 4, 12, 12],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle4",
+			"id": "tentacle4",
+			"invertAxis": "xy",
+			"translate": [-6.25, -1, 0],
+			"boxes": [
+				{
+					"coordinates": [5.25, -4, -1, 2, 5, 2],
+					"uvNorth": [4, 4, 8, 14],
+					"uvEast": [0, 4, 4, 14],
+					"uvSouth": [12, 4, 16, 14],
+					"uvWest": [8, 4, 12, 14],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle5",
+			"id": "tentacle5",
+			"invertAxis": "xy",
+			"translate": [-1.25, -1, 0],
+			"boxes": [
+				{
+					"coordinates": [0.25, -4, -1, 2, 5, 2],
+					"uvNorth": [4, 4, 8, 14],
+					"uvEast": [0, 4, 4, 14],
+					"uvSouth": [12, 4, 16, 14],
+					"uvWest": [8, 4, 12, 14],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle6",
+			"id": "tentacle6",
+			"invertAxis": "xy",
+			"translate": [3.75, -1, 0],
+			"boxes": [
+				{
+					"coordinates": [-4.75, -6, -1, 2, 7, 2],
+					"uvNorth": [4, 4, 8, 18],
+					"uvEast": [0, 4, 4, 18],
+					"uvSouth": [12, 4, 16, 18],
+					"uvWest": [8, 4, 12, 18],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle7",
+			"id": "tentacle7",
+			"invertAxis": "xy",
+			"translate": [-3.75, -1, -5],
+			"boxes": [
+				{
+					"coordinates": [2.75, -7, 4, 2, 8, 2],
+					"uvNorth": [4, 4, 8, 20],
+					"uvEast": [0, 4, 4, 20],
+					"uvSouth": [12, 4, 16, 20],
+					"uvWest": [8, 4, 12, 20],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle8",
+			"id": "tentacle8",
+			"invertAxis": "xy",
+			"translate": [1.25, -1, -5],
+			"boxes": [
+				{
+					"coordinates": [-2.25, -7, 4, 2, 8, 2],
+					"uvNorth": [4, 4, 8, 20],
+					"uvEast": [0, 4, 4, 20],
+					"uvSouth": [12, 4, 16, 20],
+					"uvWest": [8, 4, 12, 20],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		},
+		{
+			"part": "tentacle9",
+			"id": "tentacle9",
+			"invertAxis": "xy",
+			"translate": [6.25, -1, -5],
+			"boxes": [
+				{
+					"coordinates": [-7.25, -4, 4, 2, 5, 2],
+					"uvNorth": [4, 4, 8, 14],
+					"uvEast": [0, 4, 4, 14],
+					"uvSouth": [12, 4, 16, 14],
+					"uvWest": [8, 4, 12, 14],
+					"uvUp": [8, 4, 4, 0],
+					"uvDown": [12, 0, 8, 4]
+				}
+			]
+		}
+	]
+}

@@ -9,12 +9,14 @@ import net.minecraft.client.render.BlockRenderLayer;
 import net.minecraft.world.biome.GrassColors;
 import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.screen.CustomBeaconScreen;
+import net.nicolas.calcium.screen.CustomEnchantingScreen;
 
 public class CalciumClient implements ClientModInitializer {
 
     @Override public void onInitializeClient() {
 
         HandledScreens.register(Calcium.CUSTOM_BEACON_SCREEN_HANDLER, CustomBeaconScreen::new);
+        HandledScreens.register(Calcium.CUSTOM_ENCHANTING_SCREEN_HANDLER, CustomEnchantingScreen::new);
 
         BlockRenderLayerMap.putBlock(ModBlocks.IRON_GRATE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.GOLD_GRATE, BlockRenderLayer.CUTOUT);

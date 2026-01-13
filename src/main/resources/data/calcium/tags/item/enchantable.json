@@ -1,0 +1,28 @@
+{
+  "values": [
+    "minecraft:book",
+    "minecraft:enchanted_book",
+    "#minecraft:axes",
+    "#minecraft:pickaxes",
+    "#minecraft:shovels",
+    "#minecraft:hoes",
+    "#minecraft:swords",
+    "#minecraft:spears",
+    "#minecraft:enchantable/head_armor",
+    "#minecraft:enchantable/chest_armor",
+    "#minecraft:enchantable/leg_armor",
+    "#minecraft:enchantable/foot_armor",
+    "minecraft:elytra",
+    "minecraft:shield",
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "minecraft:trident",
+    "minecraft:shears",
+    "minecraft:flint_and_steel",
+    "minecraft:brush",
+    "minecraft:fishing_rod",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:warped_fungus_on_a_stick",
+    "minecraft:mace"
+  ]
+}

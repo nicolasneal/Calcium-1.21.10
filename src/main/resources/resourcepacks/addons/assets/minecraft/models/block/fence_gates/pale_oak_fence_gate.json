@@ -1,0 +1,20 @@
+﻿{
+  "parent": "minecraft:block/template_custom_fence_gate",
+  "textures": {
+    "texture": "minecraft:block/fence_gates/pale_oak",
+    "particle": "minecraft:block/particles/pale_oak"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

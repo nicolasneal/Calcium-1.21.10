@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/doors/door_top_right",
+  "textures": {
+    "texture": "minecraft:block/doors/bamboo",
+    "particle": "minecraft:block/particles/bamboo_door"
+  }
+}
+
+
+
+
+
+
+
+

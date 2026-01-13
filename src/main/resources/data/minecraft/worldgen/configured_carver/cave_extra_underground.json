@@ -48,7 +48,7 @@
     "y": {
       "type": "minecraft:uniform",
       "max_inclusive": {
-        "absolute": 64
+        "absolute": 60
       },
       "min_inclusive": {
         "above_bottom": 8

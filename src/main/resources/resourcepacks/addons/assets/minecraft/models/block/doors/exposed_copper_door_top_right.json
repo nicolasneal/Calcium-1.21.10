@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:block/doors/door_top_right",
+  "textures": {
+    "texture": "minecraft:block/doors/exposed_copper",
+    "particle": "minecraft:block/particles/exposed_copper_door"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

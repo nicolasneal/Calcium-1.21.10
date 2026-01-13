@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/template_copper_bars",
+	"textures": {
+		"texture": "block/copper_bars"
+	}
+}

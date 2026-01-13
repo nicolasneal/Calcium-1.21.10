@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:gold_block"
+    "#": "minecraft:cut_gold"
   },
   "pattern": [
     "#"

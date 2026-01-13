@@ -1,0 +1,20 @@
+﻿{
+  "parent": "minecraft:block/template_custom_fence_gate_open",
+  "textures": {
+    "texture": "minecraft:block/fence_gates/crimson",
+    "particle": "minecraft:block/particles/crimson"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

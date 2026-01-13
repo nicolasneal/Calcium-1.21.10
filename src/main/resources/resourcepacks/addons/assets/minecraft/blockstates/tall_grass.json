@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "half=lower": [
+      { "model": "block/tall_grass_bottom1", "weight": 1 },
+      { "model": "block/tall_grass_bottom2", "weight": 1 },
+      { "model": "block/tall_grass_bottom3", "weight": 1 },
+      { "model": "block/tall_grass_bottom4", "weight": 1 }
+    ],
+    "half=upper": [
+      { "model": "block/tall_grass_top1", "weight": 1 },
+      { "model": "block/tall_grass_top2", "weight": 1 },
+      { "model": "block/tall_grass_top3", "weight": 1 },
+      { "model": "block/tall_grass_top4", "weight": 1 }
+    ]
+  }
+}

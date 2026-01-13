@@ -3,7 +3,9 @@
   "package": "net.nicolas.calcium.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BeaconBlockEntityMixin",
     "CampfireBlockMixin",
+    "FarmlandBlockMixin",
     "ItemMixin",
     "WitherSkeletonEntityMixin",
     "hitboxes.AnvilBlockMixin",
@@ -16,7 +18,6 @@
     "hitboxes.WallHangingSignBlockMixin",
     "screens.AbstractFurnaceScreenHandlerMixin",
     "screens.AnvilScreenHandlerMixin",
-    "screens.BeaconBlockEntityMixin",
     "screens.BrewingStandScreenHandlerMixin",
     "screens.CartographyTableScreenHandlerMixin",
     "screens.CrafterScreenHandlerMixin",
@@ -37,6 +38,7 @@
   },
   "refmap": "calcium.refmap.json",
   "client": [
+    "CampfireBlockEntityRendererMixin",
     "MinecraftClientMixin",
     "SignBlockEntityRendererMixin",
     "screens.AbstractFurnaceScreenMixin",

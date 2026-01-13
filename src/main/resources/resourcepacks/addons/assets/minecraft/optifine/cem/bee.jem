@@ -1,0 +1,121 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [1.5, -9, 3],
+			"mirrorTexture": "u",
+			"boxes": [
+				{"coordinates": [-6.5, 9, -2, 5, 0, 4], "textureOffset": [0, 12]}
+			]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-1.5, -9, 3],
+			"boxes": [
+				{"coordinates": [1.5, 9, -2, 5, 0, 4], "textureOffset": [0, 12]}
+			]
+		},
+		{
+			"part": "front_legs",
+			"id": "front_legs",
+			"invertAxis": "xy",
+			"translate": [1.5, -2, 2]
+		},
+		{
+			"part": "middle_legs",
+			"id": "middle_legs",
+			"invertAxis": "xy",
+			"translate": [1.5, -2, 0]
+		},
+		{
+			"part": "back_legs",
+			"id": "back_legs",
+			"invertAxis": "xy",
+			"translate": [1.5, -2, -2]
+		},
+		{
+			"part": "left_antenna",
+			"id": "left_antenna",
+			"invertAxis": "xy",
+			"translate": [0, -7, 5]
+		},
+		{
+			"part": "stinger",
+			"id": "stinger",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"boxes": [
+				{"coordinates": [0, 7, 3, 0, 1, 1], "textureOffset": [0, 12]}
+			]
+		},
+		{
+			"part": "right_antenna",
+			"id": "right_antenna",
+			"invertAxis": "xy",
+			"translate": [0, -7, 5]
+		},
+		{
+			"part": "torso",
+			"id": "torso",
+			"invertAxis": "xy",
+			"translate": [0, -5, 0],
+			"boxes": [
+				{"coordinates": [-2.5, 4, -3, 5, 5, 6], "textureOffset": [0, 0]},
+				{"coordinates": [-1.5, 8, -5, 0, 2, 2], "textureOffset": [0, 17]},
+				{"coordinates": [1.5, 8, -5, 0, 2, 2], "textureOffset": [0, 17]}
+			],
+			"submodels": [
+				{
+					"id": "rotation1",
+					"invertAxis": "xy",
+					"translate": [0, 4, -1],
+					"rotate": [-20, 0, 0],
+					"boxes": [
+						{"coordinates": [0.5, -1, 0, 1, 1, 0], "textureOffset": [22, 1]}
+					],
+					"submodels": [
+						{
+							"id": "torso_sub_1",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"mirrorTexture": "u",
+							"boxes": [
+								{"coordinates": [-1.5, -1, 0, 1, 1, 0], "textureOffset": [22, 1]}
+							]
+						}
+					]
+				},
+				{
+					"id": "rotation2",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"rotate": [-20, 0, 0],
+					"boxes": [
+						{"coordinates": [-2, -1, 0, 4, 1, 0], "textureOffset": [22, 0]}
+					]
+				},
+				{
+					"id": "rotation3",
+					"invertAxis": "xy",
+					"translate": [0, 4, 1.5],
+					"rotate": [-20, 0, 0],
+					"boxes": [
+						{"coordinates": [-2, -1, 0, 4, 1, 0], "textureOffset": [22, 0]}
+					]
+				}
+			]
+		}
+	]
+}

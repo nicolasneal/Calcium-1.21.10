@@ -1,0 +1,11 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_post",
+  "textures": {
+    "texture": "minecraft:block/fences/birch",
+    "particle": "minecraft:block/particles/birch"
+  }
+}
+
+
+
+

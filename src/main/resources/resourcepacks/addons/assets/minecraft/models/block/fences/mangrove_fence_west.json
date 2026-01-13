@@ -1,0 +1,16 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_side_west",
+  "textures": {
+    "texture": "minecraft:block/fences/mangrove",
+    "particle": "minecraft:block/particles/mangrove"
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [32, 32],
+	"models": [
+		{
+			"part": "board",
+			"id": "board",
+			"invertAxis": "xy",
+			"translate": [0, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [-11.75, 13.75, -1.25, 23.5, 11.5, 2.5],
+					"uvNorth": [0, 0, 16, 8],
+					"uvEast": [16, 0, 18, 8],
+					"uvSouth": [0, 0, 16, 8],
+					"uvWest": [18, 0, 16, 8],
+					"uvUp": [16, 10, 0, 8],
+					"uvDown": [16, 8, 0, 10],
+					"sizeAdd": 0.25
+				}
+			]
+		},
+		{
+			"part": "stick",
+			"id": "stick",
+			"invertAxis": "xy",
+			"translate": [0, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [-1.25, 0.25, -1.25, 2.5, 13, 2.5],
+					"uvNorth": [2, 12, 4, 21],
+					"uvEast": [0, 12, 2, 21],
+					"uvSouth": [6, 12, 8, 21],
+					"uvWest": [4, 12, 6, 21],
+					"uvUp": [4, 12, 2, 10],
+					"uvDown": [6, 10, 4, 12],
+					"sizeAdd": 0.25
+				}
+			]
+		}
+	]
+}

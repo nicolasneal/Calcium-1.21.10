@@ -1,0 +1,19 @@
+﻿{
+  "parent": "minecraft:block/template_custom_fence_gate_wall_open",
+  "textures": {
+    "texture": "minecraft:block/fence_gates/pale_oak",
+    "particle": "minecraft:block/particles/pale_oak"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

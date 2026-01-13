@@ -1,0 +1,20 @@
+﻿{
+  "parent": "minecraft:block/custom_fence_side_west",
+  "textures": {
+    "texture": "minecraft:block/fences/warped",
+    "particle": "minecraft:block/particles/warped"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

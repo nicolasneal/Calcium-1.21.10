@@ -1,8 +1,7 @@
 {
 
-  "tooltip.calcium.enchanting_table_tablet": "Add Enchanting Tablet",
-  "tooltip.calcium.enchanting_table_fuel": "Add Lapis Lazuli",
-  "item.calcium.enchanting_tablet": "Enchanting Tablet",
+  "tooltip.calcium.enchanting_table_item": "Add Enchantable Item",
+  "item.calcium.tablet": "Tablet",
 
   "block.calcium.polished_stone": "Polished Stone",
   "block.calcium.polished_stone_stairs": "Polished Stone Stairs",

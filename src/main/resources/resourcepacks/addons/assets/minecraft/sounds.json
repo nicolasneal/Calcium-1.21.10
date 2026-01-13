@@ -1,0 +1,22 @@
+{
+    "block.dispenser.dispense":{
+        "sounds":[
+            {
+                "name":"block/crafter/craft",
+                "volume":0.25
+            }
+        ],
+        "replace":true,
+        "subtitle":"subtitles.block.dispenser.dispense"
+    },
+    "block.dispenser.fail":{
+        "sounds":[
+            {
+                "name":"block/crafter/fail",
+                "volume":0.25
+            }
+        ],
+        "replace":true,
+        "subtitle":"subtitles.block.dispenser.fail"
+    }
+}

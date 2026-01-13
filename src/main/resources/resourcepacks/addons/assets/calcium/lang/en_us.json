@@ -1,0 +1,20 @@
+{
+
+  "item.calcium.cheval": "Cheval \uEFF3\uEFF4",
+  "item.calcium.cooked_cheval": "Cooked Cheval \uEFF3\uEFF3\uEFF3\uEFF4",
+  "item.calcium.bear": "Bear \uEFF3\uEFF4",
+  "item.calcium.cooked_bear": "Cooked Bear \uEFF3\uEFF3\uEFF3\uEFF3",
+  "item.calcium.camel": "Camel \uEFF3\uEFF4",
+  "item.calcium.cooked_camel": "Cooked Camel \uEFF3\uEFF3\uEFF3\uEFF4",
+  "item.calcium.chevon": "Chevon \uEFF3",
+  "item.calcium.cooked_chevon": "Cooked Chevon \uEFF3\uEFF3\uEFF3",
+  "item.calcium.frog": "Frog \uEFF3",
+  "item.calcium.cooked_frog": "Cooked Frog \uEFF3\uEFF3",
+  "item.calcium.tentacles": "Tentacles \uEFF3",
+  "item.calcium.cooked_tentacles": "Cooked Tentacles \uEFF3\uEFF3\uEFF4",
+  "item.calcium.chocolate": "Chocolate \uEFF3\uEFF3",
+
+  "block.calcium.basalt_stairs": "Basalt Stairs",
+  "block.calcium.basalt_slab": "Basalt Slab"
+
+}
