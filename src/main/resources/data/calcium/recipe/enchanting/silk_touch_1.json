@@ -1,0 +1,20 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust"
+  ],
+  "result_enchantment": "minecraft:silk_touch",
+  "result_level": 1
+}
+
+
+
+
+
+
+
+
+

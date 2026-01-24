@@ -1,0 +1,20 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:swift_sneak",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:echo_shard",
+    "minecraft:echo_shard",
+    "minecraft:echo_shard",
+    "minecraft:echo_shard",
+    "minecraft:echo_shard",
+    "minecraft:ender_pearl",
+    "minecraft:ender_pearl",
+    "minecraft:ender_pearl"
+  ],
+  "result_enchantment": "minecraft:swift_sneak",
+  "result_level": 2
+}
+
+
+

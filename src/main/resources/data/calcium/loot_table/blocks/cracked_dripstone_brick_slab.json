@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "calcium:cracked_dripstone_brick_slab"
+          "name": "calcium:dripstone_brick_slab"
         }
       ]
     }

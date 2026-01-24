@@ -5,7 +5,8 @@
   "ingredients": [
     "minecraft:fermented_spider_eye",
     "minecraft:fermented_spider_eye",
-    "minecraft:fermented_spider_eye"
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard"
   ],
   "result_enchantment": "minecraft:bane_of_arthropods",
   "result_level": 2

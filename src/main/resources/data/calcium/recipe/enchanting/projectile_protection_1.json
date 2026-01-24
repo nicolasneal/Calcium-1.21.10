@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot"
+  ],
+  "result_enchantment": "minecraft:projectile_protection",
+  "result_level": 1
+}

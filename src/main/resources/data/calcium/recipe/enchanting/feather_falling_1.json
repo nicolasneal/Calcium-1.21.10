@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:feather",
+    "minecraft:feather",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane"
+  ],
+  "result_enchantment": "minecraft:feather_falling",
+  "result_level": 1
+}

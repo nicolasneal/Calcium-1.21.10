@@ -1,8 +1,8 @@
 {
   "type": "calcium:enchanting",
   "ingredients": [
-    "minecraft:diamond",
-    "minecraft:diamond"
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot"
   ],
   "result_enchantment": "minecraft:density",
   "result_level": 1

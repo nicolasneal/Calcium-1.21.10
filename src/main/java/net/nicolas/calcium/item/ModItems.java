@@ -5,11 +5,14 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ConsumableComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.nicolas.calcium.fluid.ModFluids;
+import net.nicolas.calcium.item.custom.EctoplasmBucketItem;
 
 import java.util.function.Function;
 
@@ -24,6 +27,10 @@ public class ModItems {
     public static final Item HIDE = register("hide", Item::new, new Item.Settings().maxCount(64));
     public static final Item FUR = register("fur", Item::new, new Item.Settings().maxCount(64));
     public static final Item PIXIE_DUST = register("pixie_dust", Item::new, new Item.Settings().maxCount(64));
+    public static final Item FOUR_LEAF_CLOVER = register("four_leaf_clover", Item::new, new Item.Settings().maxCount(64));
+    public static final Item DOLPHIN_FIN = register("dolphin_fin", Item::new, new Item.Settings().maxCount(64));
+    public static final Item GHAST_TENTACLE = register("ghast_tentacle", Item::new, new Item.Settings().maxCount(64));
+    public static final Item WARDEN_HEART = register("warden_heart", Item::new, new Item.Settings().maxCount(64));
 
     // INGREDIENTS (RESOURCES)
 
@@ -52,6 +59,14 @@ public class ModItems {
     public static final Item CHOCOLATE = register("chocolate", Item::new, new Item.Settings().maxCount(64).food(ModFoods.CHOCOLATE));
     public static final Item WATER_BOWL = register("water_bowl", Item::new, new Item.Settings().maxCount(64).food(ModFoods.WATER_BOWL).component(DataComponentTypes.CONSUMABLE, ConsumableComponents.DRINK).useRemainder(BOWL).recipeRemainder(BOWL));
 
+    // TOOLS & UTILITY
+
+    public static final Item COPPER_COIN = register("copper_coin", Item::new, new Item.Settings().maxCount(64));
+    public static final Item IRON_COIN = register("iron_coin", Item::new, new Item.Settings().maxCount(64));
+    public static final Item GOLD_COIN = register("gold_coin", Item::new, new Item.Settings().maxCount(64));
+    public static final Item NETHERITE_COIN = register("netherite_coin", Item::new, new Item.Settings().maxCount(64));
+    public static final Item ECTOPLASM_BUCKET = register("ectoplasm_bucket", settings -> new EctoplasmBucketItem(ModFluids.ECTOPLASM_STILL, settings), new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(64));
+
     private static <T extends Item> T register(String name, Function<Item.Settings, T> constructor, Item.Settings settings) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name));
         T item = constructor.apply(settings.registryKey(key));
@@ -66,6 +81,10 @@ public class ModItems {
             itemgroup.add(HIDE);
             itemgroup.add(FUR);
             itemgroup.add(PIXIE_DUST);
+            itemgroup.add(FOUR_LEAF_CLOVER);
+            itemgroup.add(DOLPHIN_FIN);
+            itemgroup.add(GHAST_TENTACLE);
+            itemgroup.add(WARDEN_HEART);
             itemgroup.add(FLOUR);
             itemgroup.add(DOUGH);
             itemgroup.add(COOKIE_DOUGH);
@@ -88,6 +107,14 @@ public class ModItems {
             itemgroup.add(COOKED_TENTACLES);
             itemgroup.add(CHOCOLATE);
             itemgroup.add(WATER_BOWL);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(itemgroup -> {
+            itemgroup.add(COPPER_COIN);
+            itemgroup.add(IRON_COIN);
+            itemgroup.add(GOLD_COIN);
+            itemgroup.add(NETHERITE_COIN);
+            itemgroup.add(ECTOPLASM_BUCKET);
         });
 
     }

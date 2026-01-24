@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:looting",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli"
+  ],
+  "result_enchantment": "minecraft:looting",
+  "result_level": 2
+}

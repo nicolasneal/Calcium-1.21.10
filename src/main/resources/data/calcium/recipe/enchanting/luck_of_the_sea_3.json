@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:luck_of_the_sea",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:rabbit_foot",
+    "minecraft:rabbit_foot",
+    "minecraft:rabbit_foot"
+  ],
+  "result_enchantment": "minecraft:luck_of_the_sea",
+  "result_level": 3
+}

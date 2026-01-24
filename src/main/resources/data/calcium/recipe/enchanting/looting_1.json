@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot"
+  ],
+  "result_enchantment": "minecraft:looting",
+  "result_level": 1
+}

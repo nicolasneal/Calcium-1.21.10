@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:snowball",
+    "minecraft:snowball",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot"
+  ],
+  "result_enchantment": "minecraft:frost_walker",
+  "result_level": 1
+}

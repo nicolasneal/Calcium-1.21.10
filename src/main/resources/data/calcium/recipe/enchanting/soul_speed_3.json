@@ -1,0 +1,19 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:soul_speed",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart",
+    "calcium:ectoplasm_bucket",
+    "calcium:ectoplasm_bucket",
+    "calcium:ectoplasm_bucket",
+    "calcium:ectoplasm_bucket",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:soul_speed",
+  "result_level": 3
+}
+

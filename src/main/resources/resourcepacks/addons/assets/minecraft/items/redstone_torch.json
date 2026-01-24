@@ -1,0 +1,23 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "ground",
+          "fixed"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/torches/redstone_torch_hand"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/torches/redstone_torch_hand"
+    },
+    "property": "minecraft:display_context"
+  }
+}

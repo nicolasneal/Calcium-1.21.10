@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:impaling",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:prismarine_crystals",
+    "minecraft:prismarine_crystals",
+    "minecraft:prismarine_crystals",
+    "minecraft:prismarine_crystals",
+    "minecraft:prismarine_crystals",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:impaling",
+  "result_level": 4
+}

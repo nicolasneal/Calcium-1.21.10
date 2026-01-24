@@ -3,11 +3,14 @@
   "required_enchantment": "minecraft:bane_of_arthropods",
   "required_level": 3,
   "ingredients": [
-    "minecraft:fermented_spider_eye",
-    "minecraft:fermented_spider_eye",
-    "minecraft:fermented_spider_eye",
-    "minecraft:diamond",
-    "minecraft:diamond"
+    "minecraft:honeycomb",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
   ],
   "result_enchantment": "minecraft:bane_of_arthropods",
   "result_level": 4

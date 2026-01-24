@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:feather",
+    "minecraft:feather"
+  ],
+  "result_enchantment": "minecraft:blast_protection",
+  "result_level": 1
+}

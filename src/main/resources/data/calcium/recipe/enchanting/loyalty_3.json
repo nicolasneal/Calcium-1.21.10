@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:loyalty",
+  "required_level": 2,
+  "ingredients": [
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "minecraft:heart_of_the_sea",
+    "minecraft:heart_of_the_sea",
+    "minecraft:heart_of_the_sea"
+  ],
+  "result_enchantment": "minecraft:loyalty",
+  "result_level": 3
+}

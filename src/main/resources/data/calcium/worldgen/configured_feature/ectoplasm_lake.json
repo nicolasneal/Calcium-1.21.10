@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:lake",
+  "config": {
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "calcium:ectoplasm",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    },
+    "barrier": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "calcium:soulslate"
+          }
+        }
+      ]
+    }
+  }
+}

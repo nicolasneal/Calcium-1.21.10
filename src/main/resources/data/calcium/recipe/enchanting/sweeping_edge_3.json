@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:sweeping_edge",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:sweeping_edge",
+  "result_level": 3
+}

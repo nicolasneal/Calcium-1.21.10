@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:ink_sac",
+    "minecraft:ink_sac",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin"
+  ],
+  "result_enchantment": "minecraft:depth_strider",
+  "result_level": 1
+}

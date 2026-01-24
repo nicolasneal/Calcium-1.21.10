@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_mushroom_block"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/red_mushroom_block"
+}

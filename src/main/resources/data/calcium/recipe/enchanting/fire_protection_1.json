@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:lava_bucket",
+    "minecraft:lava_bucket"
+  ],
+  "result_enchantment": "minecraft:fire_protection",
+  "result_level": 1
+}

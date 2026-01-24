@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:power",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "minecraft:wind_charge",
+    "minecraft:wind_charge"
+  ],
+  "result_enchantment": "minecraft:power",
+  "result_level": 2
+}

@@ -3,10 +3,12 @@
   "required_enchantment": "minecraft:breach",
   "required_level": 2,
   "ingredients": [
-    "minecraft:gold_ingot",
-    "minecraft:gold_ingot",
-    "minecraft:gold_ingot",
-    "minecraft:netherite_scrap"
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:resin_clump",
+    "minecraft:ender_pearl",
+    "minecraft:ender_pearl"
   ],
   "result_enchantment": "minecraft:breach",
   "result_level": 3

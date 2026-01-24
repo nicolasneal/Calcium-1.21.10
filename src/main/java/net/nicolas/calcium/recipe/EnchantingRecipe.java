@@ -82,6 +82,11 @@ public class EnchantingRecipe implements Recipe<EnchantingRecipeInput> {
 
         ItemEnchantmentsComponent existingEnchants = tablet.get(componentType);
 
+        int currentLevel = existingEnchants != null ? existingEnchants.getLevel(this.resultEnchantment) : 0;
+        if (currentLevel != this.resultLevel - 1) {
+            return false;
+        }
+
         if (existingEnchants != null) {
             for (RegistryEntry<Enchantment> entry : existingEnchants.getEnchantments()) {
                 if (entry.equals(this.resultEnchantment)) continue;
@@ -96,23 +101,39 @@ public class EnchantingRecipe implements Recipe<EnchantingRecipeInput> {
     }
 
     @Override public ItemStack craft(EnchantingRecipeInput input, RegistryWrapper.WrapperLookup lookup) {
-        ItemStack result = input.tablet().copy();
-        if (result.isOf(net.minecraft.item.Items.BOOK)) {
-            ItemStack newStack = new ItemStack(net.minecraft.item.Items.ENCHANTED_BOOK, result.getCount());
-            newStack.applyComponentsFrom(result.getComponents());
-            result = newStack;
+
+        ItemStack inputStack = input.tablet();
+        ItemStack result;
+
+        if (inputStack.isOf(net.minecraft.item.Items.BOOK)) {
+            result = new ItemStack(net.minecraft.item.Items.ENCHANTED_BOOK, inputStack.getCount());
+            if (inputStack.contains(DataComponentTypes.CUSTOM_NAME)) {
+                result.set(DataComponentTypes.CUSTOM_NAME, inputStack.get(DataComponentTypes.CUSTOM_NAME));
+            }
+            if (inputStack.contains(DataComponentTypes.LORE)) {
+                result.set(DataComponentTypes.LORE, inputStack.get(DataComponentTypes.LORE));
+            }
         }
+        else {
+            result = inputStack.copy();
+        }
+
         var componentType = result.isOf(net.minecraft.item.Items.ENCHANTED_BOOK)
             ? DataComponentTypes.STORED_ENCHANTMENTS
             : DataComponentTypes.ENCHANTMENTS;
+
         ItemEnchantmentsComponent existingEnchantments = result.get(componentType);
+
         if (existingEnchantments == null) {
             existingEnchantments = ItemEnchantmentsComponent.DEFAULT;
         }
+
         ItemEnchantmentsComponent.Builder builder = new ItemEnchantmentsComponent.Builder(existingEnchantments);
         builder.set(resultEnchantment, resultLevel);
         result.set(componentType, builder.build());
+
         return result;
+        
     }
 
     @Override public RecipeSerializer<? extends Recipe<EnchantingRecipeInput>> getSerializer() {
@@ -134,11 +155,11 @@ public class EnchantingRecipe implements Recipe<EnchantingRecipeInput> {
     public static class Serializer implements RecipeSerializer<EnchantingRecipe> {
 
         public static final MapCodec<EnchantingRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
-                Ingredient.CODEC.listOf().fieldOf("ingredients").forGetter(r -> r.ingredients),
-                Enchantment.ENTRY_CODEC.fieldOf("result_enchantment").forGetter(r -> r.resultEnchantment),
-                Codec.INT.fieldOf("result_level").forGetter(r -> r.resultLevel),
-                Enchantment.ENTRY_CODEC.optionalFieldOf("required_enchantment").forGetter(r -> r.requiredEnchantment),
-                Codec.INT.optionalFieldOf("required_level", 0).forGetter(r -> r.requiredLevel)
+            Ingredient.CODEC.listOf().fieldOf("ingredients").forGetter(r -> r.ingredients),
+            Enchantment.ENTRY_CODEC.fieldOf("result_enchantment").forGetter(r -> r.resultEnchantment),
+            Codec.INT.fieldOf("result_level").forGetter(r -> r.resultLevel),
+            Enchantment.ENTRY_CODEC.optionalFieldOf("required_enchantment").forGetter(r -> r.requiredEnchantment),
+            Codec.INT.optionalFieldOf("required_level", 0).forGetter(r -> r.requiredLevel)
         ).apply(instance, (ingredients, resEnch, resLvl, reqEnch, reqLvl) -> {
             DefaultedList<Ingredient> list = DefaultedList.of();
             list.addAll(ingredients);

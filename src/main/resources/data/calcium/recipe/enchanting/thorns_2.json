@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:thorns",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower"
+  ],
+  "result_enchantment": "minecraft:thorns",
+  "result_level": 2
+}

@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:iron_nugget",
+    "minecraft:iron_nugget",
+    "minecraft:sweet_berries",
+    "minecraft:sweet_berries"
+  ],
+  "result_enchantment": "minecraft:thorns",
+  "result_level": 1
+}

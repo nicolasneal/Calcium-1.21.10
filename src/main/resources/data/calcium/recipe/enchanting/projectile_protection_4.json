@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:projectile_protection",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:slime_ball",
+    "minecraft:slime_ball",
+    "minecraft:slime_ball",
+    "minecraft:slime_ball",
+    "minecraft:slime_ball",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell"
+  ],
+  "result_enchantment": "minecraft:projectile_protection",
+  "result_level": 4
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:netherrack",
+    "minecraft:magma_cream"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:magma_block"
+  }
+}

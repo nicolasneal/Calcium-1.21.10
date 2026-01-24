@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:blaze_rod",
+    "minecraft:blaze_rod",
+    "minecraft:gunpowder",
+    "minecraft:gunpowder"
+  ],
+  "result_enchantment": "minecraft:flame",
+  "result_level": 1
+}

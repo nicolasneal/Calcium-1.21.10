@@ -1,0 +1,14 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:honey_bottle",
+    "minecraft:honey_bottle",
+    "minecraft:honey_bottle",
+    "minecraft:honey_bottle",
+    "minecraft:nether_wart",
+    "minecraft:nether_wart"
+  ],
+  "result_enchantment": "minecraft:soul_speed",
+  "result_level": 1
+}
+

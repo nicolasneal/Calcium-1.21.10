@@ -13,8 +13,7 @@ public record EnchantingRecipeInput(ItemStack tablet, List<ItemStack> ingredient
         return ItemStack.EMPTY;
     }
 
-    @Override
-    public int size() {
+    @Override public int size() {
         return 0;
     }
 

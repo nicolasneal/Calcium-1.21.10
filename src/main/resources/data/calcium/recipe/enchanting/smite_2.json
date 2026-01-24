@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:smite",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:bone",
+    "minecraft:bone",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard"
+  ],
+  "result_enchantment": "minecraft:smite",
+  "result_level": 2
+}

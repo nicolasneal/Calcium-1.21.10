@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:glow_ink_sac",
+    "minecraft:glow_ink_sac",
+    "minecraft:turtle_scute",
+    "minecraft:turtle_scute"
+  ],
+  "result_enchantment": "minecraft:respiration",
+  "result_level": 1
+}

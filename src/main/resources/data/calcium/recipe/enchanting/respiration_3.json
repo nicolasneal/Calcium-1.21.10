@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:respiration",
+  "required_level": 2,
+  "ingredients": [
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell"
+  ],
+  "result_enchantment": "minecraft:respiration",
+  "result_level": 3
+}

@@ -1,0 +1,47 @@
+{
+  "block.ectoplasm.whispering": {
+    "sounds": [
+      "calcium:block/ectoplasm/whispering1",
+      "calcium:block/ectoplasm/whispering2",
+      "calcium:block/ectoplasm/whispering3",
+      "calcium:block/ectoplasm/whispering4"
+    ]
+  },
+  "item.bucket.empty_ectoplasm": {
+    "sounds": [
+      "calcium:block/ectoplasm/empty1",
+      "calcium:block/ectoplasm/empty2"
+    ]
+  },
+  "item.bucket.fill_ectoplasm": {
+    "sounds": [
+      "calcium:block/ectoplasm/fill1",
+      "calcium:block/ectoplasm/fill2"
+    ]
+  },
+  "block.soulslate.break": {
+    "sounds": [
+      "calcium:block/soulslate/break1",
+      "calcium:block/soulslate/break2",
+      "calcium:block/soulslate/break3",
+      "calcium:block/soulslate/break4"
+    ]
+  },
+  "block.soulslate.place": {
+    "sounds": [
+      "calcium:block/soulslate/place1",
+      "calcium:block/soulslate/place2",
+      "calcium:block/soulslate/place3",
+      "calcium:block/soulslate/place4"
+    ]
+  },
+  "block.soulslate.step": {
+    "sounds": [
+      "calcium:block/soulslate/step1",
+      "calcium:block/soulslate/step2",
+      "calcium:block/soulslate/step3",
+      "calcium:block/soulslate/step4",
+      "calcium:block/soulslate/step5"
+    ]
+  }
+}

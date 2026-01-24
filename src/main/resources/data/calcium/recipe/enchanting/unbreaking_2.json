@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:unbreaking",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:clay_ball",
+    "minecraft:clay_ball",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot"
+  ],
+  "result_enchantment": "minecraft:unbreaking",
+  "result_level": 2
+}

@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:slime_ball",
+    "minecraft:slime_ball",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane"
+  ],
+  "result_enchantment": "minecraft:punch",
+  "result_level": 1
+}

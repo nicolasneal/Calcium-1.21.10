@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:thorns",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:cactus_flower",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose",
+    "minecraft:wither_rose"
+  ],
+  "result_enchantment": "minecraft:thorns",
+  "result_level": 3
+}

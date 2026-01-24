@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:impaling",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_crystals",
+    "minecraft:prismarine_crystals"
+  ],
+  "result_enchantment": "minecraft:impaling",
+  "result_level": 3
+}

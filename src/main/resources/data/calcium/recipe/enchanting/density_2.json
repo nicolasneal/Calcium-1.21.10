@@ -3,9 +3,10 @@
   "required_enchantment": "minecraft:density",
   "required_level": 1,
   "ingredients": [
-    "minecraft:diamond",
-    "minecraft:diamond",
-    "minecraft:diamond"
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod"
   ],
   "result_enchantment": "minecraft:density",
   "result_level": 2

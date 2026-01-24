@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:punch",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:ender_pearl",
+    "minecraft:ender_pearl"
+  ],
+  "result_enchantment": "minecraft:punch",
+  "result_level": 2
+}

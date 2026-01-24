@@ -1,13 +1,17 @@
 package net.nicolas.calcium;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.BlockRenderLayer;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.GrassColors;
 import net.nicolas.calcium.block.ModBlocks;
+import net.nicolas.calcium.fluid.ModFluids;
 import net.nicolas.calcium.screen.CustomBeaconScreen;
 import net.nicolas.calcium.screen.CustomEnchantingScreen;
 
@@ -42,11 +46,21 @@ public class CalciumClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.ICY_IRIS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.TALL_ICY_IRIS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.CLOVERS, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.EMBER_SPROUTS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_PONTEDERIA, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_HIBISCUS, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_POKER, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_BLACK_STINKHORN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.POTTED_WHITE_STINKHORN, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.SOUL_GLASS, BlockRenderLayer.TRANSLUCENT);
+
+        BlockRenderLayerMap.putFluids(BlockRenderLayer.TRANSLUCENT, ModFluids.ECTOPLASM_STILL);
+        BlockRenderLayerMap.putFluids(BlockRenderLayer.TRANSLUCENT, ModFluids.ECTOPLASM_FLOWING);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.ECTOPLASM_STILL, ModFluids.ECTOPLASM_FLOWING, new SimpleFluidRenderHandler(
+            Identifier.of("calcium", "block/ectoplasm_still"),
+            Identifier.of("calcium", "block/ectoplasm_flow")
+        ));
 
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             if (world != null && pos != null) {

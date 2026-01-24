@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:clay_ball",
+    "minecraft:clay_ball"
+  ],
+  "result_enchantment": "minecraft:unbreaking",
+  "result_level": 1
+}

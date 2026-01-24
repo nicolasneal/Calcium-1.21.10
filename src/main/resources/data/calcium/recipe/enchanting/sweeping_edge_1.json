@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "calcium:wooden_rod",
+    "calcium:wooden_rod",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot"
+  ],
+  "result_enchantment": "minecraft:sweeping_edge",
+  "result_level": 1
+}

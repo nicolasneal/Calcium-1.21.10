@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:flint",
+    "minecraft:flint"
+  ],
+  "result_enchantment": "minecraft:piercing",
+  "result_level": 1
+}

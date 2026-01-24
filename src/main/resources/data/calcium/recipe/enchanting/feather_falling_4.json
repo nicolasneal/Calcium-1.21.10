@@ -1,0 +1,18 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:feather_falling",
+  "required_level": 3,
+  "ingredients": [
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "minecraft:ender_eye"
+  ],
+  "result_enchantment": "minecraft:feather_falling",
+  "result_level": 4
+}

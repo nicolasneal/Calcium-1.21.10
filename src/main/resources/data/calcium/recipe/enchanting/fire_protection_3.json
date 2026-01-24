@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:fire_protection",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:armadillo_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:magma_cream",
+    "minecraft:magma_cream"
+  ],
+  "result_enchantment": "minecraft:fire_protection",
+  "result_level": 3
+}

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "calcium:cracked_andesite_bricks"
+          "name": "calcium:andesite_bricks"
         }
       ]
     }

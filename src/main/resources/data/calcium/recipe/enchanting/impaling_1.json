@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:quartz",
+    "minecraft:quartz"
+  ],
+  "result_enchantment": "minecraft:impaling",
+  "result_level": 1
+}

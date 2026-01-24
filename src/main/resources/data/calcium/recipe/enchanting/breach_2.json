@@ -5,7 +5,8 @@
   "ingredients": [
     "minecraft:gold_ingot",
     "minecraft:gold_ingot",
-    "minecraft:gold_ingot"
+    "minecraft:resin_clump",
+    "minecraft:resin_clump"
   ],
   "result_enchantment": "minecraft:breach",
   "result_level": 2

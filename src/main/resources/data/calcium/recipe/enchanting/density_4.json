@@ -6,8 +6,11 @@
     "minecraft:diamond",
     "minecraft:diamond",
     "minecraft:diamond",
-    "minecraft:netherite_scrap",
-    "minecraft:netherite_scrap"
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot"
   ],
   "result_enchantment": "minecraft:density",
   "result_level": 4

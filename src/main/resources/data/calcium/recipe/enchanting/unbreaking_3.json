@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:unbreaking",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:diamond",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:unbreaking",
+  "result_level": 3
+}

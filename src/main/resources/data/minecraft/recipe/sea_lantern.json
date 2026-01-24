@@ -2,11 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:prismarine_crystals"
+    "#": "minecraft:glowstone",
+    "@": "minecraft:prismarine_crystals"
   },
   "pattern": [
-    "##",
-    "##"
+    " @ ",
+    "@#@",
+    " @ "
   ],
   "result": {
     "count": 1,

@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:depth_strider",
+  "required_level": 1,
+  "ingredients": [
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell"
+  ],
+  "result_enchantment": "minecraft:depth_strider",
+  "result_level": 2
+}

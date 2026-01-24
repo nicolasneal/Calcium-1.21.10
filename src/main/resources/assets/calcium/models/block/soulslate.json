@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calcium:block/soulslate",
+    "particle": "calcium:block/soulslate"
+  },
+  "render_type": "solid"
+}

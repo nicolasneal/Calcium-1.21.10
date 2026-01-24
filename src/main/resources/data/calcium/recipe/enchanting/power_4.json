@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:power",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:power",
+  "result_level": 4
+}

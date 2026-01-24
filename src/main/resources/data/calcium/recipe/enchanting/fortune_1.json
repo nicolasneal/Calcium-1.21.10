@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot"
+  ],
+  "result_enchantment": "minecraft:fortune",
+  "result_level": 1
+}

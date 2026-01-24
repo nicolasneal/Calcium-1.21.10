@@ -49,6 +49,21 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "calcium:gold_coin"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/piglin_brute"

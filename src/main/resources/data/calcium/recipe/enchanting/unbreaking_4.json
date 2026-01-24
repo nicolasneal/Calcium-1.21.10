@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:unbreaking",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:shulker_shell",
+    "minecraft:shulker_shell",
+    "minecraft:shulker_shell"
+  ],
+  "result_enchantment": "minecraft:unbreaking",
+  "result_level": 4
+}

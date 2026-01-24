@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:fortune",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:emerald",
+    "minecraft:emerald",
+    "minecraft:emerald",
+    "minecraft:emerald",
+    "minecraft:emerald",
+    "calcium:four_leaf_clover",
+    "calcium:four_leaf_clover",
+    "calcium:four_leaf_clover"
+  ],
+  "result_enchantment": "minecraft:fortune",
+  "result_level": 3
+}

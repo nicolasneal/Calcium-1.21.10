@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:piercing",
+  "required_level": 3,
+  "ingredients": [
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:ghast_tear",
+    "minecraft:ghast_tear",
+    "minecraft:ghast_tear"
+  ],
+  "result_enchantment": "minecraft:piercing",
+  "result_level": 4
+}

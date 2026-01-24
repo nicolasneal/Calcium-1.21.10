@@ -1,11 +1,14 @@
 {
   "replace": false,
   "values": [
+    "minecraft:nether_quartz_ore",
+    "minecraft:nether_gold_ore",
     "calcium:cut_iron",
     "calcium:cut_iron_stairs",
     "calcium:cut_iron_slab",
     "calcium:chiseled_iron",
     "calcium:iron_grate",
-    "calcium:iron_bulb"
+    "calcium:iron_bulb",
+    "calcium:netherrack_glowstone_ore"
   ]
 }

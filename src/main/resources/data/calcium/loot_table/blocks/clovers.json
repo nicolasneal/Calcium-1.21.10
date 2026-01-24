@@ -78,6 +78,29 @@
           "name": "calcium:clovers"
         }
       ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "calcium:four_leaf_clover",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:shears"
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.01
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "calcium:blocks/clovers"

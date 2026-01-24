@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:fire_aspect",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:blaze_powder",
+    "minecraft:blaze_powder",
+    "minecraft:blaze_powder",
+    "minecraft:blaze_powder",
+    "minecraft:ghast_tear",
+    "minecraft:ghast_tear"
+  ],
+  "result_enchantment": "minecraft:fire_aspect",
+  "result_level": 2
+}
+
+

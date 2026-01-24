@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:block_interact",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:honeycomb"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:harvest/beehive"
+}

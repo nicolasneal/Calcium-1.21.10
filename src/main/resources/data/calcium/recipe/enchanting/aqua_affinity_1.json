@@ -1,0 +1,11 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:turtle_scute",
+    "minecraft:turtle_scute",
+    "minecraft:heart_of_the_sea",
+    "minecraft:heart_of_the_sea"
+  ],
+  "result_enchantment": "minecraft:aqua_affinity",
+  "result_level": 1
+}

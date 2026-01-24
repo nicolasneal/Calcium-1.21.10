@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "minecraft:wind_charge",
+    "minecraft:wind_charge"
+  ],
+  "result_enchantment": "minecraft:wind_burst",
+  "result_level": 1
+}
+
+

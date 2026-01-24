@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:fire_charge",
+    "minecraft:fire_charge",
+    "minecraft:blaze_powder",
+    "minecraft:blaze_powder"
+  ],
+  "result_enchantment": "minecraft:fire_aspect",
+  "result_level": 1
+}
+
+

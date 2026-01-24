@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:gunpowder",
+    "minecraft:gunpowder"
+  ],
+  "result_enchantment": "minecraft:power",
+  "result_level": 1
+}

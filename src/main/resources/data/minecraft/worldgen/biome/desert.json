@@ -8,8 +8,12 @@
         "sound": "minecraft:music.overworld.desert"
       }
     },
+    "minecraft:visual/fog_start_distance": -32,
+    "minecraft:visual/fog_end_distance": 384,
     "minecraft:visual/sky_color": "#A4D3ED",
-    "minecraft:visual/fog_color": "#BFE0F2",
+    "minecraft:visual/fog_color": "#F2EFE1",
+    "minecraft:visual/sky_light_color": "#FFFBEC",
+    "minecraft:visual/cloud_color": "#DBE6E2D5",
     "minecraft:visual/water_fog_color": "#42646B"
   },
   "effects": {

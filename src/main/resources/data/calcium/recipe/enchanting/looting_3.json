@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:looting",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "calcium:four_leaf_clover",
+    "calcium:four_leaf_clover",
+    "calcium:four_leaf_clover"
+  ],
+  "result_enchantment": "minecraft:looting",
+  "result_level": 3
+}

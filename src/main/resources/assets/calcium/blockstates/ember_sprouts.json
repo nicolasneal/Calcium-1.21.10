@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "calcium:block/ember_sprouts_1" },
+      { "model": "calcium:block/ember_sprouts_2" },
+      { "model": "calcium:block/ember_sprouts_3" },
+      { "model": "calcium:block/ember_sprouts_4" }
+    ]
+  }
+}

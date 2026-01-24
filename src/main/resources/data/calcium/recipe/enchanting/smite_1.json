@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:bone",
+    "minecraft:bone"
+  ],
+  "result_enchantment": "minecraft:smite",
+  "result_level": 1
+}

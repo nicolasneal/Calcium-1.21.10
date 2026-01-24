@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:quick_charge",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:redstone",
+    "minecraft:redstone",
+    "minecraft:redstone",
+    "minecraft:redstone",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust"
+  ],
+  "result_enchantment": "minecraft:quick_charge",
+  "result_level": 3
+}

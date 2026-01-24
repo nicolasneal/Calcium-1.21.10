@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:lure",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:gold_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:gold_nugget",
+    "minecraft:slime_ball",
+    "minecraft:slime_ball"
+  ],
+  "result_enchantment": "minecraft:lure",
+  "result_level": 3
+}

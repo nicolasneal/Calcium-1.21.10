@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:copper_ingot",
+    "minecraft:blaze_rod",
+    "minecraft:blaze_rod"
+  ],
+  "result_enchantment": "minecraft:channeling",
+  "result_level": 1
+}

@@ -3,10 +3,12 @@
   "required_enchantment": "minecraft:bane_of_arthropods",
   "required_level": 2,
   "ingredients": [
-    "minecraft:fermented_spider_eye",
-    "minecraft:fermented_spider_eye",
-    "minecraft:fermented_spider_eye",
-    "minecraft:diamond"
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb"
   ],
   "result_enchantment": "minecraft:bane_of_arthropods",
   "result_level": 3

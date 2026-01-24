@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "calcium:block/netherrack_glowstone_ore",
+    "particle": "calcium:block/netherrack_glowstone_ore"
+  },
+  "render_type": "solid"
+}

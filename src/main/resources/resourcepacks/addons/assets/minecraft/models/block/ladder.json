@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ladder_template",
+  "textures": {
+    "texture": "block/ladder",
+    "particle": "block/ladder"
+  }
+}

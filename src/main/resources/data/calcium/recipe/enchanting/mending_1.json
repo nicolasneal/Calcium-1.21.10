@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "minecraft:diamond",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:mending",
+  "result_level": 1
+}

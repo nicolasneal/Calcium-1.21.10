@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:string",
+    "minecraft:string"
+  ],
+  "result_enchantment": "minecraft:quick_charge",
+  "result_level": 1
+}

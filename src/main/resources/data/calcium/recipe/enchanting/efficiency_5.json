@@ -1,0 +1,18 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:efficiency",
+  "required_level": 4,
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "minecraft:diamond",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "minecraft:cake"
+  ],
+  "result_enchantment": "minecraft:efficiency",
+  "result_level": 5
+}

@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:turtle_scute",
+    "minecraft:turtle_scute"
+  ],
+  "result_enchantment": "minecraft:protection",
+  "result_level": 1
+}

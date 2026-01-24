@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "calcium:cracked_basalt_tile_slab"
+          "name": "calcium:basalt_tile_slab"
         }
       ]
     }

@@ -1,7 +1,9 @@
 package net.nicolas.calcium.block;
 
+import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.cauldron.CauldronBehavior;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
@@ -13,20 +15,59 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
-import net.nicolas.calcium.block.custom.DirtPlantBlock;
-import net.nicolas.calcium.block.custom.GenericPlantBlock;
-import net.nicolas.calcium.block.custom.TallDryPlantBlock;
+import net.minecraft.util.Util;
+import net.minecraft.world.biome.Biome;
+import net.nicolas.calcium.block.custom.*;
+import net.nicolas.calcium.fluid.ModFluids;
+import net.nicolas.calcium.sound.ModSounds;
+
 import java.util.function.Function;
 
 public class ModBlocks {
 
     public static final String MOD_ID = "calcium";
 
-    // NATURAL BLOCKS (1)
+    // NATURAL BLOCKS (3)
 
     public static final Block SILT = register("silt", settings -> new SandBlock(new ColorCode(0x766551), settings), Block.Settings.copy(Blocks.SAND), true);
+    public static final Block SOULSLATE = register("soulslate", Block::new, Block.Settings.create().sounds(ModSounds.SOULSLATE).mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(0.4F, 0.4F), true);
+    public static final Block NETHERRACK_GLOWSTONE_ORE = register("netherrack_glowstone_ore", GlowstoneOreBlock::new, Block.Settings.create().luminance(state -> state.get(RedstoneOreBlock.LIT) ? 9 : 0).sounds(BlockSoundGroup.NETHER_ORE).mapColor(MapColor.DARK_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3.0F, 3.0F), true);
+
+    // NATURAL FLUIDS (1, 1)
+
+    public static final Block ECTOPLASM = register("ectoplasm", settings -> new FluidBlock(ModFluids.ECTOPLASM_STILL, settings), Block.Settings.create().mapColor(MapColor.DIAMOND_BLUE).replaceable().noCollision().strength(100.0F).pistonBehavior(PistonBehavior.DESTROY).dropsNothing().liquid().luminance(state -> 6), false);
+    public static final java.util.Map<Item, CauldronBehavior> ECTOPLASM_CAULDRON_BEHAVIOR_MAP = Util.make(new Object2ObjectOpenHashMap<>(), map -> map.defaultReturnValue((state, world, pos, player, hand, stack) -> ActionResult.PASS_TO_DEFAULT_BLOCK_ACTION));
+    public static final CauldronBehavior.CauldronBehaviorMap ECTOPLASM_CAULDRON_BEHAVIOR = new CauldronBehavior.CauldronBehaviorMap("ectoplasm", ECTOPLASM_CAULDRON_BEHAVIOR_MAP);
+    public static final Block ECTOPLASM_CAULDRON = register("ectoplasm_cauldron", settings -> new LeveledCauldronBlock(Biome.Precipitation.NONE, ECTOPLASM_CAULDRON_BEHAVIOR, settings), Block.Settings.copy(Blocks.CAULDRON).mapColor(MapColor.IRON_GRAY).luminance(state -> 6), false);
+
+    // PLANT BLOCKS (18, 5)
+
+    public static final Block WILD_WHEAT = register("wild_wheat", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block WILD_CARROT = register("wild_carrot", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block WILD_POTATO = register("wild_potato", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block WILD_BEETROOT = register("wild_beetroot", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block PONTEDERIA = register("pontederia", (settings) -> new FlowerBlock(StatusEffects.WATER_BREATHING, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block HIBISCUS = register("hibiscus", (settings) -> new FlowerBlock(StatusEffects.BLINDNESS, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block POKER = register("poker", (settings) -> new FlowerBlock(StatusEffects.NIGHT_VISION, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
+    public static final Block BLACK_STINKHORN = register("black_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
+    public static final Block WHITE_STINKHORN = register("white_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.LIGHT_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
+    public static final Block BUSY_LIZZIE = register("busy_lizzie", BushBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block GOLDENROD = register("goldenrod", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block BARLEY = register("barley", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block SEA_OATS = register("sea_oats", TallDryPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block PAMPAS = register("pampas", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block ICY_IRIS = register("icy_iris", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block TALL_ICY_IRIS = register("tall_icy_iris", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block CLOVERS = register("clovers", FlowerbedBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.FLOWERBED).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
+    public static final Block EMBER_SPROUTS = register("ember_sprouts", FlatPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_CRIMSON).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.NETHER_SPROUTS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY), true);
+    public static final Block POTTED_PONTEDERIA = register("potted_pontederia", settings -> new FlowerPotBlock(PONTEDERIA, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_HIBISCUS = register("potted_hibiscus", settings -> new FlowerPotBlock(HIBISCUS, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_POKER = register("potted_poker", settings -> new FlowerPotBlock(POKER, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_BLACK_STINKHORN = register("potted_black_stinkhorn", settings -> new FlowerPotBlock(BLACK_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block POTTED_WHITE_STINKHORN = register("potted_white_stinkhorn", settings -> new FlowerPotBlock(WHITE_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
 
     // STONE VARIANT BLOCKS (124)
 
@@ -211,30 +252,9 @@ public class ModBlocks {
     public static final Block GOLD_CHAIN = register("gold_chain", ChainBlock::new, Block.Settings.create().sounds(BlockSoundGroup.CHAIN).nonOpaque().solid().requiresTool().strength(3.0F, 6.0F), true);
     public static final Block GOLD_LANTERN = register("gold_lantern", LanternBlock::new, Block.Settings.create().luminance(state -> 15).sounds(BlockSoundGroup.LANTERN).mapColor(MapColor.GOLD).instrument(NoteBlockInstrument.BELL).pistonBehavior(PistonBehavior.DESTROY).requiresTool().nonOpaque().strength(3.5f, 3.5f), true);
 
-    // PLANT BLOCKS (17, 5)
+    // DECORATIVE BLOCKS
 
-    public static final Block WILD_WHEAT = register("wild_wheat", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block WILD_CARROT = register("wild_carrot", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block WILD_POTATO = register("wild_potato", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block WILD_BEETROOT = register("wild_beetroot", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY), true);
-    public static final Block PONTEDERIA = register("pontederia", (settings) -> new FlowerBlock(StatusEffects.WATER_BREATHING, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
-    public static final Block HIBISCUS = register("hibiscus", (settings) -> new FlowerBlock(StatusEffects.BLINDNESS, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
-    public static final Block POKER = register("poker", (settings) -> new FlowerBlock(StatusEffects.NIGHT_VISION, 5.0f, settings), Block.Settings.create().mapColor(MapColor.DARK_GREEN).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).burnable().pistonBehavior(PistonBehavior.DESTROY),true);
-    public static final Block BLACK_STINKHORN = register("black_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.DEEPSLATE_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
-    public static final Block WHITE_STINKHORN = register("white_stinkhorn", GenericPlantBlock::new, Block.Settings.create().mapColor(MapColor.LIGHT_GRAY).noCollision().breakInstantly().sounds(BlockSoundGroup.FUNGUS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).nonOpaque(), true);
-    public static final Block BUSY_LIZZIE = register("busy_lizzie", BushBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block GOLDENROD = register("goldenrod", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.YELLOW).noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block BARLEY = register("barley", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block SEA_OATS = register("sea_oats", TallDryPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block PAMPAS = register("pampas", TallPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_YELLOW).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block ICY_IRIS = register("icy_iris", DirtPlantBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block TALL_ICY_IRIS = register("tall_icy_iris", TallFlowerBlock::new, Block.Settings.create().mapColor(MapColor.PALE_PURPLE).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.CROP).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block CLOVERS = register("clovers", FlowerbedBlock::new, Block.Settings.create().mapColor(MapColor.DARK_GREEN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.FLOWERBED).pistonBehavior(PistonBehavior.DESTROY).burnable(), true);
-    public static final Block POTTED_PONTEDERIA = register("potted_pontederia", settings -> new FlowerPotBlock(PONTEDERIA, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
-    public static final Block POTTED_HIBISCUS = register("potted_hibiscus", settings -> new FlowerPotBlock(HIBISCUS, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
-    public static final Block POTTED_POKER = register("potted_poker", settings -> new FlowerPotBlock(POKER, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
-    public static final Block POTTED_BLACK_STINKHORN = register("potted_black_stinkhorn", settings -> new FlowerPotBlock(BLACK_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
-    public static final Block POTTED_WHITE_STINKHORN = register("potted_white_stinkhorn", settings -> new FlowerPotBlock(WHITE_STINKHORN, settings), Block.Settings.copy(Blocks.FLOWER_POT), false);
+    public static final Block SOUL_GLASS = register("soul_glass", TransparentBlock::new, Block.Settings.create().sounds(BlockSoundGroup.GLASS).instrument(NoteBlockInstrument.HAT).strength(0.6F, 0.6F).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never), true);
 
     public static void initialize() {
 
@@ -388,6 +408,8 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register((itemgroup) -> {
             itemgroup.add(SILT);
+            itemgroup.add(SOULSLATE);
+            itemgroup.add(NETHERRACK_GLOWSTONE_ORE);
             itemgroup.add(WILD_WHEAT);
             itemgroup.add(WILD_CARROT);
             itemgroup.add(WILD_POTATO);
@@ -405,6 +427,7 @@ public class ModBlocks {
             itemgroup.add(ICY_IRIS);
             itemgroup.add(TALL_ICY_IRIS);
             itemgroup.add(CLOVERS);
+            itemgroup.add(EMBER_SPROUTS);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((itemgroup) -> {
@@ -418,6 +441,10 @@ public class ModBlocks {
             itemgroup.add(GOLD_BULB);
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register((itemgroup) -> {
+            itemgroup.add(SOUL_GLASS);
+        });
+
     }
 
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean registerItem) {
@@ -425,10 +452,7 @@ public class ModBlocks {
         RegistryKey<Block> blockKey = keyOfBlock(name);
         Block block = blockFactory.apply(settings.registryKey(blockKey));
 
-        if (registerItem) {
-            RegistryKey<Item> itemKey = keyOfItem(name);
-            BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(itemKey).useBlockPrefixedTranslationKey());
-            Registry.register(Registries.ITEM, itemKey, blockItem);
+        if (registerItem) {RegistryKey<Item> itemKey = keyOfItem(name);BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(itemKey).useBlockPrefixedTranslationKey());Registry.register(Registries.ITEM, itemKey, blockItem);
         }
 
         return Registry.register(Registries.BLOCK, blockKey, block);

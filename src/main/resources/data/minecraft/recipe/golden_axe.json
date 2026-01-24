@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "@": "calcium:wooden_rod"
+  },
+  "pattern": [
+    "##",
+    "#@",
+    " @"
+  ],
+  "result": {
+    "id": "minecraft:golden_axe",
+    "count": 1
+  }
+}

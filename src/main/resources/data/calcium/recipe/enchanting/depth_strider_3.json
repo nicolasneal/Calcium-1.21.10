@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:depth_strider",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:heart_of_the_sea",
+    "minecraft:heart_of_the_sea",
+    "minecraft:heart_of_the_sea"
+  ],
+  "result_enchantment": "minecraft:depth_strider",
+  "result_level": 3
+}

@@ -3,10 +3,12 @@
   "required_enchantment": "minecraft:density",
   "required_level": 2,
   "ingredients": [
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
+    "minecraft:breeze_rod",
     "minecraft:diamond",
-    "minecraft:diamond",
-    "minecraft:diamond",
-    "minecraft:netherite_scrap"
+    "minecraft:diamond"
   ],
   "result_enchantment": "minecraft:density",
   "result_level": 3

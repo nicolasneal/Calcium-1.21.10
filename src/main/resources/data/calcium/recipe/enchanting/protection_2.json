@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:protection",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:turtle_scute",
+    "minecraft:turtle_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:armadillo_scute"
+  ],
+  "result_enchantment": "minecraft:protection",
+  "result_level": 2
+}

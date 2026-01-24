@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "calcium:pixie_dust",
+    "minecraft:echo_shard",
+    "minecraft:echo_shard"
+  ],
+  "result_enchantment": "minecraft:infinity",
+  "result_level": 1
+}

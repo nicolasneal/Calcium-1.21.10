@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:sugar",
+    "minecraft:sugar"
+  ],
+  "result_enchantment": "minecraft:efficiency",
+  "result_level": 1
+}

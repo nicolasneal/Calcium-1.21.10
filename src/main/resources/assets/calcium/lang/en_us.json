@@ -1,7 +1,39 @@
 {
 
   "tooltip.calcium.enchanting_table_item": "Add Enchantable Item",
+  "tooltip.calcium.enchanting_table_fuel": "Add Lapis Lazuli",
   "item.calcium.tablet": "Tablet",
+
+  "block.calcium.ectoplasm": "Ectoplasm",
+  "block.calcium.ectoplasm_cauldron": "Ectoplasm Cauldron",
+
+  "block.calcium.silt": "Silt",
+  "block.calcium.soulslate": "Soulslate",
+  "block.calcium.netherrack_glowstone_ore": "Netherrack Glowstone Ore",
+
+  "block.calcium.wild_wheat": "Wild Wheat",
+  "block.calcium.wild_carrot": "Wild Carrot",
+  "block.calcium.wild_potato": "Wild Potato",
+  "block.calcium.wild_beetroot": "Wild Beetroot",
+  "block.calcium.pontederia": "Pontederia",
+  "block.calcium.hibiscus": "Hibiscus",
+  "block.calcium.poker": "Poker",
+  "block.calcium.black_stinkhorn": "Black Stinkhorn",
+  "block.calcium.white_stinkhorn": "White Stinkhorn",
+  "block.calcium.busy_lizzie": "Busy Lizzie",
+  "block.calcium.goldenrod": "Goldenrod",
+  "block.calcium.barley": "Barley",
+  "block.calcium.sea_oats": "Sea Oats",
+  "block.calcium.pampas": "Pampas",
+  "block.calcium.icy_iris": "Icy Iris",
+  "block.calcium.tall_icy_iris": "Tall Icy Iris",
+  "block.calcium.clovers": "Clovers",
+  "block.calcium.ember_sprouts": "Ember Sprouts",
+  "block.calcium.potted_pontederia": "Potted Pontederia",
+  "block.calcium.potted_hibiscus": "Potted Hibiscus",
+  "block.calcium.potted_poker": "Potted Poker",
+  "block.calcium.potted_black_stinkhorn": "Potted Black Stinkhorn",
+  "block.calcium.potted_white_stinkhorn": "Potted White Stinkhorn",
 
   "block.calcium.polished_stone": "Polished Stone",
   "block.calcium.polished_stone_stairs": "Polished Stone Stairs",
@@ -164,31 +196,7 @@
   "block.calcium.gold_chain": "Gold Chain",
   "block.calcium.gold_lantern": "Gold Lantern",
 
-  "block.calcium.silt": "Silt",
-
-  "block.calcium.wild_wheat": "Wild Wheat",
-  "block.calcium.wild_carrot": "Wild Carrot",
-  "block.calcium.wild_potato": "Wild Potato",
-  "block.calcium.wild_beetroot": "Wild Beetroot",
-  "block.calcium.pontederia": "Pontederia",
-  "block.calcium.hibiscus": "Hibiscus",
-  "block.calcium.poker": "Poker",
-  "block.calcium.black_stinkhorn": "Black Stinkhorn",
-  "block.calcium.white_stinkhorn": "White Stinkhorn",
-  "block.calcium.busy_lizzie": "Busy Lizzie",
-  "block.calcium.goldenrod": "Goldenrod",
-  "block.calcium.barley": "Barley",
-  "block.calcium.sea_oats": "Sea Oats",
-  "block.calcium.pampas": "Pampas",
-  "block.calcium.icy_iris": "Icy Iris",
-  "block.calcium.tall_icy_iris": "Tall Icy Iris",
-  "block.calcium.clovers": "Clovers",
-
-  "block.calcium.potted_pontederia": "Potted Pontederia",
-  "block.calcium.potted_hibiscus": "Potted Hibiscus",
-  "block.calcium.potted_poker": "Potted Poker",
-  "block.calcium.potted_black_stinkhorn": "Potted Black Stinkhorn",
-  "block.calcium.potted_white_stinkhorn": "Potted White Stinkhorn",
+  "block.calcium.soul_glass": "Soul Glass",
 
   "item.calcium.flour": "Flour",
   "item.calcium.dough": "Dough",
@@ -199,6 +207,10 @@
   "item.calcium.fur": "Fur",
   "item.calcium.hide": "Hide",
   "item.calcium.pixie_dust": "Pixie Dust",
+  "item.calcium.four_leaf_clover": "Four-Leaf Clover",
+  "item.calcium.dolphin_fin": "Dolphin Fin",
+  "item.calcium.ghast_tentacle": "Ghast Tentacle",
+  "item.calcium.warden_heart": "Warden Heart",
 
   "item.calcium.cheval": "Cheval",
   "item.calcium.cooked_cheval": "Cooked Cheval",
@@ -213,6 +225,12 @@
   "item.calcium.tentacles": "Tentacles",
   "item.calcium.cooked_tentacles": "Cooked Tentacles",
   "item.calcium.chocolate": "Chocolate",
-  "item.calcium.water_bowl": "Water Bowl"
+  "item.calcium.water_bowl": "Water Bowl",
+  
+  "item.calcium.copper_coin": "Copper Coin",
+  "item.calcium.iron_coin": "Iron Coin",
+  "item.calcium.gold_coin": "Gold Coin",
+  "item.calcium.netherite_coin": "Netherite Coin",
+  "item.calcium.ectoplasm_bucket": "Ectoplasm Bucket"
 
 }

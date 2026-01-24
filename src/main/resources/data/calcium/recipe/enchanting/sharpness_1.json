@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard"
+  ],
+  "result_enchantment": "minecraft:sharpness",
+  "result_level": 1
+}

@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:piercing",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane"
+  ],
+  "result_enchantment": "minecraft:piercing",
+  "result_level": 3
+}

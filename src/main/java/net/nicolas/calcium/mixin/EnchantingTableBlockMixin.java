@@ -25,9 +25,7 @@ public class EnchantingTableBlockMixin {
 
         if (blockEntity instanceof EnchantingTableBlockEntity tableEntity) {
             Text displayName = tableEntity.getDisplayName();
-            NamedScreenHandlerFactory factory = new SimpleNamedScreenHandlerFactory((syncId, inv, player) -> {
-                return new CustomEnchantingScreenHandler(syncId, inv, new SimpleInventory(10));
-            }, displayName);
+            NamedScreenHandlerFactory factory = new SimpleNamedScreenHandlerFactory((syncId, inv, player) -> new CustomEnchantingScreenHandler(syncId, inv, new SimpleInventory(11)), displayName);
             cir.setReturnValue(factory);
         }
 

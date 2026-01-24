@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:frost_walker",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:diamond",
+    "minecraft:diamond"
+  ],
+  "result_enchantment": "minecraft:frost_walker",
+  "result_level": 2
+}

@@ -1,0 +1,13 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:sharpness",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_shard"
+  ],
+  "result_enchantment": "minecraft:sharpness",
+  "result_level": 2
+}

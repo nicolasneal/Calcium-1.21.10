@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "calcium:block/ectoplasm_cauldron_1"
+    },
+    "level=2": {
+      "model": "calcium:block/ectoplasm_cauldron_2"
+    },
+    "level=3": {
+      "model": "calcium:block/ectoplasm_cauldron_3"
+    }
+  }
+}

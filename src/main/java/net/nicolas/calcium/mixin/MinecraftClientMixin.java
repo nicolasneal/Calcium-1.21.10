@@ -26,7 +26,6 @@ public class MinecraftClientMixin {
 
     @Shadow @Final public GameOptions options;
     @Redirect(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/option/InactivityFpsLimiter;update()I"))
-
     private int unlockTitleFps(InactivityFpsLimiter instance) {
         return this.options.getMaxFps().getValue();
     }

@@ -7,7 +7,10 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.ComposterBlock;
+import net.minecraft.block.LeveledCauldronBlock;
+import net.minecraft.block.cauldron.CauldronBehavior;
 import net.minecraft.component.DataComponentTypes;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,10 +20,12 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.nicolas.calcium.block.ModBlocks;
 import net.nicolas.calcium.event.Cracking;
+import net.nicolas.calcium.fluid.ModFluids;
 import net.nicolas.calcium.item.ModItems;
 import net.nicolas.calcium.recipe.ModRecipes;
 import net.nicolas.calcium.screen.CustomBeaconScreenHandler;
 import net.nicolas.calcium.screen.CustomEnchantingScreenHandler;
+import net.nicolas.calcium.sound.ModSounds;
 
 public class Calcium implements ModInitializer {
 
@@ -40,15 +45,30 @@ public class Calcium implements ModInitializer {
 
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModFluids.initialize();
 		ModRecipes.initialize();
+		ModSounds.initialize();
 		Cracking.registerEvents();
-
 
 		// Resourcepack Initialization
 
 		FabricLoader.getInstance().getModContainer("calcium").ifPresent(container -> {
-			boolean success = ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("calcium", "addons"), container, net.minecraft.text.Text.of("Calcium Default"), ResourcePackActivationType.ALWAYS_ENABLED);
+			boolean success = ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("calcium", "addons"), container, net.minecraft.text.Text.of("§lNicolas's Add-Ons §r§7[1.1.1]"), ResourcePackActivationType.ALWAYS_ENABLED);
 		});
+
+		FabricLoader.getInstance().getModContainer("calcium").ifPresent(container -> {
+			boolean success = ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("calcium", "cubic"), container, net.minecraft.text.Text.of("§l3D Sun & Moon"), ResourcePackActivationType.NORMAL);
+		});
+
+		FabricLoader.getInstance().getModContainer("calcium").ifPresent(container -> {
+			boolean success = ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of("calcium", "bushy"), container, net.minecraft.text.Text.of("§lBushy Leaves"), ResourcePackActivationType.NORMAL);
+		});
+
+		// Cauldron Behavior
+
+		CauldronBehavior.BEHAVIOR_MAPS.put("ectoplasm", ModBlocks.ECTOPLASM_CAULDRON_BEHAVIOR);
+		CauldronBehavior.EMPTY_CAULDRON_BEHAVIOR.map().put(ModItems.ECTOPLASM_BUCKET, (state, world, pos, player, hand, stack) -> CauldronBehavior.fillCauldron(world, pos, player, hand, stack, ModBlocks.ECTOPLASM_CAULDRON.getDefaultState().with(LeveledCauldronBlock.LEVEL, 3), ModSounds.ECTOPLASM_BUCKET_EMPTY));
+		ModBlocks.ECTOPLASM_CAULDRON_BEHAVIOR_MAP.put(Items.BUCKET, (state, world, pos, player, hand, stack) -> CauldronBehavior.emptyCauldron(state, world, pos, player, hand, stack, new ItemStack(ModItems.ECTOPLASM_BUCKET), (statex) -> true, ModSounds.ECTOPLASM_BUCKET_FILL));
 
 		// Registering Compostables
 
@@ -61,6 +81,7 @@ public class Calcium implements ModInitializer {
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.GOLDENROD.asItem(), 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.PAMPAS.asItem(), 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.CLOVERS.asItem(), 0.30f);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.EMBER_SPROUTS.asItem(), 0.30f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.PUMPKIN_SLICE, 0.50f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.FLOUR, 0.65f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.DOUGH, 0.85f);
@@ -70,6 +91,14 @@ public class Calcium implements ModInitializer {
 		// Registering Fuels
 
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
+			// Vanilla Fuels
+			builder.add(Items.LAVA_BUCKET, 12800);
+			builder.add(Items.COAL_BLOCK, 6400);
+			builder.add(Items.DRIED_KELP_BLOCK, 800);
+			builder.add(Items.DRIED_KELP, 200);
+			builder.add(Items.BLAZE_POWDER, 1200);
+			// Calcium Fuels
+			builder.add(ModItems.WOODEN_ROD, 100);
 			builder.add(ModItems.PIXIE_DUST, 2400);
 		});
 
@@ -176,6 +205,9 @@ public class Calcium implements ModInitializer {
 			context.modify(Items.BROWN_EGG, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
 			// Miscellaneous
 			context.modify(Items.BUCKET, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
+			context.modify(Items.WATER_BUCKET, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
+			context.modify(Items.LAVA_BUCKET, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
+			context.modify(Items.POWDER_SNOW_BUCKET, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
 			context.modify(Items.POTION, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
 			context.modify(Items.SPLASH_POTION, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));
 			context.modify(Items.LINGERING_POTION, builder -> builder.add(DataComponentTypes.MAX_STACK_SIZE, 64));

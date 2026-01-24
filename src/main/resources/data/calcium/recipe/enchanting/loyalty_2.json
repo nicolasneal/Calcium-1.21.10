@@ -1,0 +1,15 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:loyalty",
+  "required_level": 1,
+  "ingredients": [
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "minecraft:lapis_lazuli",
+    "calcium:dolphin_fin",
+    "calcium:dolphin_fin"
+  ],
+  "result_enchantment": "minecraft:loyalty",
+  "result_level": 2
+}

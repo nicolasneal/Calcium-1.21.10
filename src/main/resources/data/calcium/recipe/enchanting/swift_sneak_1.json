@@ -1,0 +1,16 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:phantom_membrane",
+    "minecraft:echo_shard",
+    "minecraft:echo_shard"
+  ],
+  "result_enchantment": "minecraft:swift_sneak",
+  "result_level": 1
+}
+
+
+

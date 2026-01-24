@@ -1,0 +1,9 @@
+{
+  "type": "calcium:enchanting",
+  "ingredients": [
+    "minecraft:glowstone_dust",
+    "minecraft:glowstone_dust"
+  ],
+  "result_enchantment": "minecraft:lure",
+  "result_level": 1
+}

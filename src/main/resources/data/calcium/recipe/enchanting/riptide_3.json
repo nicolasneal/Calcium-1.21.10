@@ -1,0 +1,18 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:riptide",
+  "required_level": 2,
+  "ingredients": [
+    "minecraft:wind_charge",
+    "minecraft:wind_charge",
+    "minecraft:wind_charge",
+    "minecraft:wind_charge",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:nautilus_shell",
+    "minecraft:heart_of_the_sea"
+  ],
+  "result_enchantment": "minecraft:riptide",
+  "result_level": 3
+}

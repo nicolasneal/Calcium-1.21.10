@@ -1,0 +1,17 @@
+{
+  "type": "calcium:enchanting",
+  "required_enchantment": "minecraft:smite",
+  "required_level": 3,
+  "ingredients": [
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "calcium:ghast_tentacle",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap"
+  ],
+  "result_enchantment": "minecraft:smite",
+  "result_level": 4
+}
